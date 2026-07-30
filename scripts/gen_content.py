@@ -38,6 +38,7 @@ PAGES = [
     ("parte-2-dio-e-la-trinita","Parte II · Dio e la Trinità","Parte II · Dio, la Trinità e i concili","parte2"),
     ("parte-3-la-salvezza-in-cristo","Parte III · La salvezza in Cristo","Parte III · La salvezza in Cristo","parte3"),
     ("parte-4-la-chiesa","Parte IV · La Chiesa","Parte IV · La Chiesa: il popolo di Dio","parte4"),
+    ("parte-5-apologetica","Parte V · Apologetica","Parte V · Riconoscere gli inganni","parte5"),
     ("introduzione","Introduzione","Introduzione · La necessità della sana dottrina","intro"),
     ("01-chi-e-dio","1 · Chi è Dio","Chi è Dio","c1"),
     ("02-il-peccato","2 · Il peccato","Il problema: il peccato","c2"),
