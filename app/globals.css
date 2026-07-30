@@ -1,0 +1,427 @@
+
+/* =====================================================================
+   "I FONDAMENTI DELLA FEDE" — libro editoriale
+   Direzione: pagina bianca da stampa (poco inchiostro), impaginazione da
+   libro (InDesign): colonna di lettura stretta, molta aria, capolettera,
+   testatine, illustrazioni al tratto minimal, dati di ricerca citati.
+   Palette quasi monocroma + un solo accento bronzo antico, usato pochissimo.
+   ===================================================================== */
+:root{
+  --page:#fdfcfa; --page-2:#f6f3ec; --panel:#ffffff;
+  --ink:#1c1b19; --ink-2:#57544d; --ink-3:#8b877d;
+  --accent:#8a6a23; --accent-soft:#b79a55;
+  --rule:rgba(28,27,25,.16); --rule-soft:rgba(28,27,25,.08);
+  --figure:#26251f;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,"Times New Roman",serif;
+  --sans:"Helvetica Neue",-apple-system,system-ui,"Segoe UI",Roboto,Arial,sans-serif;
+  --measure:33rem;
+  --shadow:0 1px 30px rgba(28,27,25,.05);
+}
+:root[data-theme="light"]{
+  --page:#fdfcfa; --page-2:#f6f3ec; --panel:#ffffff;
+  --ink:#1c1b19; --ink-2:#57544d; --ink-3:#8b877d;
+  --accent:#8a6a23; --accent-soft:#b79a55;
+  --rule:rgba(28,27,25,.16); --rule-soft:rgba(28,27,25,.08); --figure:#26251f;
+}
+:root[data-theme="dark"]{
+  --page:#17150f; --page-2:#201c15; --panel:#1c1911;
+  --ink:#ece6d7; --ink-2:#b3ad9d; --ink-3:#847e6f;
+  --accent:#d0ab5a; --accent-soft:#8a7333;
+  --rule:rgba(236,230,215,.16); --rule-soft:rgba(236,230,215,.08); --figure:#e4dcc7;
+}
+/* fix any dark-media typos by re-declaring cleanly */
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme]){
+    --page:#17150f; --page-2:#201c15; --panel:#1c1911;
+    --ink:#ece6d7; --ink-2:#b3ad9d; --ink-3:#847e6f;
+    --accent:#d0ab5a; --accent-soft:#8a7333;
+    --rule:rgba(236,230,215,.16); --rule-soft:rgba(236,230,215,.08); --figure:#e4dcc7;
+  }
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  margin:0;background:var(--page);color:var(--ink);
+  font-family:var(--serif);line-height:1.72;
+  font-size:clamp(1.06rem,.5vw + .96rem,1.19rem);
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  font-kerning:normal;
+}
+
+/* ---------- chrome ---------- */
+.progress{position:fixed;top:0;left:0;height:2px;width:0;background:var(--accent);z-index:60;transition:width .1s linear}
+.tools{position:fixed;top:14px;right:14px;z-index:65;display:flex;gap:7px;flex-wrap:wrap;
+  justify-content:flex-end;max-width:calc(100vw - 28px)}
+.tools button,.tools a.btn{font-family:var(--sans);font-size:11.5px;font-weight:600;letter-spacing:.03em;
+  color:var(--ink-2);background:var(--panel);border:1px solid var(--rule);border-radius:7px;
+  padding:7px 11px;cursor:pointer;box-shadow:var(--shadow);transition:color .15s,border-color .15s;
+  text-decoration:none;display:inline-flex;align-items:center;line-height:1;white-space:nowrap}
+.tools button:hover,.tools a.btn:hover{color:var(--accent);border-color:var(--accent-soft)}
+.tools button:focus-visible,.tools a.btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.fsgroup{display:inline-flex}
+.fsgroup button{border-radius:0;font-size:12.5px;min-width:34px;justify-content:center}
+.fsgroup button:first-child{border-radius:7px 0 0 7px}
+.fsgroup button:last-child{border-radius:0 7px 7px 0;margin-left:-1px}
+
+/* ---------- book scaffold ---------- */
+.book{max-width:1080px;margin:0 auto;padding:0 clamp(22px,7vw,110px)}
+.col{max-width:var(--measure);margin-inline:auto}
+.wide{max-width:46rem;margin-inline:auto}
+.sheet{padding:clamp(56px,10vh,120px) 0;border-bottom:1px solid var(--rule-soft)}
+.sheet:last-of-type{border-bottom:none}
+
+p{margin:0 0 1.15em}
+.col p, .wide p{max-width:var(--measure)}
+em{font-style:italic}
+strong{font-weight:700}
+.small{font-size:.92rem}
+
+/* running head */
+.rhead{font-family:var(--sans);font-size:11px;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--ink-3);display:flex;justify-content:space-between;align-items:center;
+  padding-bottom:10px;margin-bottom:54px;border-bottom:1px solid var(--rule)}
+.rhead .folio{font-variant-numeric:tabular-nums}
+
+/* ---------- title page ---------- */
+.title-page{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;
+  text-align:center;padding:80px 24px}
+.mark{width:88px;height:88px;color:var(--accent);margin-bottom:40px}
+.title-page .imprint{font-family:var(--sans);font-size:11.5px;letter-spacing:.34em;text-transform:uppercase;
+  color:var(--ink-3);margin-bottom:34px}
+h1.title{font-weight:700;line-height:1.02;letter-spacing:-.015em;margin:0;
+  font-size:clamp(2.9rem,8vw,5.6rem);text-wrap:balance;max-width:14ch}
+.title-page .subtitle{font-style:italic;color:var(--ink-2);margin-top:26px;
+  font-size:clamp(1.1rem,2.2vw,1.5rem);max-width:26ch;line-height:1.4}
+.title-rule{width:52px;height:1px;background:var(--accent);margin:38px auto 0}
+.title-page .foot-imprint{font-family:var(--sans);font-size:11px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--ink-3);margin-top:44px}
+.scrollcue{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);
+  font-family:var(--sans);font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--ink-3);
+  display:flex;flex-direction:column;align-items:center;gap:9px}
+.scrollcue i{width:1px;height:22px;background:var(--accent);opacity:.5;animation:cue 2s ease-in-out infinite}
+@keyframes cue{0%,100%{transform:scaleY(.5);opacity:.25}50%{transform:scaleY(1);opacity:.7}}
+@media(prefers-reduced-motion:reduce){.scrollcue i{animation:none}}
+
+/* ---------- epigraph ---------- */
+.epigraph{text-align:center;padding:26vh 0}
+.epigraph blockquote{font-style:italic;font-size:clamp(1.3rem,2.6vw,1.9rem);line-height:1.5;
+  max-width:24ch;margin:0 auto;color:var(--ink)}
+.epigraph cite{display:block;font-style:normal;font-family:var(--sans);font-size:11px;
+  letter-spacing:.24em;text-transform:uppercase;color:var(--accent);margin-top:26px}
+
+/* ---------- table of contents ---------- */
+.toc h2{font-size:2rem;font-weight:700;margin:0 0 6px;letter-spacing:-.01em}
+.toc .kick{font-family:var(--sans);font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+.toc ol{list-style:none;margin:36px 0 0;padding:0;counter-reset:none}
+.toc li{margin:0}
+.toc a{display:grid;grid-template-columns:2.4rem 1fr auto;gap:16px;align-items:baseline;
+  text-decoration:none;color:var(--ink);padding:15px 0;border-top:1px solid var(--rule-soft)}
+.toc a:hover{color:var(--accent)}
+.toc a:hover .tnum{color:var(--accent)}
+.toc .tnum{font-family:var(--sans);font-size:.82rem;letter-spacing:.1em;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.toc .ttitle{font-size:1.12rem}
+.toc .tpage{font-family:var(--sans);font-size:.82rem;color:var(--ink-3);font-variant-numeric:tabular-nums}
+
+/* ---------- chapter opener ---------- */
+.chap-open{display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:56px}
+.chap-num{font-family:var(--sans);font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--accent);margin-bottom:20px}
+.chap-num::before,.chap-num::after{content:"—";margin:0 12px;color:var(--rule)}
+h2.chap-title{font-weight:700;font-size:clamp(2.1rem,4.6vw,3.4rem);line-height:1.06;letter-spacing:-.015em;
+  margin:0;text-wrap:balance;max-width:18ch}
+.chap-lede{font-style:italic;color:var(--ink-2);font-size:clamp(1.12rem,1.7vw,1.32rem);line-height:1.5;
+  max-width:34ch;margin:22px auto 0;text-wrap:balance}
+
+/* drop cap opening paragraph */
+.opening::first-letter{font-size:3.6em;line-height:.82;float:left;font-weight:700;color:var(--accent);
+  padding:.06em .1em 0 0;font-family:var(--serif)}
+
+h3{font-family:var(--sans);font-size:.86rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent);margin:2.4em 0 .9em}
+
+/* ---------- figure (SVG line art) ---------- */
+figure{margin:3em auto;max-width:40rem}
+figure svg{display:block;width:100%;height:auto;color:var(--figure)}
+.fig-frame{padding:34px clamp(20px,5vw,56px);background:var(--panel);border:1px solid var(--rule);border-radius:2px}
+figcaption{font-family:var(--sans);font-size:.8rem;line-height:1.55;color:var(--ink-2);margin-top:16px;
+  padding-left:16px;border-left:2px solid var(--accent);max-width:34rem}
+figcaption b{color:var(--ink);font-weight:700;letter-spacing:.04em}
+
+/* ---------- pull quote / scripture ---------- */
+.pull{margin:2.6em auto;max-width:38rem;text-align:center;position:relative;padding-top:26px}
+.pull::before{content:"“";position:absolute;top:-14px;left:50%;transform:translateX(-50%);
+  font-size:4rem;color:var(--accent-soft);line-height:1;font-family:var(--serif)}
+.pull p{font-style:italic;font-size:clamp(1.28rem,2.4vw,1.7rem);line-height:1.44;color:var(--ink);margin:0}
+.pull cite{display:block;font-style:normal;font-family:var(--sans);font-size:11px;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--accent);margin-top:20px}
+
+/* inline reference tag */
+.ref{font-family:var(--sans);font-size:.74em;font-weight:700;letter-spacing:.04em;color:var(--accent);
+  white-space:nowrap;vertical-align:.08em}
+
+/* ---------- data callout (real research) ---------- */
+.data{margin:2.6em auto;max-width:40rem;background:var(--page-2);border:1px solid var(--rule);border-radius:2px;
+  padding:clamp(26px,4vw,40px)}
+.data .eyebrow{font-family:var(--sans);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:18px}
+.data .stat{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.data .big{font-weight:700;font-size:clamp(3rem,9vw,4.6rem);line-height:.9;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.data .stat-txt{font-family:var(--sans);font-size:.94rem;line-height:1.4;color:var(--ink-2);max-width:22ch}
+.bar{height:8px;background:var(--rule-soft);border-radius:100px;margin-top:22px;overflow:hidden}
+.bar > i{display:block;height:100%;background:var(--accent);border-radius:100px}
+.bar-legend{display:flex;justify-content:space-between;font-family:var(--sans);font-size:.72rem;color:var(--ink-3);margin-top:7px;letter-spacing:.04em}
+.rows{margin-top:24px;display:grid;gap:14px}
+.drow{display:grid;grid-template-columns:1fr;gap:5px}
+.drow .lab{display:flex;justify-content:space-between;font-family:var(--sans);font-size:.82rem;color:var(--ink-2);letter-spacing:.02em}
+.drow .lab b{color:var(--ink);font-variant-numeric:tabular-nums}
+.drow .track{height:6px;background:var(--rule-soft);border-radius:100px;overflow:hidden}
+.drow .track > i{display:block;height:100%;background:var(--accent-soft)}
+.source{font-family:var(--sans);font-size:.72rem;line-height:1.5;color:var(--ink-3);margin-top:22px;letter-spacing:.02em}
+.source b{color:var(--ink-2);font-weight:600}
+
+/* ---------- stat trio (inline) ---------- */
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin:2.4em auto;max-width:42rem;text-align:center}
+@media(max-width:640px){.trio{grid-template-columns:1fr;gap:20px}}
+.trio .n{font-weight:700;font-size:2.6rem;line-height:1;color:var(--accent);font-variant-numeric:tabular-nums}
+.trio .t{font-family:var(--sans);font-size:.82rem;color:var(--ink-2);line-height:1.4;margin-top:8px}
+
+/* ---------- solas / list blocks ---------- */
+.solas{margin:2.4em auto;max-width:40rem;display:grid;gap:0;border-top:1px solid var(--rule)}
+.sola{display:grid;grid-template-columns:1fr;gap:4px;padding:20px 0;border-bottom:1px solid var(--rule-soft)}
+.sola .lat{font-weight:700;font-size:1.3rem}
+.sola .lat span{font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-left:12px;vertical-align:.18em}
+.sola p{margin:0;color:var(--ink-2);font-size:.98rem}
+
+.tulip{margin:2.4em auto;max-width:40rem;display:grid;gap:0}
+.tl{display:grid;grid-template-columns:3rem 1fr;gap:22px;padding:20px 0;border-top:1px solid var(--rule-soft);align-items:baseline}
+.tl:first-child{border-top:1px solid var(--rule)}
+.tl .let{font-weight:700;font-size:2.2rem;color:var(--accent);line-height:.8}
+.tl h4{margin:0 0 3px;font-size:1.08rem;font-weight:700}
+.tl .en{font-family:var(--sans);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);display:block;margin-bottom:5px}
+.tl p{margin:0;color:var(--ink-2);font-size:.96rem}
+
+/* ---------- warning list ---------- */
+.warns{margin:2.2em auto;max-width:40rem;display:grid;gap:20px}
+.wn{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:start}
+.wn .x{font-family:var(--sans);font-weight:700;color:var(--accent);font-size:.95rem;padding-top:2px}
+.wn h4{margin:0 0 3px;font-size:1.05rem;font-weight:700}
+.wn p{margin:0;color:var(--ink-2);font-size:.96rem}
+
+/* ---------- timeline ---------- */
+.time{margin:2.4em auto;max-width:40rem;position:relative;padding-left:26px}
+.time::before{content:"";position:absolute;left:4px;top:6px;bottom:6px;width:1px;background:var(--rule)}
+.ev{position:relative;padding:0 0 30px 22px}
+.ev::before{content:"";position:absolute;left:-22px;top:6px;width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--page)}
+.ev .yr{font-family:var(--sans);font-size:.78rem;font-weight:700;letter-spacing:.1em;color:var(--accent)}
+.ev h4{margin:2px 0 4px;font-size:1.12rem;font-weight:700}
+.ev p{margin:0;color:var(--ink-2);font-size:.96rem}
+
+/* ---------- read box ---------- */
+.readbox{margin:2.4em auto;max-width:40rem;background:var(--page-2);border-radius:2px;padding:26px 28px;border:1px solid var(--rule)}
+.readbox .h{font-family:var(--sans);font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.readbox ul{margin:0;padding:0;list-style:none;display:grid;gap:9px}
+.readbox li{display:grid;grid-template-columns:auto 1fr;gap:12px;font-size:.98rem;color:var(--ink-2)}
+.readbox li b{font-family:var(--sans);font-size:.8rem;font-weight:700;letter-spacing:.03em;color:var(--accent);white-space:nowrap;padding-top:.15em}
+
+/* ---------- steps ---------- */
+.steps{margin:2.4em auto;max-width:40rem;display:grid;gap:0;counter-reset:st}
+.st{display:grid;grid-template-columns:3.2rem 1fr;gap:20px;padding:24px 0;border-top:1px solid var(--rule-soft);align-items:baseline}
+.st:first-child{border-top:1px solid var(--rule)}
+.st::before{counter-increment:st;content:counter(st,decimal-leading-zero);font-family:var(--sans);
+  font-weight:700;font-size:1.1rem;color:var(--accent);font-variant-numeric:tabular-nums;letter-spacing:.06em}
+.st h4{margin:0 0 4px;font-size:1.12rem;font-weight:700}
+.st p{margin:0;color:var(--ink-2);font-size:.98rem}
+
+/* ---------- sources ---------- */
+.sources-list{margin:2em auto 0;max-width:40rem;display:grid;gap:16px;list-style:none;padding:0;counter-reset:src}
+.sources-list li{display:grid;grid-template-columns:auto 1fr;gap:14px;font-family:var(--sans);font-size:.86rem;line-height:1.5;color:var(--ink-2)}
+.sources-list li::before{counter-increment:src;content:counter(src);font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums}
+.sources-list a{color:var(--accent);text-underline-offset:2px;word-break:break-word}
+.sources-list b{color:var(--ink);font-weight:600}
+
+/* ---------- colophon ---------- */
+.colophon{text-align:center;padding:14vh 0}
+.colophon .mk{width:40px;height:40px;color:var(--accent);margin:0 auto 22px}
+.colophon p{font-family:var(--sans);font-size:.82rem;letter-spacing:.06em;color:var(--ink-3);max-width:30rem;margin:0 auto .6em;line-height:1.7}
+.colophon .amen{font-style:italic;font-family:var(--serif);font-size:1.5rem;color:var(--accent);margin-top:20px}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s ease}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+
+/* =====================================================================
+   APPARATO SCIENTIFICO (manuale a due livelli)
+   ===================================================================== */
+.shead{margin:2.8em 0 1.1em;padding-bottom:.45em;border-bottom:1px solid var(--rule-soft)}
+.shead .k{font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:7px}
+.shead .t{font-family:var(--serif);font-size:clamp(1.4rem,2.4vw,1.75rem);font-weight:700;color:var(--ink);line-height:1.16;display:block;text-wrap:balance}
+
+sup.fn{font-size:.6em;line-height:0;vertical-align:super;margin-left:1px}
+sup.fn a{color:var(--accent);text-decoration:none;font-weight:700;font-family:var(--sans)}
+sup.fn a:hover{text-decoration:underline}
+
+/* ---- "ⓘ" nota espandibile (progressive disclosure) ---- */
+.info{display:inline}
+.info > .i{display:inline-flex;align-items:center;justify-content:center;width:1.15em;height:1.15em;
+  font-family:var(--sans);font-size:.66em;font-weight:700;font-style:normal;line-height:1;
+  color:var(--accent);border:1px solid var(--accent-soft);border-radius:50%;background:transparent;
+  cursor:pointer;vertical-align:.35em;margin:0 1px 0 2px;padding:0;transition:background .15s,color .15s,border-color .15s}
+.info > .i:hover,.info.open > .i{background:var(--accent);color:#fff;border-color:var(--accent)}
+.info > .i:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.info > .pop{display:none}
+.info.open > .pop{display:inline;font-family:var(--sans);font-size:.82em;line-height:1.5;color:var(--ink-2);
+  background:var(--page-2);border-bottom:1px solid var(--accent-soft);border-radius:3px;
+  padding:.15em .5em;margin:0 .15em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.info.open > .pop b{color:var(--ink)}
+.info.open > .pop a{color:var(--accent);text-decoration:underline;text-underline-offset:2px;word-break:break-word}
+
+.original{margin:2.4em auto;max-width:40rem;border:1px solid var(--rule);border-left:3px solid var(--accent);
+  border-radius:2px;background:var(--page-2);padding:24px 26px}
+.original .olang{font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+.original .otext{font-family:var(--serif);font-size:clamp(1.35rem,3vw,1.7rem);line-height:1.55;color:var(--ink)}
+.original .otext.rtl{direction:rtl;text-align:right}
+.original .translit{font-style:italic;color:var(--ink-2);margin-top:10px;font-size:1.02rem}
+.original .gloss{margin-top:12px;font-size:.96rem;color:var(--ink-2)}
+.original .gloss b{color:var(--ink)}
+.original .oref{font-family:var(--sans);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-top:12px;display:block}
+
+.callout{margin:2.4em auto;max-width:40rem;background:var(--page-2);border:1px solid var(--rule);border-radius:2px;padding:24px 26px}
+.callout .h{font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+.callout p{margin:0;color:var(--ink-2);font-size:.98rem}
+
+.notes{margin:3em auto 0;max-width:40rem;border-top:1px solid var(--rule);padding-top:20px}
+.notes .h{font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin:0 0 14px}
+.notes ol{margin:0;padding-left:1.5em;display:grid;gap:9px}
+.notes li{font-family:var(--sans);font-size:.78rem;line-height:1.55;color:var(--ink-2)}
+.notes li a{color:var(--accent);text-decoration:none;word-break:break-word}
+.notes li b{color:var(--ink);font-weight:600}
+
+/* =====================================================================
+   RESPONSIVE — telefono / tablet
+   ===================================================================== */
+html{overflow-x:hidden}
+@media(max-width:600px){
+  .sheet{padding:46px 0}
+  .rhead{margin-bottom:34px;font-size:10px;letter-spacing:.18em}
+  .chap-open{margin-bottom:38px}
+  .fig-frame{padding:22px 14px}
+  figure{margin:2.2em auto}
+  figcaption{padding-left:12px;font-size:.78rem}
+  .data{padding:22px 18px}
+  .data .big{font-size:clamp(2.7rem,15vw,3.6rem)}
+  .pull{padding-top:20px}
+  .pull::before{font-size:3rem;top:-8px}
+  .toc a{grid-template-columns:1.7rem 1fr auto;gap:10px;padding:13px 0}
+  .toc .ttitle{font-size:1.02rem}
+  .st,.tl{gap:14px}
+  .tl .let{font-size:1.9rem}
+  .readbox{padding:22px 20px}
+  .sources-list li{gap:10px}
+}
+@media(max-width:380px){
+  .tools button,.tools a.btn{padding:6px 9px;font-size:11px}
+  .fsgroup button{min-width:30px}
+}
+
+/* =====================================================================
+   PRINT — libro bianco, poco inchiostro, capitoli su pagine nuove (A4)
+   ===================================================================== */
+@media print{
+  :root,:root[data-theme="dark"],:root[data-theme="light"]{
+    --page:#fff;--page-2:#f7f5f0;--panel:#fff;--ink:#1a1a18;--ink-2:#44423c;--ink-3:#6f6c64;
+    --accent:#7a5c1e;--accent-soft:#a98f4f;--rule:rgba(26,26,24,.3);--rule-soft:rgba(26,26,24,.16);--figure:#2a2924;--shadow:none;
+  }
+  @page{size:A4;margin:15mm}
+  html{font-size:16px!important}
+  body{background:#fff;font-size:11pt;line-height:1.6}
+  .tools,.progress,.scrollcue{display:none!important}
+  /* content fills the printable width → close to all four edges (margins from @page) */
+  .book{max-width:none;width:auto;margin:0;padding:0}
+  .col,.wide{max-width:none;margin:0}
+  .col p,.wide p,.lede,.verse,.data,.original,.callout,.notes,.readbox,
+  .steps,.tulip,.solas,.time,.trio,.warns,figure,.toc ol{max-width:none}
+  /* a new page is triggered ONLY by page-break-before → no blank pages,
+     and every page's margins come uniformly from @page (interior pages too) */
+  .sheet{page-break-before:always;padding:0;border:none;min-height:0}
+  .epigraph{page-break-before:always}
+  .title-page{page-break-before:avoid}
+  /* front matter: vertically centered on its own A4 page */
+  .title-page,.epigraph{min-height:265mm;display:flex;flex-direction:column;
+    justify-content:center;align-items:center;padding:0}
+  .epigraph{text-align:center}
+  .colophon{padding:6mm 0 0}
+  figure,.data,.pull,.readbox,.time,.steps,.solas,.tulip,.trio,.warns,.fig-frame,
+  .original,.callout,.notes{break-inside:avoid;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .rv{opacity:1!important;transform:none!important}
+  a{color:inherit;text-decoration:none}
+  h1.title{font-size:32pt}
+  /* in stampa le note "ⓘ" sono sempre visibili (documento completo) */
+  .info > .i{display:none}
+  .info > .pop{display:inline!important;background:transparent;border:none;padding:0;
+    color:var(--ink-2);font-size:.84em}
+  .info > .pop::before{content:" ["}
+  .info > .pop::after{content:"]"}
+}
+
+/* ============ SITO (header, drawer, ricerca, pager, card) ============ */
+[hidden]{display:none!important}   /* evita che display:flex sovrascriva l'attributo hidden */
+.site{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;
+  gap:16px;padding:10px clamp(14px,4vw,28px);background:color-mix(in srgb,var(--page) 88%,transparent);
+  backdrop-filter:saturate(1.2) blur(10px);-webkit-backdrop-filter:saturate(1.2) blur(10px);
+  border-bottom:1px solid var(--rule);flex-wrap:wrap}
+.brand{font-family:var(--serif);font-weight:700;font-size:1.02rem;color:var(--ink);text-decoration:none;letter-spacing:-.01em;white-space:nowrap}
+.brand-mark{color:var(--accent);margin-right:4px}
+.site-tools{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.hbtn,.fsgroup button{font-family:var(--sans);font-size:12px;font-weight:600;color:var(--ink-2);
+  background:var(--panel);border:1px solid var(--rule);border-radius:8px;padding:7px 11px;cursor:pointer;
+  text-decoration:none;display:inline-flex;align-items:center;gap:5px;line-height:1;white-space:nowrap;transition:color .15s,border-color .15s}
+.hbtn:hover,.fsgroup button:hover{color:var(--accent);border-color:var(--accent-soft)}
+.hbtn.pdf{color:var(--accent)}
+.hbtn:focus-visible,.fsgroup button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.fsgroup{display:inline-flex}.fsgroup button{border-radius:0;min-width:34px;justify-content:center;font-size:12.5px}
+.fsgroup button:first-child{border-radius:8px 0 0 8px}.fsgroup button:last-child{border-radius:0 8px 8px 0;margin-left:-1px}
+@media(max-width:680px){.hbtn .lbl{display:none}}
+.drawer{position:fixed;top:0;left:0;bottom:0;width:min(84vw,320px);z-index:70;background:var(--page);
+  border-right:1px solid var(--rule);padding:22px 18px;overflow-y:auto;transform:translateX(-102%);
+  transition:transform .25s ease;display:flex;flex-direction:column;gap:2px}
+.drawer.open{transform:none;box-shadow:0 0 60px rgba(0,0,0,.25)}
+.drawer-head{font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin:4px 0 14px}
+.drawer a{font-family:var(--serif);font-size:1.02rem;color:var(--ink);text-decoration:none;padding:9px 8px;border-radius:7px;border-bottom:1px solid var(--rule-soft)}
+.drawer a:hover{background:var(--page-2);color:var(--accent)}
+.drawer a.here{color:var(--accent);font-weight:700}
+.scrim{position:fixed;inset:0;z-index:60;background:rgba(10,10,8,.42)}
+.pager{max-width:var(--measure);margin:60px auto 0;display:flex;gap:14px;justify-content:space-between;border-top:1px solid var(--rule);padding-top:22px}
+.pager .pg{flex:1;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;gap:4px;padding:12px 14px;border:1px solid var(--rule);border-radius:10px;background:var(--panel);transition:border-color .15s}
+.pager .pg:hover{border-color:var(--accent-soft)}
+.pager .pg span{font-family:var(--sans);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+.pager .pg b{font-family:var(--serif);font-size:.98rem;font-weight:700}
+.pager .next{text-align:right;align-items:flex-end}
+.site-foot{max-width:var(--measure);margin:70px auto 0;padding:34px clamp(18px,5vw,40px);text-align:center;
+  font-family:var(--sans);font-size:.82rem;color:var(--ink-3);border-top:1px solid var(--rule);line-height:1.7}
+.site-foot strong{color:var(--ink-2)}
+.cta{display:inline-block;font-family:var(--sans);font-weight:700;font-size:.9rem;text-decoration:none;
+  background:var(--accent);color:#fff;padding:12px 20px;border-radius:9px;letter-spacing:.01em}
+.cta.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent-soft)}
+.tgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:12px;margin-top:32px}
+.tcard{display:flex;flex-direction:column;gap:5px;padding:16px 18px;border:1px solid var(--rule);border-radius:12px;
+  background:var(--panel);text-decoration:none;transition:border-color .15s,transform .15s}
+.tcard:hover{border-color:var(--accent-soft);transform:translateY(-2px)}
+.tc-k{font-family:var(--sans);font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.tc-t{font-family:var(--serif);font-size:1.02rem;color:var(--ink);line-height:1.25}
+.search-overlay{position:fixed;inset:0;z-index:80;background:rgba(10,10,8,.5);display:flex;justify-content:center;align-items:flex-start;padding:12vh 16px 16px}
+.search-box{position:relative;width:min(680px,100%);background:var(--page);border:1px solid var(--rule);border-radius:14px;box-shadow:0 30px 80px rgba(0,0,0,.4);overflow:hidden}
+.search-box input{width:100%;border:none;outline:none;background:transparent;color:var(--ink);font-family:var(--serif);font-size:1.2rem;padding:20px 52px 20px 22px}
+.search-box #searchClose{position:absolute;top:14px;right:14px;background:var(--panel);border:1px solid var(--rule);border-radius:8px;width:34px;height:34px;cursor:pointer;color:var(--ink-2)}
+.search-results{max-height:56vh;overflow-y:auto;border-top:1px solid var(--rule)}
+.search-results a{display:block;padding:14px 22px;text-decoration:none;border-bottom:1px solid var(--rule-soft)}
+.search-results a:hover{background:var(--page-2)}
+.sr-t{font-family:var(--serif);font-weight:700;color:var(--ink);font-size:1.02rem}
+.sr-s{font-family:var(--sans);font-size:.84rem;color:var(--ink-2);margin-top:3px;line-height:1.45}
+.sr-s mark{background:var(--accent-soft);color:var(--ink);padding:0 2px;border-radius:2px}
+.sr-empty{padding:22px;font-family:var(--sans);color:var(--ink-3);font-size:.9rem}
+.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);z-index:90;background:#16273c;color:#fff;
+  font-family:var(--sans);font-size:.85rem;padding:11px 18px;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.3);opacity:0;transition:opacity .2s}
+.toast.show{opacity:1}
+@media print{.site,.drawer,.scrim,.pager,.site-foot,.search-overlay,.progress{display:none!important}
+  .sheet{page-break-before:auto!important}}
