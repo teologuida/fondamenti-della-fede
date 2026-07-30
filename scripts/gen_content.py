@@ -35,6 +35,7 @@ PAGES = [
     ("prefazione","Prefazione","Prefazione · Nota sul metodo","prefazione"),
     ("perche-fidarsi","Perché fidarsi","Perché fidarsi di questo documento","__PERCHE__"),
     ("parte-1-la-parola","Parte I · La Parola","Parte I · La Parola di Dio e la sua affidabilità","parte1"),
+    ("parte-2-dio-e-la-trinita","Parte II · Dio e la Trinità","Parte II · Dio, la Trinità e i concili","parte2"),
     ("introduzione","Introduzione","Introduzione · La necessità della sana dottrina","intro"),
     ("01-chi-e-dio","1 · Chi è Dio","Chi è Dio","c1"),
     ("02-il-peccato","2 · Il peccato","Il problema: il peccato","c2"),
