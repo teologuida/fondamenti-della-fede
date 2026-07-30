@@ -1,5 +1,7 @@
 "use client";
 import { useEffect } from "react";
+import { initStudy } from "./study";
+import glossary from "../content/glossary.json";
 
 export default function Shell({ pages, searchIndex, children }) {
   useEffect(() => {
@@ -109,6 +111,9 @@ export default function Shell({ pages, searchIndex, children }) {
     };
     inp?.addEventListener("input", () => run(inp.value));
 
+    // funzioni di studio: evidenzia, glossario, condividi paragrafo, segnalibri
+    try { initStudy(glossary); } catch (e) {}
+
     return () => {
       removeEventListener("scroll", onScroll);
       removeEventListener("resize", onScroll);
@@ -130,6 +135,8 @@ export default function Shell({ pages, searchIndex, children }) {
             <button id="fsPlus" aria-label="Ingrandisci testo">A+</button>
           </div>
           <button id="themeBtn" className="hbtn" aria-label="Tema">◐</button>
+          <button id="bookmarkBtn" className="hbtn star" aria-label="Salva nei segnalibri">★</button>
+          <button id="marksBtn" className="hbtn" aria-label="I miei segni">✎ <span className="lbl">Segni</span></button>
           <button id="shareBtn" className="hbtn" aria-label="Condividi">↗ <span className="lbl">Condividi</span></button>
           <a className="hbtn pdf" href="/Fondamenti_della_Fede.pdf" download>⤓ PDF</a>
         </div>

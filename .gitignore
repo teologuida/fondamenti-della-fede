@@ -4,3 +4,8 @@
 .DS_Store
 *.log
 .vercel
+
+# Secrets — mai commitare
+.env
+.env.local
+.env.*.local
