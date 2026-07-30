@@ -287,6 +287,7 @@ function buildMarksPanel() {
   scrim.addEventListener("click", () => close());
   function close() { panel.classList.remove("open"); scrim.hidden = true; setTimeout(() => (panel.hidden = true), 250); }
   function render() {
+    const pageHref = (s) => (s === "home" || s === "" ? "/" : "/" + s + "/");
     const bms = bmAll();
     let hlHtml = "";
     for (let i = 0; i < localStorage.length; i++) {
@@ -296,12 +297,12 @@ function buildMarksPanel() {
       if (!arr.length) continue;
       hlHtml += '<div class="mp-group"><div class="mp-slug">' + slug.replace(/-/g, " ") + "</div>" +
         arr.slice().sort((a, b) => a.s - b.s).map((h) =>
-          '<a class="mp-hl" href="/' + slug + "/#hl" + h.s + '">“' + (h.t || "").replace(/</g, "&lt;") + '”</a>').join("") + "</div>";
+          '<a class="mp-hl" href="' + pageHref(slug) + "#hl" + h.s + '">“' + (h.t || "").replace(/</g, "&lt;") + '”</a>').join("") + "</div>";
     }
     panel.innerHTML =
       '<div class="mp-head">I miei segni <button id="mpClose" aria-label="Chiudi">✕</button></div>' +
       '<div class="mp-sec">Segnalibri</div>' +
-      (bms.length ? bms.map((b) => '<a class="mp-bm" href="/' + b.slug + '/">★ ' + b.title + "</a>").join("") : '<div class="mp-empty">Nessun segnalibro. Usa ★ in alto per salvare una pagina.</div>') +
+      (bms.length ? bms.map((b) => '<a class="mp-bm" href="' + pageHref(b.slug) + '">★ ' + b.title + "</a>").join("") : '<div class="mp-empty">Nessun segnalibro. Usa ★ in alto per salvare una pagina.</div>') +
       '<div class="mp-sec">Evidenziazioni</div>' +
       (hlHtml || '<div class="mp-empty">Nessuna evidenziazione. Seleziona un testo e scegli “Evidenzia”.</div>');
     panel.querySelector("#mpClose").addEventListener("click", close);
