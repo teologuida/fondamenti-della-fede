@@ -10,6 +10,11 @@
     "title": "Perché fidarsi di questo documento"
   },
   {
+    "slug": "introduzione",
+    "nav": "Introduzione",
+    "title": "Introduzione · La necessità della sana dottrina"
+  },
+  {
     "slug": "parte-1-la-parola",
     "nav": "Parte I · La Parola",
     "title": "Parte I · La Parola di Dio e la sua affidabilità"
@@ -35,64 +40,19 @@
     "title": "Parte V · Riconoscere gli inganni"
   },
   {
-    "slug": "introduzione",
-    "nav": "Introduzione",
-    "title": "Introduzione · La necessità della sana dottrina"
-  },
-  {
-    "slug": "01-chi-e-dio",
-    "nav": "1 · Chi è Dio",
-    "title": "Chi è Dio"
-  },
-  {
-    "slug": "02-il-peccato",
-    "nav": "2 · Il peccato",
-    "title": "Il problema: il peccato"
-  },
-  {
-    "slug": "03-gesu-cristo",
-    "nav": "3 · Gesù Cristo",
-    "title": "La soluzione: Gesù Cristo"
-  },
-  {
-    "slug": "04-come-vengo-salvato",
-    "nav": "4 · La salvezza",
-    "title": "Come vengo salvato"
-  },
-  {
-    "slug": "05-cinque-sola",
-    "nav": "5 · Le 5 Sola",
-    "title": "Le Cinque «Sola»"
-  },
-  {
-    "slug": "06-tulip",
-    "nav": "6 · TULIP",
-    "title": "La grazia sovrana (TULIP)"
-  },
-  {
-    "slug": "07-false-dottrine",
-    "nav": "7 · False dottrine",
-    "title": "Attenzione alle false dottrine"
-  },
-  {
-    "slug": "08-la-chiesa",
-    "nav": "8 · La chiesa",
-    "title": "La vita nella chiesa"
-  },
-  {
-    "slug": "09-radici-storiche",
-    "nav": "9 · Storia",
-    "title": "Le radici storiche"
-  },
-  {
-    "slug": "10-primi-passi",
-    "nav": "10 · Primi passi",
+    "slug": "i-tuoi-primi-passi",
+    "nav": "I tuoi primi passi",
     "title": "I tuoi primi passi"
   },
   {
     "slug": "conclusione",
     "nav": "Conclusione",
     "title": "Conclusione · Soli Deo Gloria"
+  },
+  {
+    "slug": "cronologia",
+    "nav": "Cronologia storica",
+    "title": "Cronologia storica essenziale"
   },
   {
     "slug": "registro-modifiche",
