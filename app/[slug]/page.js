@@ -8,7 +8,10 @@ export function generateStaticParams() {
 
 export function generateMetadata({ params }) {
   const p = pages.find((x) => x.slug === params.slug);
-  return { title: (p ? p.title : "Pagina") + " — I Fondamenti della Fede" };
+  return {
+    title: p ? p.title : "Pagina",
+    alternates: { canonical: `/${params.slug}/` }
+  };
 }
 
 export default function Page({ params }) {

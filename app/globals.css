@@ -370,8 +370,8 @@ html{overflow-x:hidden}
   gap:16px;padding:10px clamp(14px,4vw,28px);background:color-mix(in srgb,var(--page) 88%,transparent);
   backdrop-filter:saturate(1.2) blur(10px);-webkit-backdrop-filter:saturate(1.2) blur(10px);
   border-bottom:1px solid var(--rule);flex-wrap:wrap}
-.brand{font-family:var(--serif);font-weight:700;font-size:1.02rem;color:var(--ink);text-decoration:none;letter-spacing:-.01em;white-space:nowrap}
-.brand-mark{color:var(--accent);margin-right:4px}
+.brand{font-family:var(--serif);font-weight:700;font-size:1.02rem;color:var(--ink);text-decoration:none;letter-spacing:-.01em;white-space:nowrap;display:inline-flex;align-items:center;gap:8px}
+.brand-logo{width:26px;height:26px;border-radius:6px;flex:0 0 auto}
 .site-tools{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
 .hbtn,.fsgroup button{font-family:var(--sans);font-size:12px;font-weight:600;color:var(--ink-2);
   background:var(--panel);border:1px solid var(--rule);border-radius:8px;padding:7px 11px;cursor:pointer;
@@ -400,6 +400,17 @@ html{overflow-x:hidden}
 .site-foot{max-width:var(--measure);margin:70px auto 0;padding:34px clamp(18px,5vw,40px);text-align:center;
   font-family:var(--sans);font-size:.82rem;color:var(--ink-3);border-top:1px solid var(--rule);line-height:1.7}
 .site-foot strong{color:var(--ink-2)}
+.foot-brand{display:inline-block;margin-bottom:16px}
+.foot-logo{height:32px;width:auto}
+.foot-logo.dark{display:none}
+:root[data-theme="dark"] .foot-logo.light{display:none}
+:root[data-theme="dark"] .foot-logo.dark{display:inline-block}
+:root[data-theme="light"] .foot-logo.light{display:inline-block}
+:root[data-theme="light"] .foot-logo.dark{display:none}
+@media (prefers-color-scheme:dark){:root:not([data-theme]) .foot-logo.light{display:none}
+  :root:not([data-theme]) .foot-logo.dark{display:inline-block}}
+.foot-txt a{color:var(--accent);text-decoration:none}
+.foot-txt a:hover{text-decoration:underline}
 .cta{display:inline-block;font-family:var(--sans);font-weight:700;font-size:.9rem;text-decoration:none;
   background:var(--accent);color:#fff;padding:12px 20px;border-radius:9px;letter-spacing:.01em}
 .cta.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent-soft)}

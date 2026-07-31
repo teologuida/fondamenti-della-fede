@@ -114,6 +114,11 @@ export default function Shell({ pages, searchIndex, children }) {
     // funzioni di studio: evidenzia, glossario, condividi paragrafo, segnalibri
     try { initStudy(glossary); } catch (e) {}
 
+    // PWA: registra il service worker per la lettura offline
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/sw.js").catch(() => {});
+    }
+
     return () => {
       removeEventListener("scroll", onScroll);
       removeEventListener("resize", onScroll);
@@ -126,7 +131,7 @@ export default function Shell({ pages, searchIndex, children }) {
     <>
       <div className="progress" id="progress" />
       <header className="site">
-        <a className="brand" href="/"><span className="brand-mark">✝</span> I Fondamenti della Fede</a>
+        <a className="brand" href="/"><img className="brand-logo" src="/icon-192.png" alt="Teologuida" width="26" height="26" /> I Fondamenti della Fede</a>
         <div className="site-tools">
           <button id="menuBtn" className="hbtn" aria-label="Indice">☰ <span className="lbl">Indice</span></button>
           <button id="searchBtn" className="hbtn" aria-label="Cerca">⌕ <span className="lbl">Cerca</span></button>
@@ -152,9 +157,17 @@ export default function Shell({ pages, searchIndex, children }) {
       {children}
 
       <footer className="site-foot">
-        <strong>I Fondamenti della Fede</strong> — manuale del discepolo · documento vivo, verificabile.
-        <br />
-        Ogni affermazione va controllata alla luce della Scrittura · <em>Sola Scriptura</em>
+        <a href="https://www.teologuida.it" className="foot-brand" aria-label="Teologuida">
+          <img className="foot-logo light" src="/logo-teologuida.png" alt="Teologuida" />
+          <img className="foot-logo dark" src="/teologuida-bianca.png" alt="Teologuida" />
+        </a>
+        <div className="foot-txt">
+          <strong>I Fondamenti della Fede</strong> — manuale del discepolo · documento vivo, verificabile.
+          <br />
+          Ogni affermazione va controllata alla luce della Scrittura · <em>Sola Scriptura</em>
+          <br />
+          © Teologuida · <a href="https://www.teologuida.it">teologuida.it</a>
+        </div>
       </footer>
 
       <div className="search-overlay" id="searchOverlay" hidden>
