@@ -385,15 +385,14 @@ function buildBussolaPanel(cards) {
       : c.catClass === "dist" ? "dmark-divergenza"
       : "dmark-fuori";
     panel.innerHTML =
-      '<div class="qp-top"><span class="qp-kick">Bussola delle dottrine</span>' +
+      '<div class="qp-top"><span class="qp-kick">Scheda · confronto</span>' +
       '<button class="qp-close" aria-label="Chiudi">✕</button></div>' +
       '<div class="bx-meta">' +
         '<span class="dmark-k ' + catCls + '">' + (c.cat || "") + "</span>" +
         '<span class="bx-gauge">' + (c.gaugeHtml || "") + "</span>" +
         '<span class="doc-lv">' + (c.level || "") + "</span>" +
       "</div>" +
-      '<h2 class="qp-q"></h2><div class="qp-a bx-body"></div>' +
-      '<a class="bx-full" href="/bussola-delle-dottrine/#' + encodeURIComponent(c.id) + '">Apri nella Bussola completa →</a>';
+      '<h2 class="qp-q"></h2><div class="qp-a bx-body"></div>';
     panel.querySelector(".qp-q").textContent = c.title || "";
     panel.querySelector(".bx-body").innerHTML = c.body || "";
     markExternalLinks(panel);
@@ -422,7 +421,7 @@ export function initStudy(glossary, bussolaCards) {
   root.addEventListener("click", (e) => {
     const q = e.target.closest(".qa-q");
     if (q) { e.preventDefault(); qaPanel.open(q.closest(".qa")); return; }
-    const dm = e.target.closest("a.dmark");
+    const dm = e.target.closest("a.dmark, button.dmark");
     if (dm) {
       const id = dm.getAttribute("data-bussola") || (dm.getAttribute("href") || "").split("#")[1];
       if (id) { e.preventDefault(); bxPanel.open(id); return; }

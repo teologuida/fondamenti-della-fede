@@ -40,7 +40,6 @@ PAGES = [
     ("parte-3-la-salvezza-in-cristo","Parte III · La salvezza in Cristo","Parte III · La salvezza in Cristo","parte3"),
     ("parte-4-la-chiesa","Parte IV · La Chiesa","Parte IV · La Chiesa: il popolo di Dio","parte4"),
     ("parte-5-apologetica","Parte V · Apologetica","Parte V · Riconoscere gli inganni","parte5"),
-    ("bussola-delle-dottrine","La Bussola delle dottrine","La Bussola delle dottrine","bussola"),
     ("i-tuoi-primi-passi","I tuoi primi passi","I tuoi primi passi","primi-passi"),
     ("conclusione","Conclusione","Conclusione · Soli Deo Gloria","fine"),
     ("cronologia","Cronologia storica","Cronologia storica essenziale","cronologia"),
@@ -141,8 +140,13 @@ for m in re.finditer(
 open(os.path.join(CONTENT, "bussola-cards.json"), "w", encoding="utf-8").write(
     json.dumps(bussola_cards, ensure_ascii=False, indent=2))
 
+# Niente pagina Bussola sul sito: solo schede JSON per il pannello laterale
+_old_bx = os.path.join(CONTENT, "bussola-delle-dottrine.html")
+if os.path.exists(_old_bx):
+    os.remove(_old_bx)
+
 # --- globals.css = design system + stili del sito
 APP_CSS_EXTRA = open(os.path.join(HERE, "site.css"), encoding="utf-8").read() if os.path.exists(os.path.join(HERE,"site.css")) else ""
 open(os.path.join(APPDIR, "globals.css"), "w", encoding="utf-8").write(style + "\n" + APP_CSS_EXTRA)
 
-print("Contenuti Next generati:", len(PAGES), "pagine + home | ricerca:", len(index_docs), "voci | bussola:", len(bussola_cards), "schede")
+print("Contenuti Next generati:", len(PAGES), "pagine + home | ricerca:", len(index_docs), "voci | bussola:", len(bussola_cards), "schede (solo pannello)")

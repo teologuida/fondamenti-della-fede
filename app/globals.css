@@ -321,6 +321,7 @@ sup.fn a:hover{text-decoration:underline}
 @media print{.doc-body{display:block!important}.doc-head{cursor:auto}}
 
 /* ---- Indicatori inline (Bussola nel testo) ---- */
+button.dmark{appearance:none;-webkit-appearance:none;border:none;background:none;padding:0;margin:1.1em 0 1.6em;cursor:pointer;text-align:left;font:inherit;color:inherit}
 .dmark{display:inline-flex;align-items:center;gap:8px;flex-wrap:wrap;margin:1.1em 0 1.6em;
   font-family:var(--sans);font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
   text-decoration:none;color:inherit;max-width:40rem}
