@@ -164,6 +164,11 @@ function handleHash() {
   if (!location.hash) return;
   const el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
   if (!el) return;
+  if (el.classList.contains("doc")) {
+    el.classList.add("open");
+    const h = el.querySelector(".doc-head");
+    if (h) h.setAttribute("aria-expanded", "true");
+  }
   setTimeout(() => {
     el.scrollIntoView({ behavior: "smooth", block: "center" });
     el.classList.add("flash");

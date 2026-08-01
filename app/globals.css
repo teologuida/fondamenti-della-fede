@@ -306,11 +306,11 @@ sup.fn a:hover{text-decoration:underline}
 .gauge i{width:9px;height:9px;border-radius:50%;border:1.5px solid currentColor;display:inline-block;box-sizing:border-box}
 .gauge i.on{background:currentColor}
 .gauge.l5,.gauge.l4{color:#5f9e73}.gauge.l3{color:var(--accent)}.gauge.l2{color:#c08a3f}.gauge.l1{color:#b06a5f}
-.doc{margin:14px auto;max-width:40rem;border:1px solid var(--rule);border-radius:12px;background:var(--page-2);overflow:hidden}
+.doc{margin:14px auto;max-width:40rem;border:1px solid var(--rule);border-radius:12px;background:var(--page-2);overflow:hidden;scroll-margin-top:5rem}
 .doc-head{display:block;width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:15px 18px;font-family:var(--serif)}
 .doc-toprow{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:8px}
 .doc-cat{font-family:var(--sans);font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:2px 9px;border-radius:100px;border:1px solid currentColor}
-.doc-cat.ess{color:#5f9e73}.doc-cat.dist{color:var(--accent)}.doc-cat.out{color:#b06a5f}
+.doc-cat.ess{color:#5f9e73}.doc-cat.dist{color:var(--accent)}.doc-cat.rottura{color:#8b4a42}.doc-cat.out{color:#b06a5f}
 .doc-meta{display:inline-flex;align-items:center;gap:8px}
 .doc-lv{font-family:var(--sans);font-size:.66rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}
 .doc-q{display:block;font-size:1.05rem;font-weight:700;color:var(--ink);line-height:1.25}
@@ -319,6 +319,24 @@ sup.fn a:hover{text-decoration:underline}
 .doc-body p{margin:0 0 .7em}.doc-body p:last-child{margin-bottom:0}.doc-body b{color:var(--ink)}
 .doc.open .doc-body{display:block}
 @media print{.doc-body{display:block!important}.doc-head{cursor:auto}}
+
+/* ---- Indicatori inline (Bussola nel testo) ---- */
+.dmark{display:inline-flex;align-items:center;gap:8px;flex-wrap:wrap;margin:1.1em 0 1.6em;
+  font-family:var(--sans);font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  text-decoration:none;color:inherit;max-width:40rem}
+.dmark-k{padding:3px 10px;border-radius:100px;border:1px solid currentColor;line-height:1.4}
+.dmark-l{letter-spacing:.06em;font-weight:600;color:var(--ink-3);text-transform:none;font-size:.78rem}
+.dmark:hover .dmark-l{color:var(--accent)}
+.dmark-consenso{color:#5f9e73}
+.dmark-divergenza{color:var(--accent)}
+.dmark-rottura{color:#8b4a42}
+.dmark-fuori{color:#b06a5f}
+@media print{
+  .dmark{display:inline;margin:.4em 0 1em;color:var(--ink)}
+  .dmark-k{border:1px solid var(--ink-3);padding:1px 6px;border-radius:0}
+  .dmark-l::before{content:" — "}
+  .dmark-l{color:var(--ink-2)}
+}
 
 .original{margin:2.4em auto;max-width:40rem;border:1px solid var(--rule);border-left:3px solid var(--accent);
   border-radius:2px;background:var(--page-2);padding:24px 26px}
