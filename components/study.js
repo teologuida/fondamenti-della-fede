@@ -311,6 +311,54 @@ function buildMarksPanel() {
   return { open };
 }
 
+// link esterni → nuova scheda + indicatore ↗ (i link interni restano nel sito)
+function markExternalLinks(root) {
+  root.querySelectorAll("a[href]").forEach((a) => {
+    const href = a.getAttribute("href") || "";
+    if (!/^https?:\/\//i.test(href)) return;
+    try {
+      const u = new URL(href, location.href);
+      if (u.origin !== location.origin) {
+        a.target = "_blank";
+        a.rel = "noopener noreferrer";
+        a.classList.add("ext");
+      }
+    } catch (e) {}
+  });
+}
+
+// pannello Domanda & Risposta (destra su PC, dal basso su mobile)
+function buildQAPanel() {
+  const panel = document.createElement("aside");
+  panel.className = "qa-panel"; panel.hidden = true;
+  document.body.appendChild(panel);
+  const scrim = document.createElement("div");
+  scrim.className = "scrim"; scrim.hidden = true;
+  document.body.appendChild(scrim);
+  function close() { panel.classList.remove("open"); scrim.hidden = true; setTimeout(() => (panel.hidden = true), 300); }
+  scrim.addEventListener("click", close);
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !panel.hidden) close(); });
+  function open(qaEl) {
+    const qBtn = qaEl.querySelector(".qa-q");
+    const qClone = qBtn ? qBtn.cloneNode(true) : null;
+    if (qClone) { const lbl = qClone.querySelector(".lbl"); if (lbl) lbl.remove(); }
+    const qText = qClone ? qClone.textContent.trim() : "";
+    const a = qaEl.querySelector(".qa-a");
+    panel.innerHTML =
+      '<div class="qp-top"><span class="qp-kick">Domanda &amp; Risposta</span>' +
+      '<button class="qp-close" aria-label="Chiudi">✕</button></div>' +
+      '<h2 class="qp-q"></h2><div class="qp-a"></div>';
+    panel.querySelector(".qp-q").textContent = qText;
+    panel.querySelector(".qp-a").innerHTML = a ? a.innerHTML : "";
+    markExternalLinks(panel);
+    panel.querySelector(".qp-close").addEventListener("click", close);
+    panel.scrollTop = 0;
+    panel.hidden = false; scrim.hidden = false;
+    requestAnimationFrame(() => panel.classList.add("open"));
+  }
+  return { open };
+}
+
 export function initStudy(glossary) {
   const root = document.querySelector("#content .page");
   if (!root) return;
@@ -322,6 +370,12 @@ export function initStudy(glossary) {
   applyGlossary(root, glossary);
   buildFloatingUI(root, slug, glossary);
   const panel = buildMarksPanel();
+  markExternalLinks(root);
+  const qaPanel = buildQAPanel();
+  root.addEventListener("click", (e) => {
+    const q = e.target.closest(".qa-q");
+    if (q) { e.preventDefault(); qaPanel.open(q.closest(".qa")); }
+  });
   handleHash();
 
   // pulsante ★ segnalibro (nell'header)
