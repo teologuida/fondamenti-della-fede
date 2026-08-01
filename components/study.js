@@ -361,10 +361,51 @@ function buildQAPanel() {
     panel.hidden = false; scrim.hidden = false;
     requestAnimationFrame(() => panel.classList.add("open"));
   }
-  return { open };
+  return { open, close, panel, scrim };
 }
 
-export function initStudy(glossary) {
+// pannello Bussola (stesso layout del Q&A): scheda di fianco senza lasciare la pagina
+function buildBussolaPanel(cards) {
+  const byId = Object.create(null);
+  (cards || []).forEach((c) => { if (c && c.id) byId[c.id] = c; });
+  const panel = document.createElement("aside");
+  panel.className = "qa-panel bx-panel"; panel.hidden = true;
+  document.body.appendChild(panel);
+  const scrim = document.createElement("div");
+  scrim.className = "scrim"; scrim.hidden = true;
+  document.body.appendChild(scrim);
+  function close() { panel.classList.remove("open"); scrim.hidden = true; setTimeout(() => (panel.hidden = true), 300); }
+  scrim.addEventListener("click", close);
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !panel.hidden) close(); });
+  function open(id) {
+    const c = byId[id];
+    if (!c) { toast("Scheda non trovata"); return; }
+    const catCls = c.catClass === "rottura" ? "dmark-rottura"
+      : c.catClass === "ess" ? "dmark-consenso"
+      : c.catClass === "dist" ? "dmark-divergenza"
+      : "dmark-fuori";
+    panel.innerHTML =
+      '<div class="qp-top"><span class="qp-kick">Bussola delle dottrine</span>' +
+      '<button class="qp-close" aria-label="Chiudi">✕</button></div>' +
+      '<div class="bx-meta">' +
+        '<span class="dmark-k ' + catCls + '">' + (c.cat || "") + "</span>" +
+        '<span class="bx-gauge">' + (c.gaugeHtml || "") + "</span>" +
+        '<span class="doc-lv">' + (c.level || "") + "</span>" +
+      "</div>" +
+      '<h2 class="qp-q"></h2><div class="qp-a bx-body"></div>' +
+      '<a class="bx-full" href="/bussola-delle-dottrine/#' + encodeURIComponent(c.id) + '">Apri nella Bussola completa →</a>';
+    panel.querySelector(".qp-q").textContent = c.title || "";
+    panel.querySelector(".bx-body").innerHTML = c.body || "";
+    markExternalLinks(panel);
+    panel.querySelector(".qp-close").addEventListener("click", close);
+    panel.scrollTop = 0;
+    panel.hidden = false; scrim.hidden = false;
+    requestAnimationFrame(() => panel.classList.add("open"));
+  }
+  return { open, close };
+}
+
+export function initStudy(glossary, bussolaCards) {
   const root = document.querySelector("#content .page");
   if (!root) return;
   const slug = pageSlug();
@@ -377,9 +418,15 @@ export function initStudy(glossary) {
   const panel = buildMarksPanel();
   markExternalLinks(root);
   const qaPanel = buildQAPanel();
+  const bxPanel = buildBussolaPanel(bussolaCards);
   root.addEventListener("click", (e) => {
     const q = e.target.closest(".qa-q");
     if (q) { e.preventDefault(); qaPanel.open(q.closest(".qa")); return; }
+    const dm = e.target.closest("a.dmark");
+    if (dm) {
+      const id = dm.getAttribute("data-bussola") || (dm.getAttribute("href") || "").split("#")[1];
+      if (id) { e.preventDefault(); bxPanel.open(id); return; }
+    }
     const h = e.target.closest(".doc-head");
     if (h) {
       const doc = h.parentNode;

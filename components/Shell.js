@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import { initStudy } from "./study";
 import glossary from "../content/glossary.json";
+import bussolaCards from "../content/bussola-cards.json";
 
 export default function Shell({ pages, searchIndex, children }) {
   useEffect(() => {
@@ -112,7 +113,7 @@ export default function Shell({ pages, searchIndex, children }) {
     inp?.addEventListener("input", () => run(inp.value));
 
     // funzioni di studio: evidenzia, glossario, condividi paragrafo, segnalibri
-    try { initStudy(glossary); } catch (e) {}
+    try { initStudy(glossary, bussolaCards); } catch (e) {}
 
     // PWA: registra il service worker per la lettura offline
     if ("serviceWorker" in navigator) {

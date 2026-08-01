@@ -118,6 +118,6 @@ a.ext::after{content:"\2197";font-size:.78em;color:var(--accent);margin-left:1px
 
 
 @media print{.site,.drawer,.scrim,.pager,.site-foot,.search-overlay,.progress,
-  .sel-bar,.gloss-pop,.para-link,.marks-panel{display:none!important}
+  .sel-bar,.gloss-pop,.para-link,.marks-panel,.qa-panel{display:none!important}
   .term{border:none}
   .sheet{page-break-before:auto!important}}

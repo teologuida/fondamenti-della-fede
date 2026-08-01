@@ -331,11 +331,21 @@ sup.fn a:hover{text-decoration:underline}
 .dmark-divergenza{color:var(--accent)}
 .dmark-rottura{color:#8b4a42}
 .dmark-fuori{color:#b06a5f}
+.dmark-k.dmark-consenso,.dmark-k.dmark-divergenza,.dmark-k.dmark-rottura,.dmark-k.dmark-fuori{
+  display:inline-block;padding:3px 10px;border-radius:100px;border:1px solid currentColor;line-height:1.4;
+  font-family:var(--sans);font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.bx-meta{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:0 0 14px}
+.bx-gauge{display:inline-flex;align-items:center}
+.bx-body{font-family:var(--sans)!important;font-size:.95rem!important}
+.bx-full{display:inline-block;margin-top:18px;font-family:var(--sans);font-size:.85rem;font-weight:700;
+  color:var(--accent);text-decoration:none}
+.bx-full:hover{text-decoration:underline;text-underline-offset:2px}
 @media print{
   .dmark{display:inline;margin:.4em 0 1em;color:var(--ink)}
   .dmark-k{border:1px solid var(--ink-3);padding:1px 6px;border-radius:0}
   .dmark-l::before{content:" — "}
   .dmark-l{color:var(--ink-2)}
+  .qa-panel,.bx-panel{display:none!important}
 }
 
 .original{margin:2.4em auto;max-width:40rem;border:1px solid var(--rule);border-left:3px solid var(--accent);
@@ -546,6 +556,6 @@ a.ext::after{content:"\2197";font-size:.78em;color:var(--accent);margin-left:1px
 
 
 @media print{.site,.drawer,.scrim,.pager,.site-foot,.search-overlay,.progress,
-  .sel-bar,.gloss-pop,.para-link,.marks-panel{display:none!important}
+  .sel-bar,.gloss-pop,.para-link,.marks-panel,.qa-panel{display:none!important}
   .term{border:none}
   .sheet{page-break-before:auto!important}}

@@ -1,0 +1,162 @@
+[
+  {
+    "id": "trinita",
+    "catClass": "ess",
+    "cat": "Essenziale",
+    "gauge": "l5",
+    "gaugeHtml": "<span class=\"gauge l5\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i></span>",
+    "level": "Fortissimo",
+    "title": "La Trinità: un solo Dio in tre Persone",
+    "body": "<p><b>Le posizioni:</b> confessata da cattolici, ortodossi e protestanti. La negano i Testimoni di Geova e i mormoni.</p>\n          <p><b>Testi:</b> Deuteronomio 6:4 (un solo Dio); Matteo 28:19; Giovanni 1:1; 2 Corinzi 13:13.</p>\n          <p><b>Perché fortissimo:</b> è la sintesi di testi espliciti ed è affermata da tutti i credi ecumenici.</p>"
+  },
+  {
+    "id": "divinita-cristo",
+    "catClass": "ess",
+    "cat": "Essenziale",
+    "gauge": "l5",
+    "gaugeHtml": "<span class=\"gauge l5\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i></span>",
+    "level": "Fortissimo",
+    "title": "La piena divinità di Cristo",
+    "body": "<p><b>Le posizioni:</b> confessata da tutte le chiese storiche; negata da TdG e mormoni.</p>\n          <p><b>Testi:</b> Giovanni 1:1; 20:28; Colossesi 1:16-17; Ebrei 1:8.</p>\n          <p><b>Perché fortissimo:</b> affermazione esplicita e ripetuta, sancita a Nicea e Calcedonia.</p>"
+  },
+  {
+    "id": "risurrezione",
+    "catClass": "ess",
+    "cat": "Essenziale",
+    "gauge": "l5",
+    "gaugeHtml": "<span class=\"gauge l5\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i></span>",
+    "level": "Fortissimo",
+    "title": "La risurrezione corporale di Gesù",
+    "body": "<p><b>Le posizioni:</b> fondamento condiviso da tutte le chiese cristiane.</p>\n          <p><b>Testi:</b> 1 Corinzi 15:3-8; Luca 24; Giovanni 20.</p>\n          <p><b>Perché fortissimo:</b> esplicito, con testimoni oculari; senza di essa «vana è la nostra fede» (1 Cor 15:14).</p>"
+  },
+  {
+    "id": "grazia-in-cristo",
+    "catClass": "ess",
+    "cat": "Essenziale",
+    "gauge": "l5",
+    "gaugeHtml": "<span class=\"gauge l5\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i></span>",
+    "level": "Fortissimo",
+    "title": "Salvezza per grazia, in Cristo (serve un Salvatore)",
+    "body": "<p><b>Le posizioni:</b> tutti i cristiani concordano che non ci si salva da soli, ma per grazia in Cristo. (Il <em>come</em> fede/opere si collegano è la riga «Giustificazione».)</p>\n          <p><b>Testi:</b> Efesini 2:8; Giovanni 14:6; Atti 4:12.</p>\n          <p><b>Perché fortissimo:</b> esplicito e universale nella fede cristiana.</p>"
+  },
+  {
+    "id": "autorita",
+    "catClass": "rottura",
+    "cat": "Rottura",
+    "gauge": "l4",
+    "gaugeHtml": "<span class=\"gauge l4\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i></i></span>",
+    "level": "Forte",
+    "title": "Autorità: solo la Scrittura o Scrittura + Tradizione?",
+    "body": "<p><b>Le posizioni:</b> protestanti — la Scrittura è l'unica autorità infallibile (Sola Scriptura). Cattolici e ortodossi — Scrittura <em>e</em> Tradizione (con il Magistero).</p>\n          <p><b>Testi:</b> 2 Timoteo 3:16-17; Marco 7:8-13 (Gesù corregge la tradizione) · <em>dall'altra parte:</em> 2 Tessalonicesi 2:15.</p>\n          <p><b>Livello:</b> forte per la <em>sufficienza</em> della Scrittura; l'esclusività è il vero punto di divisione con Roma. Valutazione dalla lettura evangelica riformata.</p>"
+  },
+  {
+    "id": "giustificazione",
+    "catClass": "rottura",
+    "cat": "Rottura",
+    "gauge": "l4",
+    "gaugeHtml": "<span class=\"gauge l4\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i></i></span>",
+    "level": "Forte",
+    "title": "Giustificazione: per sola fede o fede + opere?",
+    "body": "<p><b>Le posizioni:</b> protestanti — dichiarati giusti per fede soltanto, le opere sono il frutto. Roma (Trento) — la fede con la cooperazione e le opere accresce la giustificazione.</p>\n          <p><b>Testi:</b> Romani 3:28; 4:4-5; Efesini 2:8-9; Galati 2:16 · <em>dall'altra parte:</em> Giacomo 2:24.</p>\n          <p><b>Livello:</b> caso protestante forte ed esplicito (è il cuore della Riforma); Roma legge Giacomo 2 in modo diverso. Qui si decide se il Vangelo è grazia o meriti.</p>"
+  },
+  {
+    "id": "predestinazione",
+    "catClass": "dist",
+    "cat": "Divergenza",
+    "gauge": "l3",
+    "gaugeHtml": "<span class=\"gauge l3\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i></i><i></i></span>",
+    "level": "Dibattuto",
+    "title": "Predestinazione ed elezione: incondizionata o condizionata?",
+    "body": "<p><b>Le posizioni:</b> calvinisti — Dio elegge per pura grazia (incondizionata). Arminiani — Dio elegge chi prevede crederà (condizionata).</p>\n          <p><b>Testi:</b> Romani 9; Efesini 1:4-5; Giovanni 6:37,44 · <em>dall'altra parte:</em> 1 Timoteo 2:4; 2 Pietro 3:9; Matteo 23:37.</p>\n          <p><b>Livello:</b> argomenti seri da entrambe le parti → dibattuto. Questa guida insegna la lettura riformata; altri evangelici dissentono restando fratelli sul Vangelo.</p>"
+  },
+  {
+    "id": "espiazione",
+    "catClass": "dist",
+    "cat": "Divergenza",
+    "gauge": "l3",
+    "gaugeHtml": "<span class=\"gauge l3\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i></i><i></i></span>",
+    "level": "Dibattuto",
+    "title": "L'espiazione: definita (per gli eletti) o universale?",
+    "body": "<p><b>Le posizioni:</b> calvinisti — Cristo è morto efficacemente per il Suo popolo. Altri — è morto per tutti, applicato a chi crede.</p>\n          <p><b>Testi:</b> Giovanni 10:11,15; Efesini 5:25 · <em>dall'altra parte:</em> 1 Giovanni 2:2; 1 Timoteo 2:6.</p>\n          <p><b>Livello:</b> dibattuto.</p>"
+  },
+  {
+    "id": "perseveranza",
+    "catClass": "dist",
+    "cat": "Divergenza",
+    "gauge": "l3",
+    "gaugeHtml": "<span class=\"gauge l3\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i></i><i></i></span>",
+    "level": "Dibattuto",
+    "title": "Perseveranza: sicurezza eterna o si può cadere?",
+    "body": "<p><b>Le posizioni:</b> calvinisti e molti battisti — chi è salvato è custodito fino alla fine. Arminiani e cattolici — la salvezza si può perdere.</p>\n          <p><b>Testi:</b> Giovanni 10:28-29; Romani 8:38-39; Filippesi 1:6 · <em>dall'altra parte:</em> Ebrei 6:4-6; 10:26-29.</p>\n          <p><b>Livello:</b> dibattuto (molti battisti tengono questo punto senza il resto del TULIP).</p>"
+  },
+  {
+    "id": "doni-spirito",
+    "catClass": "dist",
+    "cat": "Divergenza",
+    "gauge": "l3",
+    "gaugeHtml": "<span class=\"gauge l3\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i></i><i></i></span>",
+    "level": "Dibattuto",
+    "title": "I doni dello Spirito oggi: continuano o sono cessati?",
+    "body": "<p><b>Le posizioni:</b> continuazionisti (pentecostali, carismatici, e anche riformati come Piper e Grudem) — guarigioni, profezia e lingue sono per oggi. Cessazionisti — i doni «segno» finirono con l'era apostolica.</p>\n          <p><b>Testi:</b> 1 Corinzi 12-14; Atti 2; nessun testo dice «i doni sono cessati» · <em>dall'altra parte:</em> Efesini 2:20; 1 Corinzi 13:8-10.</p>\n          <p><b>Livello:</b> sostegno biblico reale da entrambe le parti → dibattuto.</p>"
+  },
+  {
+    "id": "battesimo",
+    "catClass": "dist",
+    "cat": "Divergenza",
+    "gauge": "l3",
+    "gaugeHtml": "<span class=\"gauge l3\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i></i><i></i></span>",
+    "level": "Dibattuto",
+    "title": "Battesimo: dei bambini o dei credenti?",
+    "body": "<p><b>Le posizioni:</b> pedobattisti (cattolici, ortodossi, riformati, luterani, anglicani) — anche i bambini dei credenti. Credobattisti (battisti, pentecostali, molti evangelici) — solo chi ha creduto.</p>\n          <p><b>Testi:</b> Atti 2:38-39; battesimi di «tutta la casa» (Atti 16:15,33) · <em>dall'altra parte:</em> Atti 2:41; Marco 16:16 (credere, poi battezzarsi).</p>\n          <p><b>Livello:</b> dibattuto (una divergenza «in famiglia»).</p>"
+  },
+  {
+    "id": "cena",
+    "catClass": "dist",
+    "cat": "Divergenza",
+    "gauge": "l3",
+    "gaugeHtml": "<span class=\"gauge l3\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i></i><i></i></span>",
+    "level": "Dibattuto",
+    "title": "La Cena del Signore: presenza reale o memoriale?",
+    "body": "<p><b>Le posizioni:</b> cattolici (transustanziazione), luterani (presenza reale), riformati (presenza spirituale), molti evangelici (memoriale).</p>\n          <p><b>Testi:</b> «Questo è il mio corpo» (Matteo 26:26; Giovanni 6) · <em>dall'altra parte:</em> «fate questo in memoria di me» (Luca 22:19; 1 Corinzi 11:24-26).</p>\n          <p><b>Livello:</b> dibattuto.</p>"
+  },
+  {
+    "id": "preghiera-santi",
+    "catClass": "out",
+    "cat": "Al confine",
+    "gauge": "l2",
+    "gaugeHtml": "<span class=\"gauge l2\"><i class=\"on\"></i><i class=\"on\"></i><i></i><i></i><i></i></span>",
+    "level": "Debole",
+    "title": "Preghiera ai santi e ai morti",
+    "body": "<p><b>Le posizioni:</b> cattolici e ortodossi chiedono l'intercessione di Maria e dei santi. Protestanti — si prega solo Dio, per mezzo dell'unico mediatore, Cristo.</p>\n          <p><b>Testi contrari:</b> 1 Timoteo 2:5 («un solo mediatore»); Deuteronomio 18:11 (proibito consultare i morti).</p>\n          <p><b>Livello:</b> sostegno biblico diretto scarso, con testi contrari → debole. È una pratica, non un articolo essenziale.</p>"
+  },
+  {
+    "id": "purgatorio",
+    "catClass": "out",
+    "cat": "Al confine",
+    "gauge": "l2",
+    "gaugeHtml": "<span class=\"gauge l2\"><i class=\"on\"></i><i class=\"on\"></i><i></i><i></i><i></i></span>",
+    "level": "Debole",
+    "title": "Il purgatorio",
+    "body": "<p><b>Le posizioni:</b> cattolici — una purificazione dopo la morte, prima del cielo. Protestanti — non ha base nella Scrittura.</p>\n          <p><b>Testi:</b> si appella a 2 Maccabei (libro deuterocanonico, fuori dal canone protestante); nessun passo chiaro del NT · <em>dall'altra parte:</em> Ebrei 9:27; Luca 23:43 («oggi sarai con me in paradiso»).</p>\n          <p><b>Livello:</b> debole.</p>"
+  },
+  {
+    "id": "fuori-tdg",
+    "catClass": "out",
+    "cat": "Fuori dalla fede",
+    "gauge": "l1",
+    "gaugeHtml": "<span class=\"gauge l1\"><i class=\"on\"></i><i></i><i></i><i></i><i></i></span>",
+    "level": "Contrario",
+    "title": "Negare la Trinità e la divinità di Cristo (Testimoni di Geova)",
+    "body": "<p><b>Le posizioni:</b> i Testimoni di Geova negano la Trinità e la piena divinità del Figlio (Gesù come creatura / «un dio»).</p>\n          <p><b>Testi:</b> Giovanni 1:1; 20:28; Colossesi 1:16-17; Ebrei 1:5-6; Isaia 43:10.</p>\n          <p><b>Livello:</b> contrario alla Scrittura chiara e ai credi ecumenici → <b>fuori dalla fede cristiana storica</b> (ne parla la Parte V).</p>"
+  },
+  {
+    "id": "fuori-mormoni",
+    "catClass": "out",
+    "cat": "Fuori dalla fede",
+    "gauge": "l1",
+    "gaugeHtml": "<span class=\"gauge l1\"><i class=\"on\"></i><i></i><i></i><i></i><i></i></span>",
+    "level": "Contrario",
+    "title": "Aggiungere scritture e molti dèi (mormonismo)",
+    "body": "<p><b>Le posizioni:</b> i mormoni pongono altri libri «sacri» accanto alla Bibbia e insegnano una visione di Dio incompatibile col monoteismo biblico.</p>\n          <p><b>Testi:</b> canone chiuso (Apocalisse 22:18; Galati 1:8); un solo Dio (Isaia 43:10; 44:6).</p>\n          <p><b>Livello:</b> contrario alla Scrittura chiara → <b>fuori dalla fede cristiana storica</b> (ne parla la Parte V).</p>"
+  }
+]

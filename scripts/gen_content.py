@@ -116,8 +116,33 @@ open(os.path.join(CONTENT, "pages.json"), "w", encoding="utf-8").write(
 open(os.path.join(CONTENT, "search-index.json"), "w", encoding="utf-8").write(
     json.dumps(index_docs, ensure_ascii=False))
 
+# --- schede Bussola (JSON per pannello laterale sulle Parti)
+bussola_frag = sections.get("bussola", "")
+bussola_cards = []
+for m in re.finditer(
+    r'<div class="doc rv" id="([^"]+)">\s*'
+    r'<button[^>]*>.*?<span class="doc-cat ([^"]+)">([^<]+)</span>'
+    r'.*?<span class="gauge (l\d)">(.*?)</span>'
+    r'<span class="doc-lv">([^<]+)</span>.*?'
+    r'<span class="doc-q">([^<]+)</span></button>\s*'
+    r'<div class="doc-body">(.*?)</div>\s*</div>',
+    bussola_frag, re.S):
+    cid, cat_cls, cat, gauge, gauge_html, lv, title, body = m.groups()
+    bussola_cards.append({
+        "id": cid,
+        "catClass": cat_cls,
+        "cat": cat,
+        "gauge": gauge,
+        "gaugeHtml": '<span class="gauge %s">%s</span>' % (gauge, gauge_html),
+        "level": lv,
+        "title": title,
+        "body": body.strip(),
+    })
+open(os.path.join(CONTENT, "bussola-cards.json"), "w", encoding="utf-8").write(
+    json.dumps(bussola_cards, ensure_ascii=False, indent=2))
+
 # --- globals.css = design system + stili del sito
 APP_CSS_EXTRA = open(os.path.join(HERE, "site.css"), encoding="utf-8").read() if os.path.exists(os.path.join(HERE,"site.css")) else ""
 open(os.path.join(APPDIR, "globals.css"), "w", encoding="utf-8").write(style + "\n" + APP_CSS_EXTRA)
 
-print("Contenuti Next generati:", len(PAGES), "pagine + home | ricerca:", len(index_docs), "voci")
+print("Contenuti Next generati:", len(PAGES), "pagine + home | ricerca:", len(index_docs), "voci | bussola:", len(bussola_cards), "schede")
