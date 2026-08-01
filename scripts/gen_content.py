@@ -40,6 +40,7 @@ PAGES = [
     ("parte-3-la-salvezza-in-cristo","Parte III · La salvezza in Cristo","Parte III · La salvezza in Cristo","parte3"),
     ("parte-4-la-chiesa","Parte IV · La Chiesa","Parte IV · La Chiesa: il popolo di Dio","parte4"),
     ("parte-5-apologetica","Parte V · Apologetica","Parte V · Riconoscere gli inganni","parte5"),
+    ("bussola-delle-dottrine","La Bussola delle dottrine","La Bussola delle dottrine","bussola"),
     ("i-tuoi-primi-passi","I tuoi primi passi","I tuoi primi passi","primi-passi"),
     ("conclusione","Conclusione","Conclusione · Soli Deo Gloria","fine"),
     ("cronologia","Cronologia storica","Cronologia storica essenziale","cronologia"),

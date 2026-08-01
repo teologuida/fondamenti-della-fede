@@ -374,7 +374,13 @@ export function initStudy(glossary) {
   const qaPanel = buildQAPanel();
   root.addEventListener("click", (e) => {
     const q = e.target.closest(".qa-q");
-    if (q) { e.preventDefault(); qaPanel.open(q.closest(".qa")); }
+    if (q) { e.preventDefault(); qaPanel.open(q.closest(".qa")); return; }
+    const h = e.target.closest(".doc-head");
+    if (h) {
+      const doc = h.parentNode;
+      const open = doc.classList.toggle("open");
+      h.setAttribute("aria-expanded", open ? "true" : "false");
+    }
   });
   handleHash();
 

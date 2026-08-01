@@ -291,6 +291,35 @@ sup.fn a:hover{text-decoration:underline}
 .qa.open .qa-a{display:block}
 @media print{.qa-a{display:block!important;padding-top:4px}.qa-q .lbl{display:none}.qa-q{cursor:auto}}
 
+/* ---- Bussola delle dottrine ---- */
+.tiers{margin:2em auto;max-width:40rem;display:grid;gap:12px}
+.tier{border:1px solid var(--rule);border-left:4px solid var(--accent);border-radius:10px;background:var(--page-2);padding:14px 18px}
+.tier.ess{border-left-color:#5f9e73}.tier.dist{border-left-color:var(--accent)}.tier.out{border-left-color:#b06a5f}
+.tier-b{display:inline-block;font-family:var(--sans);font-size:.66rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px}
+.tier.ess .tier-b{color:#5f9e73}.tier.dist .tier-b{color:var(--accent)}.tier.out .tier-b{color:#b06a5f}
+.tier p{margin:0;font-family:var(--sans);font-size:.92rem;line-height:1.55;color:var(--ink-2)}
+.tier p b{color:var(--ink)}
+.levels{margin:2em auto;max-width:40rem;display:grid;gap:10px}
+.levels .lv{display:grid;grid-template-columns:76px 1fr;gap:14px;align-items:center;font-family:var(--sans);font-size:.85rem;color:var(--ink-2)}
+.levels .lv b{color:var(--ink)}
+.gauge{display:inline-flex;gap:4px;white-space:nowrap;line-height:1}
+.gauge i{width:9px;height:9px;border-radius:50%;border:1.5px solid currentColor;display:inline-block;box-sizing:border-box}
+.gauge i.on{background:currentColor}
+.gauge.l5,.gauge.l4{color:#5f9e73}.gauge.l3{color:var(--accent)}.gauge.l2{color:#c08a3f}.gauge.l1{color:#b06a5f}
+.doc{margin:14px auto;max-width:40rem;border:1px solid var(--rule);border-radius:12px;background:var(--page-2);overflow:hidden}
+.doc-head{display:block;width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:15px 18px;font-family:var(--serif)}
+.doc-toprow{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:8px}
+.doc-cat{font-family:var(--sans);font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:2px 9px;border-radius:100px;border:1px solid currentColor}
+.doc-cat.ess{color:#5f9e73}.doc-cat.dist{color:var(--accent)}.doc-cat.out{color:#b06a5f}
+.doc-meta{display:inline-flex;align-items:center;gap:8px}
+.doc-lv{font-family:var(--sans);font-size:.66rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}
+.doc-q{display:block;font-size:1.05rem;font-weight:700;color:var(--ink);line-height:1.25}
+.doc-head:hover .doc-q{color:var(--accent)}
+.doc-body{display:none;padding:0 18px 18px;font-family:var(--sans);font-size:.92rem;line-height:1.6;color:var(--ink-2)}
+.doc-body p{margin:0 0 .7em}.doc-body p:last-child{margin-bottom:0}.doc-body b{color:var(--ink)}
+.doc.open .doc-body{display:block}
+@media print{.doc-body{display:block!important}.doc-head{cursor:auto}}
+
 .original{margin:2.4em auto;max-width:40rem;border:1px solid var(--rule);border-left:3px solid var(--accent);
   border-radius:2px;background:var(--page-2);padding:24px 26px}
 .original .olang{font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
