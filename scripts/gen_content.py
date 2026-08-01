@@ -44,6 +44,7 @@ PAGES = [
     ("conclusione","Conclusione","Conclusione · Soli Deo Gloria","fine"),
     ("cronologia","Cronologia storica","Cronologia storica essenziale","cronologia"),
     ("registro-modifiche","Registro modifiche","Registro delle modifiche","registro"),
+    ("audit","Audit di verifica","Audit di verifica","audit"),
     ("fonti","Fonti","Fonti e ricerche citate","fonti"),
 ]
 
@@ -88,7 +89,7 @@ for slug, nav, title, sid in PAGES:
 def home_cards():
     out = []
     for slug, nav, title, sid in PAGES:
-        if slug == "registro-modifiche": continue
+        if slug in ("registro-modifiche", "audit"): continue
         out.append('<a class="tcard" href="/%s"><span class="tc-k">%s</span><span class="tc-t">%s</span></a>'
                    % (slug, _html.escape(nav), _html.escape(title)))
     return "\n".join(out)

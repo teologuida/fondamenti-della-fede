@@ -215,6 +215,31 @@ figcaption b{color:var(--ink);font-weight:700;letter-spacing:.04em}
 .ev .yr{font-family:var(--sans);font-size:.78rem;font-weight:700;letter-spacing:.1em;color:var(--accent)}
 .ev h4{margin:2px 0 4px;font-size:1.12rem;font-weight:700}
 .ev p{margin:0;color:var(--ink-2);font-size:.96rem}
+.aud-scale{display:flex;flex-wrap:wrap;gap:8px;margin:1em auto;max-width:40rem}
+.aud-dash{display:flex;flex-wrap:wrap;gap:12px;margin:1.6em auto;max-width:40rem}
+.aud-dash .cell{flex:1 1 130px;border:1px solid var(--rule);border-radius:10px;padding:14px 16px}
+.aud-dash .n{font-family:var(--sans);font-size:1.7rem;font-weight:800;line-height:1;color:var(--ink)}
+.aud-dash .c{font-size:.8rem;color:var(--ink-3);margin-top:5px}
+.aud{border:1px solid var(--rule);border-radius:12px;padding:20px 22px;margin:1.4em auto;max-width:40rem}
+.aud-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.aud-name{font-family:var(--sans);font-weight:800;font-size:1.08rem}
+.aud-badge{display:inline-block;font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.03em;padding:4px 11px;border-radius:100px;border:1px solid currentColor;white-space:nowrap}
+.aud-badge.lv0{color:var(--ink-3)}
+.aud-badge.lv1{color:#b8863b}
+.aud-badge.lv2{color:#8b6a2f}
+.aud-badge.lv3{color:#4f7f8b}
+.aud-badge.sealed{color:#5f9e73}
+.aud-meta{font-size:.88rem;color:var(--ink-2);margin:10px 0 0;line-height:1.5}
+.aud-sub{font-family:var(--sans);font-size:.74rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin:20px 0 8px}
+.aud-find{border-top:1px solid var(--rule);padding:11px 0}
+.aud-find .ft{font-weight:600}
+.aud-find .fx{color:var(--ink-2);font-size:.94rem;margin:4px 0 0;line-height:1.55}
+.aud-tag{display:inline-block;font-family:var(--sans);font-size:.66rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:1px 7px;border-radius:4px;border:1px solid currentColor;margin-right:8px;vertical-align:1px}
+.aud-tag.err{color:#8b4a42}
+.aud-tag.src{color:#b8863b}
+.aud-tag.gap{color:#4f7f8b}
+.aud-tag.ok{color:#5f9e73}
+.aud-who{font-size:.86rem;color:var(--ink-3);font-style:italic;line-height:1.55}
 
 /* ---------- read box ---------- */
 .readbox{margin:2.4em auto;max-width:40rem;background:var(--page-2);border-radius:2px;padding:26px 28px;border:1px solid var(--rule)}

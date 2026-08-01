@@ -60,6 +60,11 @@
     "title": "Registro delle modifiche"
   },
   {
+    "slug": "audit",
+    "nav": "Audit di verifica",
+    "title": "Audit di verifica"
+  },
+  {
     "slug": "fonti",
     "nav": "Fonti",
     "title": "Fonti e ricerche citate"
