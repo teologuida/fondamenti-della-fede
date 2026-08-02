@@ -1,8 +1,10 @@
 /* Service worker Teologuida — lettura offline (PWA)
-   Strategia: stale-while-revalidate per le pagine e gli asset dello stesso dominio.
-   Serve subito la copia in cache (se c'è), aggiorna in background, e in assenza
-   di rete mostra l'ultima versione salvata (o la copertina). */
-const VERSION = "teologuida-v2";
+   Strategia:
+   - PAGINE (navigazioni / HTML): network-first. Online mostra SEMPRE l'ultima
+     versione pubblicata; offline ricade sull'ultima copia salvata (o la copertina).
+     Fondamentale per un documento vivo e verificato: nessuno deve vedere testo vecchio.
+   - ASSET statici (css/js/immagini/font): stale-while-revalidate. */
+const VERSION = "teologuida-v3";
 const CORE = [
   "/", "/manifest.webmanifest",
   "/favicon.png", "/icon-192.png", "/icon-512.png", "/apple-touch-icon.png", "/og.png"
@@ -27,6 +29,27 @@ self.addEventListener("fetch", (e) => {
   if (req.method !== "GET") return;
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) return;
+
+  const isPage = req.mode === "navigate" ||
+    (req.headers.get("accept") || "").includes("text/html");
+
+  if (isPage) {
+    // network-first: la pagina più recente quando c'è rete, cache solo offline
+    e.respondWith(
+      fetch(req)
+        .then((res) => {
+          if (res && res.status === 200 && res.type === "basic") {
+            const copy = res.clone();
+            caches.open(VERSION).then((c) => c.put(req, copy));
+          }
+          return res;
+        })
+        .catch(() => caches.match(req).then((c) => c || caches.match("/")))
+    );
+    return;
+  }
+
+  // asset statici: stale-while-revalidate
   e.respondWith(
     caches.match(req).then((cached) => {
       const net = fetch(req)
@@ -37,7 +60,7 @@ self.addEventListener("fetch", (e) => {
           }
           return res;
         })
-        .catch(() => cached || (req.mode === "navigate" ? caches.match("/") : undefined));
+        .catch(() => cached);
       return cached || net;
     })
   );

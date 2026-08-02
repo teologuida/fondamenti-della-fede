@@ -385,14 +385,21 @@ function buildBussolaPanel(cards) {
       : c.catClass === "dist" ? "dmark-divergenza"
       : "dmark-fuori";
     panel.innerHTML =
-      '<div class="qp-top"><span class="qp-kick">Scheda · confronto</span>' +
+      '<div class="qp-top"><span class="qp-kick">La Bussola delle dottrine</span>' +
       '<button class="qp-close" aria-label="Chiudi">✕</button></div>' +
+      '<div class="bx-spirit"><b>Prima di ogni distinzione — verità nell\'amore</b> (Efesini 4:15). ' +
+      'Questa scheda non serve a vincere una discussione, ma a capire e a camminare verso Cristo. ' +
+      'Ciò che ci unisce, prima di tutto, è la grazia di Gesù Cristo, morto e risorto per i peccatori (1 Corinzi 15:1-4).</div>' +
       '<div class="bx-meta">' +
         '<span class="dmark-k ' + catCls + '">' + (c.cat || "") + "</span>" +
         '<span class="bx-gauge">' + (c.gaugeHtml || "") + "</span>" +
         '<span class="doc-lv">' + (c.level || "") + "</span>" +
       "</div>" +
-      '<h2 class="qp-q"></h2><div class="qp-a bx-body"></div>';
+      '<h2 class="qp-q"></h2><div class="qp-a bx-body"></div>' +
+      '<div class="bx-trust"><b>Perché puoi fidarti.</b> Non nascondiamo nulla: ti mostriamo le posizioni di tutti, ' +
+      'i testi e le fonti, e poi diciamo con franchezza da che parte stiamo e perché. La verità è libera di essere ' +
+      'studiata — sii pure critico e verifica. Crediamo che lo Spirito Santo guidi i cuori verso Cristo, anche di chi ' +
+      'non è della nostra chiesa. Perciò parliamo con coraggio di ciò che crediamo, senza chiuderci nel nostro mondo.</div>';
     panel.querySelector(".qp-q").textContent = c.title || "";
     panel.querySelector(".bx-body").innerHTML = c.body || "";
     markExternalLinks(panel);

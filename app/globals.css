@@ -345,32 +345,41 @@ sup.fn a:hover{text-decoration:underline}
 .doc.open .doc-body{display:block}
 @media print{.doc-body{display:block!important}.doc-head{cursor:auto}}
 
-/* ---- Indicatori inline (Bussola nel testo) ---- */
-button.dmark{appearance:none;-webkit-appearance:none;border:none;background:none;padding:0;margin:1.1em 0 1.6em;cursor:pointer;text-align:left;font:inherit;color:inherit}
-.dmark{display:inline-flex;align-items:center;gap:8px;flex-wrap:wrap;margin:1.1em 0 1.6em;
-  font-family:var(--sans);font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
-  text-decoration:none;color:inherit;max-width:40rem}
-.dmark-k{padding:3px 10px;border-radius:100px;border:1px solid currentColor;line-height:1.4}
-.dmark-l{letter-spacing:.06em;font-weight:600;color:var(--ink-3);text-transform:none;font-size:.78rem}
-.dmark:hover .dmark-l{color:var(--accent)}
+/* ---- Indicatori inline: la Bussola nel testo (chip con simbolo) ---- */
+button.dmark{appearance:none;-webkit-appearance:none;background:none;font:inherit;cursor:pointer;text-align:left}
+.dmark{display:inline-flex;align-items:center;gap:13px;max-width:34rem;margin:1.6em 0 2em;
+  padding:12px 16px;border:1px solid currentColor;border-radius:12px;text-decoration:none;vertical-align:top}
+.dmark-ico{flex:0 0 auto;display:inline-flex;line-height:0}
+.dmark-tx{display:flex;flex-direction:column;font-family:var(--sans)}
+.dmark-kick{font-size:.6rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.dmark-topic{font-size:1.02rem;font-weight:800;color:var(--ink);line-height:1.2;margin:1px 0 3px}
+.dmark-line{display:inline-flex;align-items:center;gap:9px;flex-wrap:wrap}
+.dmark-k{font-size:.58rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:2px 9px;border-radius:100px;border:1px solid currentColor;line-height:1.5}
+.dmark-cta{font-size:.8rem;font-weight:600;color:var(--ink-3)}
+.dmark:hover{box-shadow:0 3px 16px rgba(0,0,0,.07)}
+.dmark:hover .dmark-cta{color:currentColor}
 .dmark-consenso{color:#5f9e73}
 .dmark-divergenza{color:var(--accent)}
 .dmark-rottura{color:#8b4a42}
 .dmark-fuori{color:#b06a5f}
-.dmark-k.dmark-consenso,.dmark-k.dmark-divergenza,.dmark-k.dmark-rottura,.dmark-k.dmark-fuori{
-  display:inline-block;padding:3px 10px;border-radius:100px;border:1px solid currentColor;line-height:1.4;
-  font-family:var(--sans);font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
 .bx-meta{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:0 0 14px}
 .bx-gauge{display:inline-flex;align-items:center}
 .bx-body{font-family:var(--sans)!important;font-size:.95rem!important}
+.bx-body p{margin:.7em 0}
+.bx-body ul{margin:.5em 0 .9em;padding-left:1.15em}
+.bx-body li{margin:.35em 0;line-height:1.5}
 .bx-full{display:inline-block;margin-top:18px;font-family:var(--sans);font-size:.85rem;font-weight:700;
   color:var(--accent);text-decoration:none}
 .bx-full:hover{text-decoration:underline;text-underline-offset:2px}
+.bx-spirit{font-family:var(--sans);font-size:.85rem;line-height:1.55;color:var(--ink-2);
+  border-left:3px solid var(--accent);background:rgba(127,127,127,.06);padding:12px 15px;border-radius:8px;margin:0 0 18px}
+.bx-spirit b{color:var(--ink)}
+.bx-trust{font-family:var(--sans);font-size:.83rem;line-height:1.55;color:var(--ink-2);
+  border-top:1px solid var(--rule);margin-top:24px;padding-top:16px}
+.bx-trust b{color:var(--ink)}
 @media print{
-  .dmark{display:inline;margin:.4em 0 1em;color:var(--ink)}
-  .dmark-k{border:1px solid var(--ink-3);padding:1px 6px;border-radius:0}
-  .dmark-l::before{content:" — "}
-  .dmark-l{color:var(--ink-2)}
+  .dmark{border:1px solid var(--ink-3);border-radius:0;padding:8px 10px}
+  .dmark-cta{color:var(--ink-2)}
   .qa-panel,.bx-panel{display:none!important}
 }
 
