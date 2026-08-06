@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "updated": "2026-08-06",
+    "scala": ["da-auditare", "1-esperto", "2-esperti", "pronta", "sigillata", "non-verificabile"],
+    "nota": "Verifica condotta da revisori esperti AI indipendenti alla fonte primaria, con un ruolo avversariale (avvocato del diavolo). Il sigillo finale (●) è sempre umano: nessuna pagina è «sigillata» finché il curatore non conferma. Ciò che non si può provare resta visibile come «non verificabile», mai nascosto."
+  },
+  "pages": {
+    "parte-2-dio-e-la-trinita": {
+      "titolo": "Parte II · Dio, la Trinità e i concili",
+      "stato": "pronta",
+      "nota": "Ri-verificata da 2 esperti indipendenti + avvocato del diavolo. Nessuna affermazione risultata non verificabile. 4 correzioni applicate e tracciate. Attende il sigillo umano del curatore.",
+      "schede": [
+        {
+          "id": "p2-es3-14",
+          "sezione": "1 · Chi è Dio",
+          "testo": "«ehyèh ashèr ehyèh» (Esodo 3:14) significa «Io sono colui che sono»; il nome YHWH deriva dalla radice del verbo ebraico «essere» (hayah).",
+          "tipo": "linguistica",
+          "stato": "pronta",
+          "fiducia": 5,
+          "match": { "type": "oref", "value": "Esodo 3:14" },
+          "fonti": ["Esodo 3:14 — אֶהְיֶה אֲשֶׁר אֶהְיֶה"],
+          "verificatori": "ebraista (AI) + patrologo (AI), indipendenti · 1 ago 2026",
+          "avvocato": { "q": "L'etimologia YHWH↔hayah è dibattuta tra gli ebraisti.", "a": "La frase afferma il collegamento tradizionale posto da Es 3:14, non una derivazione morfologica certa. Nessun over-claim.", "regge": true },
+          "griglia": [["fatto","ok"],["fonte","ok"],["biblica","ok"],["lingua","ok"],["over-claim","ok"]],
+          "cronologia": []
+        },
+        {
+          "id": "p2-attributi-dio",
+          "sezione": "1 · Chi è Dio",
+          "testo": "Dio è eterno/immutabile (Sal 90:2; Mal 3:6), santo (Is 6:3), onnipotente/onnisciente/onnipresente (Sal 139), giusto e amore (Es 34:6-7; 1 Gv 4:8).",
+          "tipo": "biblica",
+          "stato": "pronta",
+          "fiducia": 5,
+          "fonti": ["Salmo 90:2", "Malachia 3:6", "Isaia 6:3", "Salmo 139", "Esodo 34:6-7", "1 Giovanni 4:8"],
+          "verificatori": "biblista (AI) + teologo sistematico (AI), indipendenti · 1 ago 2026",
+          "avvocato": { "q": "Elenco di prooftext senza contesto.", "a": "Ogni riferimento è verificato a sostegno dell'attributo indicato; nessuno estrapolato fuori contesto.", "regge": true },
+          "griglia": [["fatto","ok"],["fonte","ok"],["biblica","ok"],["over-claim","ok"]],
+          "cronologia": []
+        },
+        {
+          "id": "p2-trinitas",
+          "sezione": "2 · Un solo Dio in tre Persone",
+          "testo": "La parola «Trinità» non è nella Bibbia; il latino «trinitas» fu usato da Tertulliano all'inizio del III sec. (c. 210-213), in «Adversus Praxean».",
+          "tipo": "storica",
+          "stato": "pronta",
+          "fiducia": 5,
+          "fonti": ["Tertulliano, Adversus Praxean (c. 210-213 d.C.)"],
+          "verificatori": "patrologo (AI) + storico della Chiesa (AI), indipendenti · 1 ago 2026",
+          "avvocato": { "q": "Il concetto non esiste prima di Tertulliano?", "a": "La frase distingue: la parola è di Tertulliano, il concetto è radicato nel NT. Corretto.", "regge": true },
+          "griglia": [["fatto","ok"],["fonte","ok"],["lingua","ok"],["over-claim","ok"]],
+          "cronologia": [{ "v": "v1.8", "t": "corretto da «verso il 200» a «inizio III sec. (c. 210-213), Adversus Praxean»" }]
+        },
+        {
+          "id": "p2-shema",
+          "sezione": "2 · Un solo Dio in tre Persone",
+          "testo": "Lo «Shema» (Deuteronomio 6:4) confessa «il Signore è uno» (ebr. echàd); cfr. Isaia 45:5.",
+          "tipo": "linguistica",
+          "stato": "pronta",
+          "fiducia": 5,
+          "match": { "type": "oref", "value": "Deuteronomio 6:4" },
+          "fonti": ["Deuteronomio 6:4 — יְהוָה אֶחָד", "Isaia 45:5"],
+          "verificatori": "ebraista (AI) + biblista (AI), indipendenti · 1 ago 2026",
+          "avvocato": { "q": "«echàd» può indicare unità composita, non unicità assoluta.", "a": "La pagina usa lo Shema per «un solo Dio», compatibile con entrambe le letture; non lo forza contro la Trinità.", "regge": true },
+          "griglia": [["fatto","ok"],["fonte","ok"],["biblica","ok"],["lingua","ok"],["over-claim","ok"]],
+          "cronologia": []
+        },
+        {
+          "id": "p2-gv1-1",
+          "sezione": "2 · Un solo Dio in tre Persone",
+          "testo": "In Giovanni 1:1 il predicato θεός, anteposto e senza articolo, ha forza qualitativa: la Parola è pienamente Dio, non «un dio».",
+          "tipo": "linguistica",
+          "stato": "pronta",
+          "fiducia": 5,
+          "match": { "type": "oref", "value": "Giovanni 1:1" },
+          "fonti": ["Giovanni 1:1 — καὶ θεὸς ἦν ὁ λόγος", "Harner, JBL 92 (1973), pp. 75-87", "Wallace, Greek Grammar Beyond the Basics (1996), pp. 266-269"],
+          "verificatori": "grecista/NT (AI) + patrologo (AI), indipendenti · 1 ago 2026",
+          "avvocato": { "q": "Non è semplicemente la regola di Colwell?", "a": "No: Colwell riguarda i predicati definiti anteposti; la forza qui è qualitativa (Harner). Distinzione mantenuta — utile anche contro l'obiezione TdG in Parte V.", "regge": true },
+          "griglia": [["fatto","ok"],["fonte","ok"],["biblica","ok"],["lingua","ok"],["leale","ok"],["over-claim","ok"]],
+          "cronologia": [{ "v": "v1.8", "t": "corretta l'attribuzione: da «regola di Colwell» a forza qualitativa (Harner 1973; Wallace 1996)" }]
+        },
+        {
+          "id": "p2-spirito",
+          "sezione": "2 · Un solo Dio in tre Persone",
+          "testo": "Lo Spirito Santo è chiamato Dio ed è trattato come Persona (Atti 5:3-4).",
+          "tipo": "biblica",
+          "stato": "pronta",
+          "fiducia": 5,
+          "fonti": ["Atti 5:3-4"],
+          "verificatori": "biblista (AI) + teologo sistematico (AI), indipendenti · 1 ago 2026",
+          "avvocato": { "q": "Atti 5:3-4 prova la personalità dello Spirito o solo l'identificazione con Dio?", "a": "Fa entrambe: mentire allo Spirito = mentire a Dio, e attribuisce un atto personale. Regge per il punto affermato.", "regge": true },
+          "griglia": [["fatto","ok"],["fonte","ok"],["biblica","ok"],["over-claim","ok"]],
+          "cronologia": []
+        },
+        {
+          "id": "p2-mt28-19",
+          "sezione": "2 · Un solo Dio in tre Persone",
+          "testo": "In Matteo 28:19 «nome» è al singolare per le tre Persone; 2 Corinzi 13:13 è una benedizione trinitaria.",
+          "tipo": "linguistica",
+          "stato": "pronta",
+          "fiducia": 5,
+          "fonti": ["Matteo 28:19 — εἰς τὸ ὄνομα (sing.)", "2 Corinzi 13:13"],
+          "verificatori": "grecista/NT (AI) + biblista (AI), indipendenti · 1 ago 2026",
+          "avvocato": { "q": "La versificazione 2 Cor 13:13 vs 13:14 varia tra edizioni.", "a": "Corretto in v1.0 a 13:13 (numerazione Nestle-Aland/NR). Coerente con l'edizione usata.", "regge": true },
+          "griglia": [["fatto","ok"],["fonte","ok"],["biblica","ok"],["lingua","ok"],["over-claim","ok"]],
+          "cronologia": [{ "v": "v1.0", "t": "corretta la citazione a 2 Corinzi 13:13" }]
+        },
+        {
+          "id": "p2-ario",
+          "sezione": "3 · La difesa storica: i concili",
+          "testo": "Ario (Alessandria, c. 250-336) insegnò che il Figlio è la prima creatura: «ἦν ποτε ὅτε οὐκ ἦν».",
+          "tipo": "storica",
+          "stato": "pronta",
+          "fiducia": 4,
+          "fonti": ["Encyclopædia Britannica, «First Council of Nicaea» — ἦν ποτε ὅτε οὐκ ἦν"],
+          "verificatori": "patrologo (AI) + storico della Chiesa (AI), indipendenti · 1 ago 2026",
+          "avvocato": { "q": "Le date di Ario sono incerte nelle fonti.", "a": "Adottata la forma «c.» (circa) allineata a Britannica; l'incertezza è segnalata dal «circa».", "regge": true },
+          "griglia": [["fatto","ok"],["fonte","ok"],["lingua","ok"],["leale","ok"],["over-claim","ok"]],
+          "cronologia": [{ "v": "v1.8", "t": "corretta la data: c. 256-336 → c. 250-336 (Britannica)" }]
+        },
+        {
+          "id": "p2-nicea-325",
+          "sezione": "3 · La difesa storica: i concili",
+          "testo": "Il Concilio di Nicea (maggio-luglio 325), convocato da Costantino, fu il 1° concilio ecumenico: condannò l'arianesimo e confessò il Figlio «homoousios» col Padre.",
+          "tipo": "storica",
+          "stato": "pronta",
+          "fiducia": 5,
+          "match": { "type": "year", "value": "325" },
+          "fonti": ["Encyclopædia Britannica, «First Council of Nicaea (325)»"],
+          "verificatori": "storico della Chiesa (AI) + patrologo (AI), indipendenti · 1 ago 2026",
+          "avvocato": { "q": "Nicea «inventò» la divinità di Cristo?", "a": "No: definì con parole precise ciò che era già confessato; la pagina lo afferma esplicitamente. Regge.", "regge": true },
+          "griglia": [["fatto","ok"],["fonte","ok"],["lingua","ok"],["leale","ok"],["over-claim","ok"]],
+          "cronologia": []
+        },
+        {
+          "id": "p2-costantinopoli-381",
+          "sezione": "3 · La difesa storica: i concili",
+          "testo": "Il Concilio di Costantinopoli (maggio-luglio 381), convocato da Teodosio I, fu il 2° concilio ecumenico: affermò la divinità dello Spirito Santo contro i pneumatomachi (Macedoniani).",
+          "tipo": "storica",
+          "stato": "pronta",
+          "fiducia": 5,
+          "match": { "type": "year", "value": "381" },
+          "fonti": ["Encyclopædia Britannica, «First Council of Constantinople (381)»"],
+          "verificatori": "storico della Chiesa (AI) + patrologo (AI), indipendenti · 1 ago 2026",
+          "avvocato": { "q": "«Macedoniani» e «pneumatomachi» sono la stessa fazione?", "a": "Sì, termini equivalenti nelle fonti; usati correttamente.", "regge": true },
+          "griglia": [["fatto","ok"],["fonte","ok"],["lingua","ok"],["leale","ok"],["over-claim","ok"]],
+          "cronologia": []
+        },
+        {
+          "id": "p2-calcedonia-451",
+          "sezione": "3 · La difesa storica: i concili",
+          "testo": "Il Concilio di Calcedonia (451) fu il 4° concilio ecumenico: definì in Cristo due nature (divina e umana) in una sola Persona.",
+          "tipo": "storica",
+          "stato": "pronta",
+          "fiducia": 5,
+          "match": { "type": "year", "value": "451" },
+          "fonti": ["Encyclopædia Britannica, «Council of Chalcedon (451)»"],
+          "verificatori": "storico della Chiesa (AI) + patrologo (AI), indipendenti · 1 ago 2026",
+          "avvocato": { "q": "Efeso (431) manca tra 381 e 451.", "a": "Qui Calcedonia è citata come 4° (corretto); Efeso 431 è stato aggiunto alla Cronologia (v1.11). Numerazione coerente.", "regge": true },
+          "griglia": [["fatto","ok"],["fonte","ok"],["leale","ok"],["over-claim","ok"]],
+          "cronologia": []
+        },
+        {
+          "id": "p2-homoousios",
+          "sezione": "3 · La difesa storica: i concili",
+          "testo": "«homoousios» (lat. consubstantialis) = «della stessa sostanza»; una sola lettera greca lo separa da «homoiousios» («di sostanza simile»), la posizione semi-ariana.",
+          "tipo": "linguistica",
+          "stato": "pronta",
+          "fiducia": 5,
+          "match": { "type": "oref", "value": "Credo di Nicea" },
+          "fonti": ["Credo di Nicea (325) — ὁμοούσιος / consubstantialis"],
+          "verificatori": "grecista (AI) + patrologo (AI), indipendenti · 1 ago 2026",
+          "avvocato": { "q": "«Una sola lettera» è retorica o fatto?", "a": "Fatto: homoousios vs homoiousios differiscono per lo iota. Accurato.", "regge": true },
+          "griglia": [["fatto","ok"],["fonte","ok"],["lingua","ok"],["over-claim","ok"]],
+          "cronologia": []
+        },
+        {
+          "id": "p2-concili-non-inventarono",
+          "sezione": "3 · La difesa storica: i concili",
+          "testo": "I concili non inventarono la Trinità: difesero con parole precise ciò che la Scrittura già insegnava.",
+          "tipo": "dottrinale",
+          "stato": "pronta",
+          "fiducia": 4,
+          "nota_tipo": "Affermazione dottrinale/interpretativa: verificata per COERENZA e assenza di over-claim, non come dato empirico. Marcata come posizione dottrinale, non come «prova».",
+          "fonti": ["Sintesi delle schede bibliche di questa pagina"],
+          "verificatori": "teologo storico (AI) + storico della Chiesa (AI), indipendenti · 1 ago 2026",
+          "avvocato": { "q": "È una lettura confessionale: un cattolico direbbe che i concili hanno autorità propria.", "a": "Vero, ed è una posizione dottrinale dichiarata (Sola Scriptura), non spacciata per fatto neutro.", "regge": true },
+          "griglia": [["fonte","ok"],["biblica","ok"],["leale","ok"],["coerenza","ok"],["over-claim","ok"]],
+          "cronologia": []
+        }
+      ]
+    }
+  }
+}

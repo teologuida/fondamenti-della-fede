@@ -1,8 +1,10 @@
 "use client";
 import { useEffect } from "react";
 import { initStudy } from "./study";
+import { initVerify } from "./verify";
 import glossary from "../content/glossary.json";
 import bussolaCards from "../content/bussola-cards.json";
+import verification from "../content/verification.json";
 
 export default function Shell({ pages, searchIndex, children }) {
   useEffect(() => {
@@ -114,6 +116,8 @@ export default function Shell({ pages, searchIndex, children }) {
 
     // funzioni di studio: evidenzia, glossario, condividi paragrafo, segnalibri
     try { initStudy(glossary, bussolaCards); } catch (e) {}
+    // motore di verifica: badge inline sulle fonti + pannello scheda di verità
+    try { initVerify(verification); } catch (e) {}
 
     // PWA: registra il service worker per la lettura offline
     if ("serviceWorker" in navigator) {
@@ -153,6 +157,7 @@ export default function Shell({ pages, searchIndex, children }) {
         {pages.map((p) => (
           <a key={p.slug} href={`/${p.slug}/`}>{p.nav}</a>
         ))}
+        <a href="/verifica/" className="drawer-verify">◕ Motore di verifica</a>
       </nav>
       <div className="scrim" id="scrim" hidden />
 
@@ -167,6 +172,8 @@ export default function Shell({ pages, searchIndex, children }) {
           <strong>I Fondamenti della Fede</strong> — manuale del discepolo · documento vivo, verificabile.
           <br />
           Ogni affermazione va controllata alla luce della Scrittura · <em>Sola Scriptura</em>
+          <br />
+          <a href="/verifica/">◕ Motore di verifica</a> — ogni frase con la sua fonte, riga per riga.
           <br />
           Trovato un errore? <a href="mailto:info@teologuida.it?subject=Segnalazione%20errore%20%E2%80%94%20Teologuida">Segnalacelo</a> — non abbiamo nulla da nascondere.
           <br />
