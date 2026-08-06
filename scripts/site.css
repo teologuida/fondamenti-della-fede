@@ -116,6 +116,12 @@ mark.hl:hover{background:rgba(214,174,94,.5)}
 /* link esterni: si aprono in nuova scheda, con indicatore ↗ (i link interni restano nel sito) */
 a.ext::after{content:"\2197";font-size:.78em;color:var(--accent);margin-left:1px;vertical-align:.06em}
 
+/* Accessibilità: salta al contenuto (visibile solo alla tastiera) */
+.skip-link{position:fixed;top:10px;left:10px;z-index:200;background:var(--accent);color:#fff;
+  padding:10px 16px;border-radius:8px;font-family:var(--sans);font-weight:700;font-size:.9rem;
+  text-decoration:none;transform:translateY(-180%);transition:transform .18s ease}
+.skip-link:focus{transform:none;outline:2px solid var(--ink);outline-offset:2px}
+
 
 @media print{.site,.drawer,.scrim,.pager,.site-foot,.search-overlay,.progress,
   .sel-bar,.gloss-pop,.para-link,.marks-panel,.qa-panel{display:none!important}

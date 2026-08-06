@@ -414,6 +414,10 @@ function buildBussolaPanel(cards) {
 export function initStudy(glossary, bussolaCards) {
   const root = document.querySelector("#content .page");
   if (!root) return;
+  // idempotente: rimuovi pannelli/UI già creati, così un secondo init
+  // (es. React StrictMode in sviluppo) non duplica gli elementi.
+  document.querySelectorAll(".qa-panel, .marks-panel, .sel-bar, .gloss-pop").forEach((e) => e.remove());
+  document.querySelectorAll(".scrim:not(#scrim)").forEach((e) => e.remove());
   const slug = pageSlug();
   const title = document.title.split(" — ")[0];
 

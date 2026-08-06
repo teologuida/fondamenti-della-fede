@@ -54,7 +54,7 @@ PERCHE = """
       <div class="rhead"><span>Il metodo</span><span class="folio">Perché fidarsi</span></div>
       <div class="chap-open">
         <div class="chap-num">Per lo scettico e per chi cerca</div>
-        <h2 class="chap-title">Perché fidarsi di questo documento</h2>
+        <h1 class="chap-title">Perché fidarsi di questo documento</h1>
         <p class="chap-lede">Non ti chiediamo di credere sulla parola. Ti chiediamo di controllare.</p>
       </div>
       <p class="opening rv">Forse non hai fede, o l'hai persa, o non hai mai aperto una Bibbia. Bene: questo documento è costruito proprio per essere <strong>verificabile da chiunque</strong>, credente o no. Non poggia sull'autorità di chi scrive, ma su fatti che puoi ricontrollare tu stesso.</p>
@@ -78,12 +78,19 @@ def strip_tags(s):
     s = re.sub(r"<[^>]+>", " ", s); s = _html.unescape(s)
     return re.sub(r"\s+", " ", s).strip()
 
-# --- scrittura fragment per pagina + indice ricerca
+# --- scrittura fragment per pagina + indice ricerca + estrazione Q&A (schema FAQ)
 index_docs = []
+faq = {}
+qa_re = re.compile(r'class="qa-q"[^>]*>(.*?)<span class="lbl">.*?</button>\s*<div class="qa-a">(.*?)</div>', re.S)
 for slug, nav, title, sid in PAGES:
     frag = PERCHE if sid == "__PERCHE__" else sections.get(sid, "")
     open(os.path.join(CONTENT, slug + ".html"), "w", encoding="utf-8").write(frag)
     index_docs.append({"slug": slug, "title": title, "nav": nav, "text": strip_tags(frag)[:4000]})
+    qas = [{"q": strip_tags(m.group(1)), "a": strip_tags(m.group(2))} for m in qa_re.finditer(frag)]
+    if qas:
+        faq[slug] = qas
+open(os.path.join(CONTENT, "faq.json"), "w", encoding="utf-8").write(
+    json.dumps(faq, ensure_ascii=False, indent=1))
 
 # --- home
 def home_cards():

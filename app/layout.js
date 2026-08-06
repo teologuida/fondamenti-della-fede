@@ -45,10 +45,44 @@ export const viewport = {
   themeColor: "#1c1b19"
 };
 
+const ORG_LD = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.teologuida.it/#org",
+      "name": "Teologuida",
+      "url": "https://www.teologuida.it",
+      "logo": "https://www.teologuida.it/icon-512.png"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.teologuida.it/#website",
+      "name": "Teologuida — I Fondamenti della Fede",
+      "url": "https://www.teologuida.it",
+      "inLanguage": "it",
+      "publisher": { "@id": "https://www.teologuida.it/#org" }
+    },
+    {
+      "@type": "Book",
+      "@id": "https://www.teologuida.it/#book",
+      "name": "I Fondamenti della Fede",
+      "inLanguage": "it",
+      "author": { "@id": "https://www.teologuida.it/#org" },
+      "publisher": { "@id": "https://www.teologuida.it/#org" },
+      "about": "Discepolato cristiano e teologia riformata, con fonti verificabili"
+    }
+  ]
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="it">
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(ORG_LD) }}
+        />
         <Shell pages={pages} searchIndex={searchIndex}>
           {children}
         </Shell>

@@ -128,7 +128,7 @@ h1.title{font-weight:700;line-height:1.02;letter-spacing:-.015em;margin:0;
 .chap-open{display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:56px}
 .chap-num{font-family:var(--sans);font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--accent);margin-bottom:20px}
 .chap-num::before,.chap-num::after{content:"—";margin:0 12px;color:var(--rule)}
-h2.chap-title{font-weight:700;font-size:clamp(2.1rem,4.6vw,3.4rem);line-height:1.06;letter-spacing:-.015em;
+.chap-title{font-weight:700;font-size:clamp(2.1rem,4.6vw,3.4rem);line-height:1.06;letter-spacing:-.015em;
   margin:0;text-wrap:balance;max-width:18ch}
 .chap-lede{font-style:italic;color:var(--ink-2);font-size:clamp(1.12rem,1.7vw,1.32rem);line-height:1.5;
   max-width:34ch;margin:22px auto 0;text-wrap:balance}
@@ -223,7 +223,7 @@ figcaption b{color:var(--ink);font-weight:700;letter-spacing:.04em}
 .aud{border:1px solid var(--rule);border-radius:12px;padding:20px 22px;margin:1.4em auto;max-width:40rem}
 .aud-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
 .aud-name{font-family:var(--sans);font-weight:800;font-size:1.08rem}
-.aud-badge{display:inline-block;font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.03em;padding:4px 11px;border-radius:100px;border:1px solid currentColor;white-space:nowrap}
+.aud-badge{display:inline-block;font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.03em;padding:4px 11px;border-radius:14px;border:1px solid currentColor;white-space:normal;max-width:100%}
 .aud-badge.lv0{color:var(--ink-3)}
 .aud-badge.lv1{color:#b8863b}
 .aud-badge.lv2{color:#8b6a2f}
@@ -425,6 +425,11 @@ html{overflow-x:hidden}
   .tl .let{font-size:1.9rem}
   .readbox{padding:22px 20px}
   .sources-list li{gap:10px}
+  .scrollcue{display:none}
+  .aud-head{flex-direction:column;align-items:flex-start;gap:8px}
+  .title-page{padding:64px 22px}
+  .mark{width:78px;height:78px;margin-bottom:30px}
+  .title-page .foot-imprint{margin-top:32px}
 }
 @media(max-width:380px){
   .tools button,.tools a.btn{padding:6px 9px;font-size:11px}
@@ -588,6 +593,12 @@ mark.hl:hover{background:rgba(214,174,94,.5)}
 }
 /* link esterni: si aprono in nuova scheda, con indicatore ↗ (i link interni restano nel sito) */
 a.ext::after{content:"\2197";font-size:.78em;color:var(--accent);margin-left:1px;vertical-align:.06em}
+
+/* Accessibilità: salta al contenuto (visibile solo alla tastiera) */
+.skip-link{position:fixed;top:10px;left:10px;z-index:200;background:var(--accent);color:#fff;
+  padding:10px 16px;border-radius:8px;font-family:var(--sans);font-weight:700;font-size:.9rem;
+  text-decoration:none;transform:translateY(-180%);transition:transform .18s ease}
+.skip-link:focus{transform:none;outline:2px solid var(--ink);outline-offset:2px}
 
 
 @media print{.site,.drawer,.scrim,.pager,.site-foot,.search-overlay,.progress,

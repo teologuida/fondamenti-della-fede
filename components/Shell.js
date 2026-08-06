@@ -130,6 +130,7 @@ export default function Shell({ pages, searchIndex, children }) {
 
   return (
     <>
+      <a className="skip-link" href="#content">Salta al contenuto</a>
       <div className="progress" id="progress" />
       <header className="site">
         <a className="brand" href="/"><img className="brand-logo" src="/icon-192.png" alt="Teologuida" width="26" height="26" /> I Fondamenti della Fede</a>
@@ -166,6 +167,8 @@ export default function Shell({ pages, searchIndex, children }) {
           <strong>I Fondamenti della Fede</strong> — manuale del discepolo · documento vivo, verificabile.
           <br />
           Ogni affermazione va controllata alla luce della Scrittura · <em>Sola Scriptura</em>
+          <br />
+          Trovato un errore? <a href="mailto:info@teologuida.it?subject=Segnalazione%20errore%20%E2%80%94%20Teologuida">Segnalacelo</a> — non abbiamo nulla da nascondere.
           <br />
           © Teologuida · <a href="https://www.teologuida.it">teologuida.it</a>
         </div>
