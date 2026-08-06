@@ -1,8 +1,8 @@
 // Motore di verifica — lato client.
 // Aggancia piccoli badge di verifica agli elementi-fonte della pagina
 // (riquadri in lingua originale e tappe della cronologia) e apre un pannello
-// laterale con la "scheda di verità": fonte, verificatori (AI), avvocato del
-// diavolo, griglia delle dimensioni e cronologia delle correzioni.
+// laterale con la "scheda di verità": fonte, verificatori (AI), esame critico,
+// griglia delle dimensioni e cronologia delle correzioni.
 // Nessun accesso a window/document a livello di modulo (compatibile SSR).
 
 const STATE = {
@@ -73,7 +73,7 @@ function buildPanel(byId) {
       const sym = g[1] === "ok" ? "✓" : (g[1] === "fix" ? "✗→corr" : "—");
       return '<span class="v-chip ' + v + '">' + esc(g[0]) + " " + sym + "</span>";
     }).join("");
-    const av = c.avvocato || {};
+    const av = c.esame || {};
     const hist = (c.cronologia && c.cronologia.length)
       ? '<div class="v-sec">Cronologia</div><ul class="v-hist">' +
         c.cronologia.map((h) => '<li><b>' + esc(h.v) + '</b> · ' + esc(h.t) + "</li>").join("") + "</ul>"
@@ -90,11 +90,11 @@ function buildPanel(byId) {
       nota +
       '<div class="v-sec">Fonti</div><ul class="v-fonti">' + fonti + "</ul>" +
       '<div class="v-sec">Verificatori</div><p class="v-who">' + esc(c.verificatori) + "</p>" +
-      '<div class="v-sec">Avvocato del diavolo</div>' +
+      '<div class="v-sec">Esame critico</div>' +
       '<div class="v-adv"><div class="v-q">«' + esc(av.q) + '»</div>' +
         '<div class="v-a">' + esc(av.a) + "</div>" +
         '<div class="v-verdict ' + (av.regge ? "ok" : "no") + '">' +
-          (av.regge ? "✓ Regge all’attacco" : "✗ Non regge") + "</div></div>" +
+          (av.regge ? "✓ Regge all’esame" : "✗ Non regge all’esame") + "</div></div>" +
       '<div class="v-sec">Griglia di verifica</div><div class="v-grid">' + griglia + "</div>" +
       hist +
       '<div class="v-trust">Il sigillo finale (●) è umano: questa scheda è verificata dai revisori, ' +

@@ -3,7 +3,7 @@ import verification from "../../content/verification.json";
 export const metadata = {
   title: "Motore di verifica",
   description:
-    "Ogni affermazione verificabile del manuale, riga per riga: fonte primaria, revisori indipendenti, avvocato del diavolo e stato di verifica. Numeri calcolati dai dati, sigillo finale umano.",
+    "Ogni affermazione verificabile del manuale, riga per riga: fonte primaria, revisori indipendenti, esame critico e stato di verifica. Numeri calcolati dai dati, sigillo finale umano.",
   alternates: { canonical: "/verifica/" }
 };
 
@@ -33,7 +33,7 @@ function Chip({ g }) {
 
 function Card({ s }) {
   const st = STATE[s.stato] || STATE.pronta;
-  const av = s.avvocato || {};
+  const av = s.esame || {};
   return (
     <div className="v-card">
       <div className="v-card-top">
@@ -48,14 +48,14 @@ function Card({ s }) {
           <ul className="v-fonti">{(s.fonti || []).map((f, i) => <li key={i}>{f}</li>)}</ul></div>
         <div className="v-row"><div className="v-lab">Verificatori</div>
           <div className="v-who">{s.verificatori}</div></div>
-        <div className="v-row"><div className="v-lab">Avvocato del diavolo</div>
+        <div className="v-row"><div className="v-lab">Esame critico</div>
           <div>
             <div className="v-adv">
               <div className="v-q">«{av.q}»</div>
               <div className="v-a">{av.a}</div>
             </div>
             <div className={"v-verdict " + (av.regge ? "ok" : "no")}>
-              {av.regge ? "✓ Regge all’attacco" : "✗ Non regge"}
+              {av.regge ? "✓ Regge all’esame" : "✗ Non regge all’esame"}
             </div>
           </div></div>
         <div className="v-row"><div className="v-lab">Griglia</div>
@@ -94,7 +94,7 @@ export default function VerificaPage() {
               <p className="chap-lede">Ogni affermazione, riga per riga: la sua fonte, chi l'ha controllata, l'obiezione più forte che ha superato. I numeri qui sotto si contano da soli. Il sigillo finale è umano.</p>
             </div>
 
-            <p className="opening rv">Non ti chiediamo di fidarti: ti mostriamo il lavoro. I revisori sono <strong>esperti AI indipendenti</strong> che verificano alla fonte primaria, con un <strong>avvocato del diavolo</strong> che tenta di confutare ogni frase. Ciò che non si può provare resta visibile come «non verificabile» — mai nascosto. Nulla è «sigillato» ● finché il curatore umano non conferma.</p>
+            <p className="opening rv">Non ti chiediamo di fidarti: ti mostriamo il lavoro. I revisori sono <strong>esperti AI indipendenti</strong> che verificano alla fonte primaria, con un <strong>esame critico</strong> che tenta di confutare ogni frase. Ciò che non si può provare resta visibile come «non verificabile» — mai nascosto. Nulla è «sigillato» ● finché il curatore umano non conferma.</p>
 
             <div className="v-dash rv">
               <div className="v-kpi"><div className="v-n">{n}</div><div className="v-k">affermazioni verificate</div></div>
@@ -134,7 +134,7 @@ export default function VerificaPage() {
             })}
 
             <p className="rv small" style={{ color: "var(--ink-3)", marginTop: "2em" }}>
-              Le altre pagine seguiranno, una alla volta, con lo stesso metodo: due revisori indipendenti, un avvocato del diavolo e la conferma umana per il sigillo.
+              Le altre pagine seguiranno, una alla volta, con lo stesso metodo: due revisori indipendenti, un esame critico e la conferma umana per il sigillo.
             </p>
           </div>
         </section>
