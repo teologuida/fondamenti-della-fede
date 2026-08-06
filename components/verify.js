@@ -49,6 +49,21 @@ function anchorFor(root, m) {
     }
     return null;
   }
+  if (m.type === "eyebrow") {
+    const boxes = root.querySelectorAll(".data");
+    for (const b of boxes) {
+      const ey = b.querySelector(".eyebrow");
+      if (ey && ey.textContent.indexOf(m.value) !== -1) return b;
+    }
+    return null;
+  }
+  if (m.type === "shead") {
+    const heads = root.querySelectorAll(".shead");
+    for (const h of heads) {
+      if (h.textContent.indexOf(m.value) !== -1) return h;
+    }
+    return null;
+  }
   return null;
 }
 
