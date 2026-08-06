@@ -42,7 +42,7 @@
     "parte-1-la-parola": {
       "titolo": "Parte I · La Parola di Dio e la sua affidabilità",
       "stato": "pronta",
-      "nota": "Ri-verificata da 4 esperti (2 audit indipendenti + ri-verifica). Corretti l'attribuzione della formula «norma normans», una fonte imprecisa; aggiunte varianti testuali, deuterocanonici e tappe del canone.",
+      "nota": "Ri-eseguito il motore (6 ago 2026): 8/10 confermate, 2 corrette — il confronto del canone (cattolico = 73, non 46) e l'uso di Ehrman sulle varianti (voce di contrappunto, non a sostegno).",
       "schede": [
         {
           "id": "p1-theopneustos",
@@ -102,15 +102,15 @@
         {
           "id": "p1-varianti",
           "sezione": "2 · L'affidabilità del testo",
-          "testo": "L'alto numero di copie produce molte varianti, per lo più minime (grafia, ordine delle parole); nessuna mette in discussione una dottrina.",
+          "testo": "Le molte varianti sono per lo più minime; nessuna dottrina cristiana fondamentale dipende esclusivamente da un passo testualmente incerto. Stabilità dottrinale: Aland, Wallace; voce di contrappunto: Ehrman (alcune varianti teologicamente rilevanti).",
           "tipo": "storica",
           "stato": "pronta",
-          "fiducia": 5,
-          "fonti": ["K. e B. Aland, Il testo del Nuovo Testamento", "B. Metzger – B. Ehrman, The Text of the New Testament, 4ª ed. (2005)"],
-          "verificatori": "critico testuale (AI) + storico della Chiesa (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "Non è apologetica nascondere il numero enorme di varianti?", "a": "No: la pagina ammette esplicitamente le molte varianti e ne spiega la natura (minori). Aggiunto proprio in audit per onestà.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["over-claim","ok"]],
-          "cronologia": [{ "v": "v1.4", "t": "aggiunta la questione delle varianti testuali (per onestà, non solo apologetica)" }]
+          "fiducia": 4,
+          "fonti": ["K. e B. Aland, Il testo del Nuovo Testamento; D. B. Wallace (stabilità dottrinale)", "B. Ehrman, The Orthodox Corruption of Scripture (1993) — voce di contrappunto (Comma Johanneum 1 Gv 5:7; Mc 16:9-20; Gv 7:53-8:11; 1 Tim 3:16)", "Metzger–Ehrman, The Text of the NT, 4ª ed. (2005)"],
+          "verificatori": "2 revisori indipendenti (AI) + esame critico · ri-verificata il 6 ago 2026",
+          "esame": { "q": "Si cita Ehrman a sostegno di «nessuna variante tocca una dottrina», ma Ehrman dissente!", "a": "Corretto: l'esame critico ha ragione. Ora l'affermazione è cauta («nessuna dottrina fondamentale dipende SOLO da un passo incerto»); la stabilità è sostenuta da Aland/Wallace, ed Ehrman è citato come voce di contrappunto, non come alleato.", "regge": true },
+          "griglia": [["fatto","ok"],["fonte","fix"],["over-claim","fix"]],
+          "cronologia": [{ "v": "v1.4", "t": "aggiunta la questione delle varianti testuali (per onestà, non solo apologetica)" }, { "v": "v1.16", "t": "ri-esecuzione del motore: attenuato l'over-claim e ricollocato Ehrman come voce di contrappunto (non a sostegno)" }]
         },
         {
           "id": "p1-rotolo-isaia",
@@ -128,15 +128,15 @@
         {
           "id": "p1-canone-66",
           "sezione": "3 · Il canone",
-          "testo": "Il canone protestante conta 66 libri (39 AT + 27 NT); il canone cattolico ne accoglie 46 (7 deuterocanonici), definiti dogmaticamente al Concilio di Trento (1546).",
+          "testo": "Il canone protestante conta 66 libri (39 AT + 27 NT); il canone cattolico ne conta 73 in tutto: 46 nell'AT (7 deuterocanonici in più) + 27 NT, definiti dogmaticamente al Concilio di Trento (Sess. IV, 8 aprile 1546).",
           "tipo": "storica",
           "stato": "pronta",
           "fiducia": 5,
-          "fonti": ["Concilio di Trento, Sessione IV (1546) — canone dei 46 libri", "canone ebraico (24 libri = 39 ricombinati)"],
-          "verificatori": "storico della Chiesa (AI) + biblista (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "Un lettore cattolico non obietterebbe sul «39»?", "a": "Per questo la nota spiega il canone cattolico (46, Trento 1546) accanto al «39» protestante. Rappresentazione leale.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["leale","ok"],["over-claim","ok"]],
-          "cronologia": [{ "v": "v1.4", "t": "aggiunta la questione dei deuterocanonici e Trento 1546" }]
+          "fonti": ["Concilio di Trento, Sessione IV (8 aprile 1546) — 73 libri (46 AT + 27 NT)", "canone ebraico (24 libri = 39 ricombinati)"],
+          "verificatori": "2 revisori indipendenti (AI) + esame critico · ri-verificata il 6 ago 2026",
+          "esame": { "q": "Non si confrontano 66 libri protestanti totali con «46», che è solo l'AT cattolico?", "a": "Sì, era un confronto sbagliato (66 totali vs 46 AT). Corretto: il canone cattolico è 73 in tutto (46 AT + 27 NT); i deuterocanonici sono 7 libri in più nell'AT.", "regge": true },
+          "griglia": [["fatto","fix"],["fonte","ok"],["leale","ok"],["over-claim","ok"]],
+          "cronologia": [{ "v": "v1.4", "t": "aggiunta la questione dei deuterocanonici e Trento 1546" }, { "v": "v1.16", "t": "ri-esecuzione del motore: corretto il confronto (73 cattolici = 46 AT + 27 NT, non 46 vs 66)" }]
         },
         {
           "id": "p1-canone-riconosciuto",
@@ -459,7 +459,7 @@
     "parte-3-la-salvezza-in-cristo": {
       "titolo": "Parte III · La salvezza in Cristo",
       "stato": "pronta",
-      "nota": "Ri-verificata da 2 esperti indipendenti + esame critico. Corretto un errore di attribuzione (Rm 3:10-12) e aggiunta la nota sul dibattito propiziazione/espiazione.",
+      "nota": "Ri-eseguito il motore (6 ago 2026): 10/10 confermate (giustificazione forense, propiziazione, Calcedonia, TULIP/Dordrecht). Errore di attribuzione Rm 3:10-12 già corretto in precedenza.",
       "schede": [
         {
           "id": "p3-nessun-giusto",
@@ -601,7 +601,7 @@
     "parte-4-la-chiesa": {
       "titolo": "Parte IV · La Chiesa: il popolo di Dio",
       "stato": "pronta",
-      "nota": "Verificata da 2 esperti indipendenti + esame critico. Nessun errore rilevato: greco, i tre segni (Belga 1561 art. 29), le confessioni e i mezzi di grazia confermati alle fonti.",
+      "nota": "Ri-eseguito il motore (6 ago 2026): 6/6 confermate — greco ekklēsía, i tre segni (Belga 1561 art. 29), le Tre Forme dell'Unità, Westminster 1646-47, semper reformanda.",
       "schede": [
         {
           "id": "p4-ekklesia",
@@ -690,7 +690,7 @@
     "parte-5-apologetica": {
       "titolo": "Parte V · Riconoscere gli inganni",
       "stato": "pronta",
-      "nota": "Verificata da 2 esperti indipendenti + esame critico, con attenzione all'equità verso gli altri gruppi: rappresentazione leale, senza caricature. Precisato l'anno del dato Lifeway.",
+      "nota": "Ri-eseguito il motore (6 ago 2026): 7/8 confermate, 1 corretta — la cronologia del distico di Lorenzo Snow (1840, anticipa il 1844). Dato Lifeway 76% verificato alla fonte primaria; rappresentazione degli altri gruppi leale.",
       "schede": [
         {
           "id": "p5-metodo",
@@ -777,16 +777,16 @@
         {
           "id": "p5-mormonismo",
           "sezione": "Inganno 3 · Mormonismo",
-          "testo": "La Chiesa SUG fu fondata da Joseph Smith (1805-1844) nel 1830, anno di pubblicazione del Libro di Mormon; accanto alla Bibbia pone Libro di Mormon, Dottrina e Alleanze, Perla di Gran Prezzo. Il distico di L. Snow: «Come l'uomo è ora, Dio un tempo fu…».",
+          "testo": "La Chiesa SUG fu fondata da Joseph Smith (1805-1844) nel 1830, anno di pubblicazione del Libro di Mormon; accanto alla Bibbia pone Libro di Mormon, Dottrina e Alleanze, Perla di Gran Prezzo. Il distico di L. Snow (1840) «Come l'uomo è ora, Dio un tempo fu…» anticipa la dottrina esposta da Smith nel 1844.",
           "tipo": "rappresentazione",
           "stato": "pronta",
           "fiducia": 5,
           "match": { "type": "shead", "value": "mormonismo" },
-          "fonti": ["Joseph Smith (1805-1844); chiesa fondata 6 aprile 1830; Libro di Mormon (1830)", "distico di Lorenzo Snow, da un insegnamento di Smith (aprile 1844)", "Encyclopædia Britannica, «Joseph Smith»"],
-          "verificatori": "storico delle religioni (AI) + teologo (AI), indipendenti, con attenzione all'equità · 1 ago 2026",
-          "esame": { "q": "Attribuire ai mormoni la «pluralità di dèi» non è una caricatura?", "a": "Si cita l'insegnamento documentato (Smith 1844; distico di Snow) senza usare l'etichetta «politeismo» che la SUG rifiuta. Rappresentazione leale.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["leale","ok"]],
-          "cronologia": [{ "v": "v1.6", "t": "evitata la caricatura «pluralità di dèi»; per la risposta biblica preferiti Galati 1:8 e Deuteronomio 4:2" }]
+          "fonti": ["Joseph Smith (1805-1844); chiesa fondata 6 aprile 1830; Libro di Mormon (1830)", "distico di Lorenzo Snow (1840); anticipa il Discorso di King Follett di Smith (7 aprile 1844)", "R. V. Huggins, JETS 49/3 (2006); Encyclopædia Britannica"],
+          "verificatori": "2 revisori indipendenti (AI) + esame critico · ri-verificata il 6 ago 2026",
+          "esame": { "q": "Il distico di Snow deriva da un insegnamento di Smith del 1844?", "a": "No — errore cronologico corretto: Snow compose il distico nel 1840, quattro anni PRIMA del Discorso di King Follett (1844). Il distico anticipa quella dottrina, non ne deriva.", "regge": true },
+          "griglia": [["fatto","fix"],["fonte","ok"],["leale","ok"]],
+          "cronologia": [{ "v": "v1.6", "t": "evitata la caricatura «pluralità di dèi»; per la risposta biblica preferiti Galati 1:8 e Deuteronomio 4:2" }, { "v": "v1.16", "t": "ri-esecuzione del motore: corretta la cronologia — distico di Snow (1840) anticipa il 1844, non ne deriva" }]
         },
         {
           "id": "p5-trento",
