@@ -220,3 +220,5 @@ a.ext::after{content:"\2197";font-size:.78em;color:var(--accent);margin-left:1px
 .drawer-verify{color:var(--accent)!important;font-weight:600}
 .shead .vbadge{margin-top:0;margin-left:auto;align-self:center}
 .data .vbadge{margin-top:14px}
+.v-kpi.v .v-n{color:var(--accent)}
+.v-bar .iv{background:var(--accent)}

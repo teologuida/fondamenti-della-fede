@@ -75,6 +75,7 @@ export default function VerificaPage() {
   const ready = schede.filter((s) => s.stato === "pronta").length;
   const sealed = schede.filter((s) => s.stato === "sigillata").length;
   const abst = schede.filter((s) => s.stato === "non-verificabile").length;
+  const inverifica = schede.filter((s) => ["da-auditare", "1-esperto", "2-esperti"].includes(s.stato)).length;
   const corr = schede.filter((s) => s.cronologia && s.cronologia.length).length;
   const pct = (x) => (n ? Math.round((x / n) * 100) : 0);
 
@@ -97,18 +98,20 @@ export default function VerificaPage() {
             <p className="opening rv">Non ti chiediamo di fidarti: ti mostriamo il lavoro. I revisori sono <strong>esperti AI indipendenti</strong> che verificano alla fonte primaria, con un <strong>esame critico</strong> che tenta di confutare ogni frase. Ciò che non si può provare resta visibile come «non verificabile» — mai nascosto. Nulla è «sigillato» ● finché il curatore umano non conferma.</p>
 
             <div className="v-dash rv">
-              <div className="v-kpi"><div className="v-n">{n}</div><div className="v-k">affermazioni verificate</div></div>
+              <div className="v-kpi"><div className="v-n">{n}</div><div className="v-k">affermazioni totali</div></div>
               <div className="v-kpi r"><div className="v-n">{ready}</div><div className="v-k">◕ pronte al sigillo</div></div>
+              <div className="v-kpi v"><div className="v-n">{inverifica}</div><div className="v-k">◔ in verifica</div></div>
               <div className="v-kpi s"><div className="v-n">{sealed}</div><div className="v-k">● sigillate</div></div>
               <div className="v-kpi a"><div className="v-n">{abst}</div><div className="v-k">✕ non verificabili</div></div>
             </div>
-            <div className="v-bar rv" role="img" aria-label={`${ready} pronte, ${sealed} sigillate, ${abst} non verificabili`}>
+            <div className="v-bar rv" role="img" aria-label={`${ready} pronte, ${inverifica} in verifica, ${sealed} sigillate, ${abst} non verificabili`}>
               <i className="ir" style={{ width: pct(ready) + "%" }} />
+              <i className="iv" style={{ width: pct(inverifica) + "%" }} />
               <i className="is" style={{ width: pct(sealed) + "%" }} />
               <i className="ia" style={{ width: pct(abst) + "%" }} />
             </div>
             <p className="rv small" style={{ color: "var(--ink-3)" }}>
-              {ready} di {n} pronte · 0 sigillate (in attesa della conferma umana) · {corr} con correzione tracciata nel <a href="/registro-modifiche">Registro</a>.
+              {ready} pronte · {inverifica} in verifica (nuovo contenuto) · 0 sigillate (in attesa della conferma umana) · {corr} con correzione tracciata nel <a href="/registro-modifiche">Registro</a>.
             </p>
 
             {pageSlugs.map((slug) => {
