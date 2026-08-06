@@ -367,92 +367,92 @@
           "sezione": "2 · Un solo Dio in tre Persone",
           "testo": "Già l'Antico Testamento lascia intravedere una pluralità in Dio: «Facciamo l'uomo» (Gen 1:26; 3:22; 11:7), lo Spirito (Gen 1:2), l'Angelo del Signore (Gen 16:7-13; Es 3:2-6), il Signore che parla al «mio Signore» (Sal 110:1, applicato da Gesù in Mt 22:41-46). Semi, non prove isolate.",
           "tipo": "biblica",
-          "stato": "1-esperto",
+          "stato": "pronta",
           "fiducia": 4,
           "fonti": ["Genesi 1:26; 3:22; 11:7", "Genesi 1:2", "Genesi 16:7-13; Esodo 3:2-6; Giudici 13", "Salmo 110:1; Matteo 22:41-46; Isaia 48:16", "Calvino, Institutio I.13; Bavinck, Reformed Dogmatics II"],
-          "verificatori": "nuovo contenuto (integrazione dal motore, 6 ago 2026) — attende la verifica completa dei due revisori indipendenti + esame critico",
+          "verificatori": "2 revisori indipendenti (AI: biblico + storico) + esame critico · verificata il 6 ago 2026",
           "esame": { "q": "Non si «leggono» a forza indizi trinitari nell'AT?", "a": "Per questo la pagina li presenta come «semi» portati a luce dal NT, non come prove isolate della Trinità. Framing prudente.", "regge": true },
           "griglia": [["fatto","ok"],["fonte","ok"],["biblica","ok"],["over-claim","ok"]],
-          "cronologia": [{ "v": "v1.14", "t": "aggiunta come integrazione per completezza (indizi trinitari nell'AT)" }]
+          "cronologia": [{ "v": "v1.14", "t": "aggiunta come integrazione per completezza (indizi trinitari nell'AT)" }, { "v": "v1.15", "t": "confermata dal motore (2 revisori indipendenti + esame critico); presentata come «semi», non prove isolate" }]
         },
         {
           "id": "p2-gen-eterna",
           "sezione": "3 · La difesa storica: i concili",
-          "testo": "Il Figlio è «generato, non creato» (gennēthénta ou poiēthénta, Credo di Nicea): eternamente generato dal Padre, non venuto all'esistenza. «Primogenito» (Col 1:15) indica preminenza, non «primo creato».",
+          "testo": "Il Figlio è «generato, non creato» (gennēthénta ou poiēthénta, Nicea): eternamente generato dal Padre. Base più solida: Giovanni 5:26. «Unigenito» (monogenḗs) è lettura tradizionale (BDAG: «unico nel suo genere»): indizio, non prova. «Primogenito» (Col 1:15) = rango, non «primo creato» (contesto v. 16-17).",
           "tipo": "dottrinale",
-          "stato": "1-esperto",
+          "stato": "pronta",
           "fiducia": 4,
           "match": { "type": "oref", "value": "Credo niceno · 325" },
-          "fonti": ["Credo di Nicea (325): γεννηθέντα οὐ ποιηθέντα", "Giovanni 1:14.18; 3:16 (monogenḗs); Giovanni 5:26; Salmo 2:7 con Ebrei 1:5; Colossesi 1:15 (prōtótokos)", "Westminster II.3; Calvino, Institutio I.13.7"],
-          "verificatori": "nuovo contenuto (integrazione dal motore, 6 ago 2026) — attende la verifica completa dei due revisori indipendenti + esame critico",
-          "esame": { "q": "«Primogenito» (Col 1:15) non prova che il Figlio è creato (obiezione TdG)?", "a": "No: prōtótokos indica preminenza ed eredità, non ordine di creazione; il contesto (Col 1:16-17: tutto creato «per mezzo di lui») lo esclude. La generazione eterna disinnesca l'argomento ariano.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["biblica","ok"],["lingua","ok"],["over-claim","ok"]],
-          "cronologia": [{ "v": "v1.14", "t": "aggiunta come integrazione per completezza (generazione eterna, contro Ario/TdG)" }]
+          "fonti": ["Giovanni 5:26 (base della generazione eterna)", "Credo di Nicea (325): γεννηθέντα οὐ ποιηθέντα", "monogenḗs (Gv 1:14.18; 3:16) — «unigenito» tradizionale, BDAG «unico nel suo genere»", "Colossesi 1:15-17; Salmo 89:27; Esodo 4:22 (prōtótokos = rango)", "Westminster II.3; Calvino, Institutio I.13.7"],
+          "verificatori": "2 revisori indipendenti (AI: biblico + storico) + esame critico · verificata il 6 ago 2026",
+          "esame": { "q": "«monogenḗs» prova la generazione eterna, e «primogenito» (Col 1:15) che il Figlio è creato (obiezione TdG)?", "a": "monogenḗs da solo no: BDAG lo intende «unico nel suo genere», non «generato» — resta indizio; la generazione è ancorata a Gv 5:26. E prōtótokos è titolo di rango (Sal 89:27; Es 4:22), non ordine di creazione: il contesto (Col 1:16-17, «tutto creato per mezzo di lui») lo esclude.", "regge": true },
+          "griglia": [["fatto","ok"],["fonte","fix"],["biblica","ok"],["lingua","ok"],["over-claim","fix"]],
+          "cronologia": [{ "v": "v1.14", "t": "aggiunta come integrazione per completezza (generazione eterna, contro Ario/TdG)" }, { "v": "v1.15", "t": "ri-eseguito il motore: declassato monogenḗs a indizio (BDAG), generazione ancorata a Gv 5:26, aggiunto Col 1:16-17 e l'uso di «primogenito» come rango" }]
         },
         {
           "id": "p2-processione-filioque",
           "sezione": "3 · La difesa storica: i concili",
           "testo": "Lo Spirito «procede dal Padre» (Gv 15:26); l'Occidente aggiunse «e dal Figlio» (Filioque), accolto dalle chiese riformate ma non dall'Oriente — una delle cause dello Scisma del 1054.",
           "tipo": "storica",
-          "stato": "1-esperto",
+          "stato": "pronta",
           "fiducia": 4,
           "fonti": ["Giovanni 15:26", "III Concilio di Toledo (589) — formalizzazione del Filioque", "Scisma del 1054"],
-          "verificatori": "nuovo contenuto (integrazione dal motore, 6 ago 2026) — attende la verifica completa dei due revisori indipendenti + esame critico",
+          "verificatori": "2 revisori indipendenti (AI: biblico + storico) + esame critico · verificata il 6 ago 2026",
           "esame": { "q": "Il Filioque è presentato in modo equo verso l'Oriente?", "a": "Sì: si dice che l'Oriente non lo accettò e che fu concausa dello scisma; si dichiara che le chiese riformate lo accolgono. Nessuna caricatura.", "regge": true },
           "griglia": [["fatto","ok"],["fonte","ok"],["leale","ok"],["over-claim","ok"]],
-          "cronologia": [{ "v": "v1.14", "t": "aggiunta come integrazione per completezza (processione dello Spirito / Filioque)" }]
+          "cronologia": [{ "v": "v1.14", "t": "aggiunta come integrazione per completezza (processione dello Spirito / Filioque)" }, { "v": "v1.15", "t": "confermata dal motore; precisata la base scritturale del Filioque (Gv 16:7; Gal 4:6; Rom 8:9, non Gv 15:26) e l'adozione a Roma (~1014)" }]
         },
         {
           "id": "p2-pericoresi",
           "sezione": "2 · Un solo Dio in tre Persone",
           "testo": "Le tre Persone si compenetrano (pericoresi): «Io sono nel Padre e il Padre è in me» (Gv 10:38; 14:10-11; 17:21); e agiscono sempre insieme — le opere ad extra sono indivise (Gv 5:19; 1 Cor 8:6; Col 1:16).",
           "tipo": "dottrinale",
-          "stato": "1-esperto",
+          "stato": "pronta",
           "fiducia": 4,
           "fonti": ["Giovanni 10:38; 14:10-11; 17:21 (pericoresi)", "Giovanni Damasceno, De fide orthodoxa", "Giovanni 5:19; 1 Corinzi 8:6; Colossesi 1:16 (opera ad extra indivisa)", "Agostino, De Trinitate; Berkhof"],
-          "verificatori": "nuovo contenuto (integrazione dal motore, 6 ago 2026) — attende la verifica completa dei due revisori indipendenti + esame critico",
+          "verificatori": "2 revisori indipendenti (AI: biblico + storico) + esame critico · verificata il 6 ago 2026",
           "esame": { "q": "«Pericoresi» e «opere ad extra» non sono categorie extra-bibliche?", "a": "Sono termini tecnici, ma ancorati a testi biblici espliciti (Gv 10:38; 14:10-11; 5:19). Servono a spiegare COME l'unità e la distinzione coesistono, senza aggiungere dottrina.", "regge": true },
           "griglia": [["fatto","ok"],["fonte","ok"],["biblica","ok"],["coerenza","ok"],["over-claim","ok"]],
-          "cronologia": [{ "v": "v1.14", "t": "aggiunta come integrazione per completezza (pericoresi e opere ad extra indivise)" }]
+          "cronologia": [{ "v": "v1.14", "t": "aggiunta come integrazione per completezza (pericoresi e opere ad extra indivise)" }, { "v": "v1.15", "t": "confermata dal motore; precisato «ripresa e sistematizzata» da Giovanni Damasceno (nasce cristologica) e la distinzione natura/grazia in Gv 17:21" }]
         },
         {
           "id": "p2-eresie",
           "sezione": "2 · Un solo Dio in tre Persone",
           "testo": "Le tre deviazioni classiche: modalismo/sabellianismo (nega la distinzione — oggi «Solo-Gesù»), triteismo (nega l'unità), arianesimo (nega l'uguaglianza del Figlio — oggi i Testimoni di Geova).",
           "tipo": "dottrinale",
-          "stato": "1-esperto",
+          "stato": "pronta",
           "fiducia": 5,
           "fonti": ["modalismo/sabellianismo (Tertulliano, Adversus Praxean, lo confuta)", "triteismo", "arianesimo (condannato a Nicea 325)"],
-          "verificatori": "nuovo contenuto (integrazione dal motore, 6 ago 2026) — attende la verifica completa dei due revisori indipendenti + esame critico",
+          "verificatori": "2 revisori indipendenti (AI: biblico + storico) + esame critico · verificata il 6 ago 2026",
           "esame": { "q": "La mappa delle eresie è accurata storicamente?", "a": "Sì: le tre negano rispettivamente distinzione, unità e uguaglianza; le identificazioni moderne (Solo-Gesù = modalismo; TdG = arianesimo) sono corrette e utili al lettore.", "regge": true },
           "griglia": [["fatto","ok"],["fonte","ok"],["leale","ok"],["coerenza","ok"]],
-          "cronologia": [{ "v": "v1.14", "t": "aggiunta come integrazione per completezza (mappa modalismo/triteismo/arianesimo)" }]
+          "cronologia": [{ "v": "v1.14", "t": "aggiunta come integrazione per completezza (mappa modalismo/triteismo/arianesimo)" }, { "v": "v1.15", "t": "confermata dal motore; aggiunto che l'arianesimo fu debellato a Costantinopoli 381 (non chiuso subito a Nicea)" }]
         },
         {
           "id": "p2-pre-nicea",
           "sezione": "3 · La difesa storica: i concili",
           "testo": "La divinità di Cristo non fu «inventata» a Nicea (325): Plinio il Giovane (c. 112) attesta che i cristiani cantavano «a Cristo come a un dio», e Ignazio di Antiochia (c. 107) chiama Gesù «Dio»; il voto niceno fu quasi unanime.",
           "tipo": "storica",
-          "stato": "1-esperto",
+          "stato": "pronta",
           "fiducia": 5,
           "fonti": ["Plinio il Giovane, Epistulae 10.96 (c. 112 d.C.): «carmen Christo quasi deo»", "Ignazio di Antiochia (c. 107), lettere", "atti del Concilio di Nicea (325)"],
-          "verificatori": "nuovo contenuto (integrazione dal motore, 6 ago 2026) — attende la verifica completa dei due revisori indipendenti + esame critico",
+          "verificatori": "2 revisori indipendenti (AI: biblico + storico) + esame critico · verificata il 6 ago 2026",
           "esame": { "q": "Le testimonianze pre-niceane provano davvero l'adorazione di Cristo come Dio?", "a": "Plinio (fonte pagana ostile) attesta il culto a Cristo «come a un dio» già nel 112; Ignazio lo chiama «Dio» nel 107. Rispondono direttamente all'accusa di «invenzione a Nicea».", "regge": true },
           "griglia": [["fatto","ok"],["fonte","ok"],["leale","ok"],["over-claim","ok"]],
-          "cronologia": [{ "v": "v1.14", "t": "aggiunta come integrazione per completezza (prove pre-niceane contro l'accusa di «invenzione a Nicea»)" }]
+          "cronologia": [{ "v": "v1.14", "t": "aggiunta come integrazione per completezza (prove pre-niceane contro l'accusa di «invenzione a Nicea»)" }, { "v": "v1.15", "t": "confermata dal motore (dati Plinio/Ignazio verificati); distinta la venerazione pre-nicena dalla definizione dogmatica (homoousios); solo due contrari al voto" }]
         },
         {
           "id": "p2-confessioni",
           "sezione": "3 · La difesa storica: i concili",
           "testo": "La dottrina trinitaria è confessata dalle chiese riformate: Westminster cap. II, Confessione belga artt. 8-9, Catechismo di Heidelberg D. 24-25, Calvino (Institutio I.13); sintesi verbale nel Simbolo di Atanasio.",
           "tipo": "dottrinale",
-          "stato": "1-esperto",
+          "stato": "pronta",
           "fiducia": 5,
           "fonti": ["Confessione di Westminster II.3", "Confessione belga artt. 8-9", "Catechismo di Heidelberg D. 24-25", "Calvino, Institutio I.13", "Simbolo di Atanasio (Quicumque vult)"],
-          "verificatori": "nuovo contenuto (integrazione dal motore, 6 ago 2026) — attende la verifica completa dei due revisori indipendenti + esame critico",
+          "verificatori": "2 revisori indipendenti (AI: biblico + storico) + esame critico · verificata il 6 ago 2026",
           "esame": { "q": "I rimandi confessionali sono esatti?", "a": "Sì: Westminster II tratta di Dio e della Trinità; Belga 8-9 e Heidelberg 24-25 la confessano; il Simbolo di Atanasio ne è la formulazione verbale più precisa.", "regge": true },
           "griglia": [["fatto","ok"],["fonte","ok"],["coerenza","ok"]],
-          "cronologia": [{ "v": "v1.14", "t": "aggiunta come integrazione per completezza (ancoraggio confessionale riformato)" }]
+          "cronologia": [{ "v": "v1.14", "t": "aggiunta come integrazione per completezza (ancoraggio confessionale riformato)" }, { "v": "v1.15", "t": "confermata dal motore (rimandi confessionali verificati); precisato che il Simbolo di Atanasio è pseudo-atanasiano (formulario latino V-VI sec.)" }]
         }
       ]
     },
