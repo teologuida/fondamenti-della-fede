@@ -12,6 +12,60 @@
     "nota": "Verifica condotta da revisori esperti AI indipendenti alla fonte primaria, con un esame critico che tenta di confutare ogni affermazione. Il sigillo finale (●) è sempre umano: nessuna pagina è «sigillata» finché il curatore non conferma. Ciò che non si può provare resta visibile come «non verificabile», mai nascosto."
   },
   "pages": {
+    "prefazione": {
+      "titolo": "Prefazione · Nota sul metodo",
+      "stato": "pronta",
+      "nota": "Ri-eseguito il motore (6 ago 2026): 2/2 confermate — edizioni critiche (BHS, Nestle-Aland NA28) e i quattro principi di metodo.",
+      "schede": [
+        {
+          "id": "pref-edizioni",
+          "sezione": "Edizioni di riferimento",
+          "testo": "Edizioni critiche: AT ebraico = Biblia Hebraica Stuttgartensia; NT greco = Nestle-Aland, Novum Testamentum Graece (28ª ed., 2012); italiano = Nuova Riveduta.",
+          "tipo": "bibliografica",
+          "stato": "pronta",
+          "fiducia": 5,
+          "fonti": ["Biblia Hebraica Stuttgartensia (Deutsche Bibelgesellschaft)", "Nestle-Aland, Novum Testamentum Graece, 28ª ed. (2012)", "Nuova Riveduta"],
+          "verificatori": "2 revisori indipendenti (AI) + esame critico · verificata il 6 ago 2026",
+          "esame": { "q": "Non esistono edizioni più recenti (BHQ, NA29)?", "a": "BHS e NA28 restano edizioni di riferimento standard e sono descritte come tali; l'esistenza di edizioni in corso non le rende inaccurate.", "regge": true },
+          "griglia": [["fatto","ok"],["fonte","ok"]],
+          "cronologia": []
+        },
+        {
+          "id": "pref-metodo",
+          "sezione": "I quattro principi",
+          "testo": "I quattro principi del metodo: Sola Scriptura; fonti primarie e originali; onestà sui limiti (certo / interpretazione / dibattito); fermezza e rispetto (descrivere gli altri dalle loro fonti).",
+          "tipo": "dottrinale",
+          "stato": "pronta",
+          "fiducia": 4,
+          "nota_tipo": "Dichiarazione di metodo (impegni), non affermazioni fattuali. Verificata per coerenza; gli avverbi assoluti restano un punto da sorvegliare in fase editoriale.",
+          "fonti": ["dichiarazione di metodo del manuale"],
+          "verificatori": "2 revisori indipendenti (AI) + esame critico · verificata il 6 ago 2026",
+          "esame": { "q": "«distinguere sempre» non è un over-claim?", "a": "È un impegno di metodo dichiarato, non un fatto falsificabile; nessuna invenzione. L'assoluto «sempre» è da tenere d'occhio in editing.", "regge": true },
+          "griglia": [["fonte","ok"],["coerenza","ok"],["over-claim","ok"]],
+          "cronologia": []
+        }
+      ]
+    },
+    "perche-fidarsi": {
+      "titolo": "Perché fidarsi di questo documento",
+      "stato": "pronta",
+      "nota": "Ri-eseguito il motore (6 ago 2026): corretto un over-claim — ammorbiditi gli assoluti «verificabile da chiunque» → «il più possibile controllabile» e rimossi i «sempre».",
+      "schede": [
+        {
+          "id": "pf-verificabile",
+          "sezione": "Perché fidarsi",
+          "testo": "Il documento è costruito per essere il più possibile controllabile da chiunque; le affermazioni importanti rimandano alla fonte; i dubbi accademici sono dichiarati; si distingue fatto / interpretazione / fede.",
+          "tipo": "metodo",
+          "stato": "pronta",
+          "fiducia": 4,
+          "fonti": ["dichiarazione di metodo del manuale"],
+          "verificatori": "2 revisori indipendenti (AI) + esame critico · verificata il 6 ago 2026",
+          "esame": { "q": "«verificabile da chiunque» e «rimandano sempre» non sono over-claim?", "a": "Sì, l'esame critico aveva ragione: nessuno verifica greco/ebraico «da chiunque», e basta una sola affermazione non referenziata per falsificare il «sempre». Corretto: «il più possibile controllabile», tolti gli assoluti.", "regge": true },
+          "griglia": [["fonte","ok"],["over-claim","fix"]],
+          "cronologia": [{ "v": "v1.17", "t": "ri-esecuzione del motore: ammorbiditi gli assoluti («verificabile da chiunque», «sempre»)" }]
+        }
+      ]
+    },
     "introduzione": {
       "titolo": "Introduzione · La necessità della sana dottrina",
       "stato": "pronta",
@@ -2401,6 +2455,73 @@
               "ok"
             ]
           ],
+          "cronologia": []
+        }
+      ]
+    },
+    "i-tuoi-primi-passi": {
+      "titolo": "I tuoi primi passi",
+      "stato": "pronta",
+      "nota": "Ri-eseguito il motore (6 ago 2026): statistica ABS 2023 confermata alla fonte primaria; linguaggio del battesimo corretto per bilanciare pedobattisti e credobattisti.",
+      "schede": [
+        {
+          "id": "primi-battesimo",
+          "sezione": "Ricevi il Battesimo",
+          "testo": "Il battesimo è pubblica professione della nuova vita. Le due tradizioni riformate lo intendono diversamente: pedobattista (Westminster XXVIII.1, «segno e sigillo del patto di grazia») e credobattista (Londra 1689, cap. 29, su professione di fede); il manuale non impone né l'una né l'altra.",
+          "tipo": "dottrinale",
+          "stato": "pronta",
+          "fiducia": 5,
+          "fonti": ["Confessione di Westminster XXVIII.1", "Seconda Confessione battista di Londra 1689, cap. 29"],
+          "verificatori": "2 revisori indipendenti (AI) + esame critico · verificata il 6 ago 2026",
+          "esame": { "q": "«segno e sigillo del patto di grazia» non pende verso il pedobattismo?", "a": "Sì: è formula specifica di Westminster, assente nella Confessione battista 1689. Corretto: ora è attribuita alla tradizione pedobattista e affiancata da quella credobattista, coerente con l'intento inclusivo.", "regge": true },
+          "griglia": [["fatto","ok"],["fonte","ok"],["leale","fix"]],
+          "cronologia": [{ "v": "v1.12", "t": "formulazione resa «segno e sigillo del patto di grazia» per non escludere i pedobattisti" }, { "v": "v1.17", "t": "ri-esecuzione del motore: attribuita a Westminster e bilanciata con la posizione credobattista (Londra 1689)" }]
+        },
+        {
+          "id": "primi-abs-39",
+          "sezione": "Perché la costanza conta",
+          "testo": "American Bible Society, State of the Bible USA 2023: 39% degli adulti USA sono «Bible Users» nel 2023 (minimo da oltre un decennio; media 50% nel 2011-2021); 24% usa la Bibbia almeno una volta a settimana fuori dalle funzioni.",
+          "tipo": "statistica",
+          "stato": "pronta",
+          "fiducia": 5,
+          "match": { "type": "eyebrow", "value": "Perché la costanza conta" },
+          "fonti": ["American Bible Society, State of the Bible USA 2023"],
+          "verificatori": "revisore dati (AI) + biblista (AI) + esame critico · verificata il 6 ago 2026",
+          "esame": { "q": "I dati e l'anno sono corretti?", "a": "Sì, verificati alla fonte primaria (ABS 2023): 39% Bible Users 2023, media 50% 2011-2021, 24% settimanale. Il 24% è un sottoinsieme coerente del 39%.", "regge": true },
+          "griglia": [["fatto","ok"],["fonte","ok"],["anno","ok"],["over-claim","ok"]],
+          "cronologia": []
+        }
+      ]
+    },
+    "conclusione": {
+      "titolo": "Conclusione · Soli Deo Gloria",
+      "stato": "pronta",
+      "nota": "Ri-eseguito il motore (6 ago 2026): 2/2 confermate — citazioni bibliche verbatim (Nuova Riveduta) e principio Soli Deo Gloria.",
+      "schede": [
+        {
+          "id": "concl-refs",
+          "sezione": "Conclusione",
+          "testo": "Riferimenti della conclusione: Romani 12:1 («sacrificio vivente, santo, gradito a Dio»); Matteo 16:18 («edificherò la mia chiesa, e le porte dell'Ades non la potranno vincere»); 2 Pietro 3:18.",
+          "tipo": "biblica",
+          "stato": "pronta",
+          "fiducia": 5,
+          "fonti": ["Romani 12:1; Matteo 16:18; 2 Pietro 3:18 (Nuova Riveduta)"],
+          "verificatori": "2 revisori indipendenti (AI) + esame critico · verificata il 6 ago 2026",
+          "esame": { "q": "Le citazioni sono verbatim?", "a": "Sì, verificate sulla Nuova Riveduta: Rm 12:1 e Mt 16:18 (incluso «Ades») verbatim; 2 Pt 3:18 parole coincidenti («crescere» è ripresa introduttiva, non citazione tra virgolette).", "regge": true },
+          "griglia": [["fatto","ok"],["fonte","ok"],["biblica","ok"]],
+          "cronologia": []
+        },
+        {
+          "id": "concl-soli-deo",
+          "sezione": "Conclusione",
+          "testo": "Tutto esiste per la gloria di Dio (Soli Deo Gloria); rifiuto esplicito della teologia della prosperità («non cerchiamo Dio per ciò che ci può dare»).",
+          "tipo": "dottrinale",
+          "stato": "pronta",
+          "fiducia": 5,
+          "fonti": ["Soli Deo Gloria (principio riformato)", "coerenza con la Parte V (rifiuto della prosperità)"],
+          "verificatori": "2 revisori indipendenti (AI) + esame critico · verificata il 6 ago 2026",
+          "esame": { "q": "«tutto per la gloria di Dio» non svaluta i benefici della salvezza?", "a": "No: nel contesto non nega i benefici reali; ribadisce il fine (la gloria di Dio) e rifiuta la prosperità come movente. Coerente con la Parte V.", "regge": true },
+          "griglia": [["fonte","ok"],["coerenza","ok"],["over-claim","ok"]],
           "cronologia": []
         }
       ]

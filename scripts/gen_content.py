@@ -57,15 +57,15 @@ PERCHE = """
         <h1 class="chap-title">Perché fidarsi di questo documento</h1>
         <p class="chap-lede">Non ti chiediamo di credere sulla parola. Ti chiediamo di controllare.</p>
       </div>
-      <p class="opening rv">Forse non hai fede, o l'hai persa, o non hai mai aperto una Bibbia. Bene: questo documento è costruito proprio per essere <strong>verificabile da chiunque</strong>, credente o no. Non poggia sull'autorità di chi scrive, ma su fatti che puoi ricontrollare tu stesso.</p>
+      <p class="opening rv">Forse non hai fede, o l'hai persa, o non hai mai aperto una Bibbia. Bene: questo documento è costruito proprio per essere <strong>controllabile</strong>, per quanto possibile, da chiunque — credente o no. Non poggia sull'autorità di chi scrive, ma su fatti che puoi ricontrollare tu stesso.</p>
       <div class="shead"><span class="k">Principio 1</span><span class="t">Ogni affermazione ha una fonte</span></div>
-      <p class="rv">Dove vedi un piccolo <strong>ⓘ</strong>, cliccalo: si apre la fonte esatta — un versetto, un manoscritto, uno studio, con il link per andare a controllare. Le affermazioni importanti rimandano sempre alla loro fonte.</p>
+      <p class="rv">Dove vedi un piccolo <strong>ⓘ</strong>, cliccalo: si apre la fonte esatta — un versetto, un manoscritto, uno studio, con il link per andare a controllare. Le affermazioni importanti rimandano alla loro fonte.</p>
       <div class="shead"><span class="k">Principio 2</span><span class="t">Fonti primarie e testi originali</span></div>
       <p class="rv">Dove possibile citiamo l'originale (ebraico, greco, latino) e l'edizione critica, non un riassunto di seconda mano. Puoi vedere <em>esattamente</em> cosa dice il testo, non solo cosa qualcuno afferma che dica.</p>
       <div class="shead"><span class="k">Principio 3</span><span class="t">Onestà sui dubbi</span></div>
       <p class="rv">Quando gli studiosi discutono — per esempio sulla datazione di un antico frammento — <strong>lo diciamo apertamente</strong>, invece di nasconderlo. Un documento che nasconde i dubbi non merita fiducia.</p>
       <div class="shead"><span class="k">Principio 4</span><span class="t">Distinguiamo i piani</span></div>
-      <p class="rv">Separiamo sempre ciò che è <em>fatto storico</em> (una data, un manoscritto), ciò che è <em>interpretazione</em> e ciò che è <em>fede</em>. Non spacciamo l'uno per l'altro.</p>
+      <p class="rv">Separiamo, con costanza, ciò che è <em>fatto storico</em> (una data, un manoscritto), ciò che è <em>interpretazione</em> e ciò che è <em>fede</em>. Non spacciamo l'uno per l'altro.</p>
       <div class="callout rv">
         <div class="h">Come verificare tu stesso</div>
         <p>1) Apri le note ⓘ e segui i link alle fonti. 2) Confronta con la Bibbia (i riferimenti sono sempre indicati). 3) Se trovi un errore, si corregge: ogni modifica è tracciata nel <a href="/registro-modifiche">Registro delle modifiche</a>. La verità non teme il controllo.</p>
