@@ -222,3 +222,6 @@ a.ext::after{content:"\2197";font-size:.78em;color:var(--accent);margin-left:1px
 .data .vbadge{margin-top:14px}
 .v-kpi.v .v-n{color:var(--accent)}
 .v-bar .iv{background:var(--accent)}
+.vbadge.v-broken,.v-state.v-broken{border-color:var(--v-adv);color:var(--v-adv);background:var(--v-adv-bg)}
+.v-kpi.b .v-n{color:var(--v-adv)}
+.v-bar .ib{background:var(--v-adv)}

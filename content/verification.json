@@ -1,14 +1,21 @@
 {
   "meta": {
     "updated": "2026-08-06",
-    "scala": ["da-auditare", "1-esperto", "2-esperti", "pronta", "sigillata", "non-verificabile"],
+    "scala": [
+      "da-auditare",
+      "1-esperto",
+      "2-esperti",
+      "pronta",
+      "sigillata",
+      "non-verificabile"
+    ],
     "nota": "Verifica condotta da revisori esperti AI indipendenti alla fonte primaria, con un esame critico che tenta di confutare ogni affermazione. Il sigillo finale (●) è sempre umano: nessuna pagina è «sigillata» finché il curatore non conferma. Ciò che non si può provare resta visibile come «non verificabile», mai nascosto."
   },
   "pages": {
     "introduzione": {
       "titolo": "Introduzione · La necessità della sana dottrina",
       "stato": "pronta",
-      "nota": "Statistiche verificate alla fonte con l'anno del dato; i due studi Pew restano separati (nessuna cifra derivata). Riferimento biblico corretto.",
+      "nota": "Ri-eseguito il motore (6 ago 2026): 2/2 confermate. Statistiche Pew verificate alla fonte con l'anno del dato (2020 e 2010), tenute separate; Efesini 4:14 corretto.",
       "schede": [
         {
           "id": "intro-cristiani-2020",
@@ -17,12 +24,44 @@
           "tipo": "statistica",
           "stato": "pronta",
           "fiducia": 5,
-          "match": { "type": "eyebrow", "value": "Il contesto" },
-          "fonti": ["Pew Research Center, How the Global Religious Landscape Changed… (2025) — dato 2020", "Pew Research Center, Global Christianity (2011) — dato 2010"],
+          "match": {
+            "type": "eyebrow",
+            "value": "Il contesto"
+          },
+          "fonti": [
+            "Pew Research Center, How the Global Religious Landscape Changed… (2025) — dato 2020",
+            "Pew Research Center, Global Christianity (2011) — dato 2010"
+          ],
           "verificatori": "revisore dati (AI) + biblista (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "Non si stanno mescolando due studi con anni diversi?", "a": "No: le due cifre sono tenute separate e ciascuna riporta il proprio anno di rilevazione (2020 e 2010). Nessuna percentuale derivata scommando i due studi.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["anno","ok"],["over-claim","ok"]],
-          "cronologia": [{ "v": "v1.11", "t": "indicato l'anno del dato per entrambe le cifre; i due studi tenuti separati" }]
+          "esame": {
+            "q": "Non si stanno mescolando due studi con anni diversi?",
+            "a": "No: le due cifre sono tenute separate e ciascuna riporta il proprio anno di rilevazione (2020 e 2010). Nessuna percentuale derivata scommando i due studi.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "anno",
+              "ok"
+            ],
+            [
+              "over-claim",
+              "ok"
+            ]
+          ],
+          "cronologia": [
+            {
+              "v": "v1.11",
+              "t": "indicato l'anno del dato per entrambe le cifre; i due studi tenuti separati"
+            }
+          ]
         },
         {
           "id": "intro-ef4-14",
@@ -31,11 +70,35 @@
           "tipo": "biblica",
           "stato": "pronta",
           "fiducia": 5,
-          "fonti": ["Efesini 4:14"],
+          "fonti": [
+            "Efesini 4:14"
+          ],
           "verificatori": "biblista (AI) + teologo sistematico (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "Il riferimento è esatto?", "a": "Sì; corretto in fase di audit. La citazione corrisponde a Efesini 4:14.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["biblica","ok"]],
-          "cronologia": [{ "v": "v1.11", "t": "riferimento a Efesini 4:14 corretto" }]
+          "esame": {
+            "q": "Il riferimento è esatto?",
+            "a": "Sì; corretto in fase di audit. La citazione corrisponde a Efesini 4:14.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "biblica",
+              "ok"
+            ]
+          ],
+          "cronologia": [
+            {
+              "v": "v1.11",
+              "t": "riferimento a Efesini 4:14 corretto"
+            }
+          ]
         }
       ]
     },
@@ -51,11 +114,42 @@
           "tipo": "linguistica",
           "stato": "pronta",
           "fiducia": 5,
-          "match": { "type": "oref", "value": "2 Timoteo 3:16" },
-          "fonti": ["2 Timoteo 3:16 — πᾶσα γραφὴ θεόπνευστος", "Nestle-Aland, Novum Testamentum Graece, 28ª ed. (2012)"],
+          "match": {
+            "type": "oref",
+            "value": "2 Timoteo 3:16"
+          },
+          "fonti": [
+            "2 Timoteo 3:16 — πᾶσα γραφὴ θεόπνευστος",
+            "Nestle-Aland, Novum Testamentum Graece, 28ª ed. (2012)"
+          ],
           "verificatori": "grecista/NT (AI) + patrologo (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "«theópneustos» significa davvero «soffiato da Dio»?", "a": "Sì: composto di theós (Dio) e pnéō (soffiare). Resa filologicamente accurata.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["biblica","ok"],["lingua","ok"],["over-claim","ok"]],
+          "esame": {
+            "q": "«theópneustos» significa davvero «soffiato da Dio»?",
+            "a": "Sì: composto di theós (Dio) e pnéō (soffiare). Resa filologicamente accurata.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "biblica",
+              "ok"
+            ],
+            [
+              "lingua",
+              "ok"
+            ],
+            [
+              "over-claim",
+              "ok"
+            ]
+          ],
           "cronologia": []
         },
         {
@@ -65,11 +159,37 @@
           "tipo": "linguistica",
           "stato": "pronta",
           "fiducia": 5,
-          "match": { "type": "oref", "value": "Genesi 1:1" },
-          "fonti": ["Genesi 1:1 — בְּרֵאשִׁית בָּרָא אֱלֹהִים"],
+          "match": {
+            "type": "oref",
+            "value": "Genesi 1:1"
+          },
+          "fonti": [
+            "Genesi 1:1 — בְּרֵאשִׁית בָּרָא אֱלֹהִים"
+          ],
           "verificatori": "ebraista (AI) + biblista (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "Traslitterazione e resa sono corrette?", "a": "Sì, corrispondono al testo masoretico.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["biblica","ok"],["lingua","ok"]],
+          "esame": {
+            "q": "Traslitterazione e resa sono corrette?",
+            "a": "Sì, corrispondono al testo masoretico.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "biblica",
+              "ok"
+            ],
+            [
+              "lingua",
+              "ok"
+            ]
+          ],
           "cronologia": []
         },
         {
@@ -79,12 +199,44 @@
           "tipo": "statistica",
           "stato": "pronta",
           "fiducia": 5,
-          "match": { "type": "eyebrow", "value": "Evidenza manoscritta" },
-          "fonti": ["INTF Münster, Kurzgefasste Liste — ~5.800 mss greci catalogati (~2017)", "confronto: Iliade di Omero ~1.800-1.900 mss"],
+          "match": {
+            "type": "eyebrow",
+            "value": "Evidenza manoscritta"
+          },
+          "fonti": [
+            "INTF Münster, Kurzgefasste Liste — ~5.800 mss greci catalogati (~2017)",
+            "confronto: Iliade di Omero ~1.800-1.900 mss"
+          ],
           "verificatori": "critico testuale (AI) + storico della Chiesa (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "«Nessun'altra opera si avvicina» non è un'esagerazione?", "a": "No: ancorato al confronto standard (Omero ~1.800 mss). Precisato «catalogati» e l'anno del dato.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["anno","ok"],["over-claim","ok"]],
-          "cronologia": [{ "v": "v1.4", "t": "indicato l'anno del dato e «catalogati»; ancorato il confronto a Omero" }]
+          "esame": {
+            "q": "«Nessun'altra opera si avvicina» non è un'esagerazione?",
+            "a": "No: ancorato al confronto standard (Omero ~1.800 mss). Precisato «catalogati» e l'anno del dato.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "anno",
+              "ok"
+            ],
+            [
+              "over-claim",
+              "ok"
+            ]
+          ],
+          "cronologia": [
+            {
+              "v": "v1.4",
+              "t": "indicato l'anno del dato e «catalogati»; ancorato il confronto a Omero"
+            }
+          ]
         },
         {
           "id": "p1-p52",
@@ -93,11 +245,37 @@
           "tipo": "storica",
           "stato": "pronta",
           "fiducia": 4,
-          "fonti": ["P.Ryl. Gr. 457 (Gv 18:31-33.37-38)", "Orsini–Clarysse, ETL 88 (2012): c. 125-175", "Nongbri, HTR 98 (2005): anche più tardo entro il II sec."],
+          "fonti": [
+            "P.Ryl. Gr. 457 (Gv 18:31-33.37-38)",
+            "Orsini–Clarysse, ETL 88 (2012): c. 125-175",
+            "Nongbri, HTR 98 (2005): anche più tardo entro il II sec."
+          ],
           "verificatori": "critico testuale (AI) + storico della Chiesa (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "Non si presenta P52 come più antico di quanto sia certo?", "a": "No: la pagina segnala esplicitamente il dibattito e cita anche la datazione tarda di minoranza (Nongbri). Onestà sui dubbi rispettata.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["over-claim","ok"]],
-          "cronologia": [{ "v": "v1.4", "t": "aggiunta la datazione tarda di minoranza (Nongbri 2005)" }]
+          "esame": {
+            "q": "Non si presenta P52 come più antico di quanto sia certo?",
+            "a": "No: la pagina segnala esplicitamente il dibattito e cita anche la datazione tarda di minoranza (Nongbri). Onestà sui dubbi rispettata.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "over-claim",
+              "ok"
+            ]
+          ],
+          "cronologia": [
+            {
+              "v": "v1.4",
+              "t": "aggiunta la datazione tarda di minoranza (Nongbri 2005)"
+            }
+          ]
         },
         {
           "id": "p1-varianti",
@@ -106,11 +284,41 @@
           "tipo": "storica",
           "stato": "pronta",
           "fiducia": 4,
-          "fonti": ["K. e B. Aland, Il testo del Nuovo Testamento; D. B. Wallace (stabilità dottrinale)", "B. Ehrman, The Orthodox Corruption of Scripture (1993) — voce di contrappunto (Comma Johanneum 1 Gv 5:7; Mc 16:9-20; Gv 7:53-8:11; 1 Tim 3:16)", "Metzger–Ehrman, The Text of the NT, 4ª ed. (2005)"],
+          "fonti": [
+            "K. e B. Aland, Il testo del Nuovo Testamento; D. B. Wallace (stabilità dottrinale)",
+            "B. Ehrman, The Orthodox Corruption of Scripture (1993) — voce di contrappunto (Comma Johanneum 1 Gv 5:7; Mc 16:9-20; Gv 7:53-8:11; 1 Tim 3:16)",
+            "Metzger–Ehrman, The Text of the NT, 4ª ed. (2005)"
+          ],
           "verificatori": "2 revisori indipendenti (AI) + esame critico · ri-verificata il 6 ago 2026",
-          "esame": { "q": "Si cita Ehrman a sostegno di «nessuna variante tocca una dottrina», ma Ehrman dissente!", "a": "Corretto: l'esame critico ha ragione. Ora l'affermazione è cauta («nessuna dottrina fondamentale dipende SOLO da un passo incerto»); la stabilità è sostenuta da Aland/Wallace, ed Ehrman è citato come voce di contrappunto, non come alleato.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","fix"],["over-claim","fix"]],
-          "cronologia": [{ "v": "v1.4", "t": "aggiunta la questione delle varianti testuali (per onestà, non solo apologetica)" }, { "v": "v1.16", "t": "ri-esecuzione del motore: attenuato l'over-claim e ricollocato Ehrman come voce di contrappunto (non a sostegno)" }]
+          "esame": {
+            "q": "Si cita Ehrman a sostegno di «nessuna variante tocca una dottrina», ma Ehrman dissente!",
+            "a": "Corretto: l'esame critico ha ragione. Ora l'affermazione è cauta («nessuna dottrina fondamentale dipende SOLO da un passo incerto»); la stabilità è sostenuta da Aland/Wallace, ed Ehrman è citato come voce di contrappunto, non come alleato.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "fix"
+            ],
+            [
+              "over-claim",
+              "fix"
+            ]
+          ],
+          "cronologia": [
+            {
+              "v": "v1.4",
+              "t": "aggiunta la questione delle varianti testuali (per onestà, non solo apologetica)"
+            },
+            {
+              "v": "v1.16",
+              "t": "ri-esecuzione del motore: attenuato l'over-claim e ricollocato Ehrman come voce di contrappunto (non a sostegno)"
+            }
+          ]
         },
         {
           "id": "p1-rotolo-isaia",
@@ -119,11 +327,35 @@
           "tipo": "storica",
           "stato": "pronta",
           "fiducia": 5,
-          "fonti": ["1QIsaᵃ, Qumran Grotta 1, II sec. a.C. — Israel Museum, Gerusalemme"],
+          "fonti": [
+            "1QIsaᵃ, Qumran Grotta 1, II sec. a.C. — Israel Museum, Gerusalemme"
+          ],
           "verificatori": "critico testuale (AI) + ebraista (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "Il testo masoretico non conserva a volte letture più antiche del rotolo?", "a": "Vero in alcuni punti: per questo si dice «accordo sostanziale», non identità. Precisato «e morfologiche».", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["over-claim","ok"]],
-          "cronologia": [{ "v": "v1.4", "t": "sostituita una fonte imprecisa (Tyndale House 2024, che non sosteneva l'affermazione); precisato «ortografiche e morfologiche»" }]
+          "esame": {
+            "q": "Il testo masoretico non conserva a volte letture più antiche del rotolo?",
+            "a": "Vero in alcuni punti: per questo si dice «accordo sostanziale», non identità. Precisato «e morfologiche».",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "over-claim",
+              "ok"
+            ]
+          ],
+          "cronologia": [
+            {
+              "v": "v1.4",
+              "t": "sostituita una fonte imprecisa (Tyndale House 2024, che non sosteneva l'affermazione); precisato «ortografiche e morfologiche»"
+            }
+          ]
         },
         {
           "id": "p1-canone-66",
@@ -132,11 +364,44 @@
           "tipo": "storica",
           "stato": "pronta",
           "fiducia": 5,
-          "fonti": ["Concilio di Trento, Sessione IV (8 aprile 1546) — 73 libri (46 AT + 27 NT)", "canone ebraico (24 libri = 39 ricombinati)"],
+          "fonti": [
+            "Concilio di Trento, Sessione IV (8 aprile 1546) — 73 libri (46 AT + 27 NT)",
+            "canone ebraico (24 libri = 39 ricombinati)"
+          ],
           "verificatori": "2 revisori indipendenti (AI) + esame critico · ri-verificata il 6 ago 2026",
-          "esame": { "q": "Non si confrontano 66 libri protestanti totali con «46», che è solo l'AT cattolico?", "a": "Sì, era un confronto sbagliato (66 totali vs 46 AT). Corretto: il canone cattolico è 73 in tutto (46 AT + 27 NT); i deuterocanonici sono 7 libri in più nell'AT.", "regge": true },
-          "griglia": [["fatto","fix"],["fonte","ok"],["leale","ok"],["over-claim","ok"]],
-          "cronologia": [{ "v": "v1.4", "t": "aggiunta la questione dei deuterocanonici e Trento 1546" }, { "v": "v1.16", "t": "ri-esecuzione del motore: corretto il confronto (73 cattolici = 46 AT + 27 NT, non 46 vs 66)" }]
+          "esame": {
+            "q": "Non si confrontano 66 libri protestanti totali con «46», che è solo l'AT cattolico?",
+            "a": "Sì, era un confronto sbagliato (66 totali vs 46 AT). Corretto: il canone cattolico è 73 in tutto (46 AT + 27 NT); i deuterocanonici sono 7 libri in più nell'AT.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "fix"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "leale",
+              "ok"
+            ],
+            [
+              "over-claim",
+              "ok"
+            ]
+          ],
+          "cronologia": [
+            {
+              "v": "v1.4",
+              "t": "aggiunta la questione dei deuterocanonici e Trento 1546"
+            },
+            {
+              "v": "v1.16",
+              "t": "ri-esecuzione del motore: corretto il confronto (73 cattolici = 46 AT + 27 NT, non 46 vs 66)"
+            }
+          ]
         },
         {
           "id": "p1-canone-riconosciuto",
@@ -145,11 +410,37 @@
           "tipo": "storica",
           "stato": "pronta",
           "fiducia": 5,
-          "fonti": ["Atanasio, 39ª Lettera festale (367)", "concili di Ippona (393) e Cartagine (397)", "B. Metzger, The Canon of the NT (1987); F.F. Bruce, The Canon of Scripture (1988)"],
+          "fonti": [
+            "Atanasio, 39ª Lettera festale (367)",
+            "concili di Ippona (393) e Cartagine (397)",
+            "B. Metzger, The Canon of the NT (1987); F.F. Bruce, The Canon of Scripture (1988)"
+          ],
           "verificatori": "storico della Chiesa (AI) + patrologo (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "Non si sorvola sul fatto che alcuni libri furono a lungo discussi?", "a": "No: la nota cita gli Antilegomena (Ebrei, Giacomo, 2 Pietro, 2-3 Giovanni, Giuda, Apocalisse). Onesto.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["over-claim","ok"]],
-          "cronologia": [{ "v": "v1.4", "t": "aggiunte le tappe storiche del canone" }]
+          "esame": {
+            "q": "Non si sorvola sul fatto che alcuni libri furono a lungo discussi?",
+            "a": "No: la nota cita gli Antilegomena (Ebrei, Giacomo, 2 Pietro, 2-3 Giovanni, Giuda, Apocalisse). Onesto.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "over-claim",
+              "ok"
+            ]
+          ],
+          "cronologia": [
+            {
+              "v": "v1.4",
+              "t": "aggiunte le tappe storiche del canone"
+            }
+          ]
         },
         {
           "id": "p1-sola-scriptura",
@@ -158,12 +449,45 @@
           "tipo": "storica",
           "stato": "pronta",
           "fiducia": 4,
-          "match": { "type": "oref", "value": "Principio formale della Riforma" },
-          "fonti": ["scolastica protestante XVII sec. (es. J. W. Baier, 1686)", "Formula di Concordia (1577) — «unica regola e norma» (concetto)", "Confessione di Westminster (1646, pubbl. 1647), cap. I.10"],
+          "match": {
+            "type": "oref",
+            "value": "Principio formale della Riforma"
+          },
+          "fonti": [
+            "scolastica protestante XVII sec. (es. J. W. Baier, 1686)",
+            "Formula di Concordia (1577) — «unica regola e norma» (concetto)",
+            "Confessione di Westminster (1646, pubbl. 1647), cap. I.10"
+          ],
           "verificatori": "critico testuale (AI) + storico della Chiesa (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "Ma Westminster non usa quelle formule?", "a": "No: né «Sola Scriptura» né «norma normans» compaiono in Westminster; il testo ne esprime il concetto (I.10). Distinzione tra parola e concetto corretta.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["over-claim","fix"]],
-          "cronologia": [{ "v": "v1.4", "t": "corretta l'attribuzione (non è di Westminster)" }, { "v": "v1.5", "t": "corretto: «norma normans» è della scolastica del XVII sec., non della Formula di Concordia" }]
+          "esame": {
+            "q": "Ma Westminster non usa quelle formule?",
+            "a": "No: né «Sola Scriptura» né «norma normans» compaiono in Westminster; il testo ne esprime il concetto (I.10). Distinzione tra parola e concetto corretta.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "over-claim",
+              "fix"
+            ]
+          ],
+          "cronologia": [
+            {
+              "v": "v1.4",
+              "t": "corretta l'attribuzione (non è di Westminster)"
+            },
+            {
+              "v": "v1.5",
+              "t": "corretto: «norma normans» è della scolastica del XVII sec., non della Formula di Concordia"
+            }
+          ]
         },
         {
           "id": "p1-non-aggiungere",
@@ -172,11 +496,39 @@
           "tipo": "biblica",
           "stato": "pronta",
           "fiducia": 5,
-          "fonti": ["Deuteronomio 4:2; Proverbi 30:5-6; Apocalisse 22:18-19"],
+          "fonti": [
+            "Deuteronomio 4:2; Proverbi 30:5-6; Apocalisse 22:18-19"
+          ],
           "verificatori": "biblista (AI) + teologo sistematico (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "Usare Ap 22:18-19 per l'intero canone non è un'estrapolazione?", "a": "Sì, e la pagina lo dice apertamente: nel contesto riguarda quel libro; usato come esempio del principio, non come prova formale. Over-claim attenuato.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["biblica","ok"],["over-claim","fix"]],
-          "cronologia": [{ "v": "v1.4", "t": "attenuato l'uso di Apocalisse 22:18-19" }]
+          "esame": {
+            "q": "Usare Ap 22:18-19 per l'intero canone non è un'estrapolazione?",
+            "a": "Sì, e la pagina lo dice apertamente: nel contesto riguarda quel libro; usato come esempio del principio, non come prova formale. Over-claim attenuato.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "biblica",
+              "ok"
+            ],
+            [
+              "over-claim",
+              "fix"
+            ]
+          ],
+          "cronologia": [
+            {
+              "v": "v1.4",
+              "t": "attenuato l'uso di Apocalisse 22:18-19"
+            }
+          ]
         }
       ]
     },
@@ -192,12 +544,48 @@
           "tipo": "linguistica",
           "stato": "pronta",
           "fiducia": 5,
-          "match": { "type": "oref", "value": "Esodo 3:14" },
-          "fonti": ["Esodo 3:14 — אֶהְיֶה אֲשֶׁר אֶהְיֶה", "BDB / HALOT, s.v. היה / יהוה"],
+          "match": {
+            "type": "oref",
+            "value": "Esodo 3:14"
+          },
+          "fonti": [
+            "Esodo 3:14 — אֶהְיֶה אֲשֶׁר אֶהְיֶה",
+            "BDB / HALOT, s.v. היה / יהוה"
+          ],
           "verificatori": "ebraista (AI) + patrologo (AI), indipendenti · ri-eseguito il 6 ago 2026",
-          "esame": { "q": "«YHWH deriva dalla radice hayah» è un dato linguistico certo?", "a": "No: è etimologia teologica posta dal testo stesso (Es 3:14-15), non una derivazione certa. Ora la pagina dà entrambe le rese («Io sono / Io sarò») e segnala apertamente il dibattito tra i semitisti.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["biblica","ok"],["lingua","ok"],["over-claim","fix"]],
-          "cronologia": [{ "v": "v1.14", "t": "ri-esecuzione del motore: attenuata l'etimologia (teologica, non dato certo) e aggiunta la resa «Io sarò ciò che sarò»" }]
+          "esame": {
+            "q": "«YHWH deriva dalla radice hayah» è un dato linguistico certo?",
+            "a": "No: è etimologia teologica posta dal testo stesso (Es 3:14-15), non una derivazione certa. Ora la pagina dà entrambe le rese («Io sono / Io sarò») e segnala apertamente il dibattito tra i semitisti.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "biblica",
+              "ok"
+            ],
+            [
+              "lingua",
+              "ok"
+            ],
+            [
+              "over-claim",
+              "fix"
+            ]
+          ],
+          "cronologia": [
+            {
+              "v": "v1.14",
+              "t": "ri-esecuzione del motore: attenuata l'etimologia (teologica, non dato certo) e aggiunta la resa «Io sarò ciò che sarò»"
+            }
+          ]
         },
         {
           "id": "p2-attributi-dio",
@@ -206,11 +594,44 @@
           "tipo": "biblica",
           "stato": "pronta",
           "fiducia": 5,
-          "fonti": ["Salmo 90:2", "Malachia 3:6; Giacomo 1:17", "Isaia 6:3", "Salmo 139 (onniscienza/onnipresenza)", "Genesi 17:1; Geremia 32:17; Apocalisse 19:6 (onnipotenza)", "Esodo 34:6-7; 1 Giovanni 4:8"],
+          "fonti": [
+            "Salmo 90:2",
+            "Malachia 3:6; Giacomo 1:17",
+            "Isaia 6:3",
+            "Salmo 139 (onniscienza/onnipresenza)",
+            "Genesi 17:1; Geremia 32:17; Apocalisse 19:6 (onnipotenza)",
+            "Esodo 34:6-7; 1 Giovanni 4:8"
+          ],
           "verificatori": "biblista (AI) + teologo sistematico (AI), indipendenti · ri-eseguito il 6 ago 2026",
-          "esame": { "q": "Il Salmo 139 prova l'onnipotenza?", "a": "No: Sal 139 fonda onniscienza (vv.1-6) e onnipresenza (vv.7-12), NON l'onnipotenza. Errore tecnico corretto: l'onnipotenza ora è ancorata a Gen 17:1; Ger 32:17; Ap 19:6.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","fix"],["biblica","ok"],["over-claim","ok"]],
-          "cronologia": [{ "v": "v1.14", "t": "ri-esecuzione del motore: scorporata l'onnipotenza dal Salmo 139 (prova onniscienza/onnipresenza) verso Gen 17:1; Ger 32:17; Ap 19:6" }]
+          "esame": {
+            "q": "Il Salmo 139 prova l'onnipotenza?",
+            "a": "No: Sal 139 fonda onniscienza (vv.1-6) e onnipresenza (vv.7-12), NON l'onnipotenza. Errore tecnico corretto: l'onnipotenza ora è ancorata a Gen 17:1; Ger 32:17; Ap 19:6.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "fix"
+            ],
+            [
+              "biblica",
+              "ok"
+            ],
+            [
+              "over-claim",
+              "ok"
+            ]
+          ],
+          "cronologia": [
+            {
+              "v": "v1.14",
+              "t": "ri-esecuzione del motore: scorporata l'onnipotenza dal Salmo 139 (prova onniscienza/onnipresenza) verso Gen 17:1; Ger 32:17; Ap 19:6"
+            }
+          ]
         },
         {
           "id": "p2-trinitas",
@@ -219,11 +640,39 @@
           "tipo": "storica",
           "stato": "pronta",
           "fiducia": 5,
-          "fonti": ["Tertulliano, Adversus Praxean (c. 210-213 d.C.)"],
+          "fonti": [
+            "Tertulliano, Adversus Praxean (c. 210-213 d.C.)"
+          ],
           "verificatori": "patrologo (AI) + storico della Chiesa (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "Il concetto non esiste prima di Tertulliano?", "a": "La frase distingue: la parola è di Tertulliano, il concetto è radicato nel NT. Corretto.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["lingua","ok"],["over-claim","ok"]],
-          "cronologia": [{ "v": "v1.8", "t": "corretto da «verso il 200» a «inizio III sec. (c. 210-213), Adversus Praxean»" }]
+          "esame": {
+            "q": "Il concetto non esiste prima di Tertulliano?",
+            "a": "La frase distingue: la parola è di Tertulliano, il concetto è radicato nel NT. Corretto.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "lingua",
+              "ok"
+            ],
+            [
+              "over-claim",
+              "ok"
+            ]
+          ],
+          "cronologia": [
+            {
+              "v": "v1.8",
+              "t": "corretto da «verso il 200» a «inizio III sec. (c. 210-213), Adversus Praxean»"
+            }
+          ]
         },
         {
           "id": "p2-shema",
@@ -232,11 +681,42 @@
           "tipo": "linguistica",
           "stato": "pronta",
           "fiducia": 5,
-          "match": { "type": "oref", "value": "Deuteronomio 6:4" },
-          "fonti": ["Deuteronomio 6:4 — יְהוָה אֶחָד", "Isaia 45:5"],
+          "match": {
+            "type": "oref",
+            "value": "Deuteronomio 6:4"
+          },
+          "fonti": [
+            "Deuteronomio 6:4 — יְהוָה אֶחָד",
+            "Isaia 45:5"
+          ],
           "verificatori": "ebraista (AI) + biblista (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "«echàd» può indicare unità composita, non unicità assoluta.", "a": "La pagina usa lo Shema per «un solo Dio», compatibile con entrambe le letture; non lo forza contro la Trinità.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["biblica","ok"],["lingua","ok"],["over-claim","ok"]],
+          "esame": {
+            "q": "«echàd» può indicare unità composita, non unicità assoluta.",
+            "a": "La pagina usa lo Shema per «un solo Dio», compatibile con entrambe le letture; non lo forza contro la Trinità.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "biblica",
+              "ok"
+            ],
+            [
+              "lingua",
+              "ok"
+            ],
+            [
+              "over-claim",
+              "ok"
+            ]
+          ],
           "cronologia": []
         },
         {
@@ -246,12 +726,53 @@
           "tipo": "linguistica",
           "stato": "pronta",
           "fiducia": 5,
-          "match": { "type": "oref", "value": "Giovanni 1:1" },
-          "fonti": ["Giovanni 1:1 — καὶ θεὸς ἦν ὁ λόγος", "Harner, JBL 92 (1973), pp. 75-87", "Wallace, Greek Grammar Beyond the Basics (1996), pp. 266-269"],
+          "match": {
+            "type": "oref",
+            "value": "Giovanni 1:1"
+          },
+          "fonti": [
+            "Giovanni 1:1 — καὶ θεὸς ἦν ὁ λόγος",
+            "Harner, JBL 92 (1973), pp. 75-87",
+            "Wallace, Greek Grammar Beyond the Basics (1996), pp. 266-269"
+          ],
           "verificatori": "grecista/NT (AI) + patrologo (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "Non è semplicemente la regola di Colwell?", "a": "No: Colwell riguarda i predicati definiti anteposti; la forza qui è qualitativa (Harner). Distinzione mantenuta — utile anche contro l'obiezione TdG in Parte V.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["biblica","ok"],["lingua","ok"],["leale","ok"],["over-claim","ok"]],
-          "cronologia": [{ "v": "v1.8", "t": "corretta l'attribuzione: da «regola di Colwell» a forza qualitativa (Harner 1973; Wallace 1996)" }]
+          "esame": {
+            "q": "Non è semplicemente la regola di Colwell?",
+            "a": "No: Colwell riguarda i predicati definiti anteposti; la forza qui è qualitativa (Harner). Distinzione mantenuta — utile anche contro l'obiezione TdG in Parte V.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "biblica",
+              "ok"
+            ],
+            [
+              "lingua",
+              "ok"
+            ],
+            [
+              "leale",
+              "ok"
+            ],
+            [
+              "over-claim",
+              "ok"
+            ]
+          ],
+          "cronologia": [
+            {
+              "v": "v1.8",
+              "t": "corretta l'attribuzione: da «regola di Colwell» a forza qualitativa (Harner 1973; Wallace 1996)"
+            }
+          ]
         },
         {
           "id": "p2-spirito",
@@ -260,11 +781,43 @@
           "tipo": "biblica",
           "stato": "pronta",
           "fiducia": 5,
-          "fonti": ["Atti 5:3-4 (deità)", "Giovanni 14:26; 16:13-14", "Romani 8:26-27", "1 Corinzi 12:11", "Efesini 4:30 (personalità)"],
+          "fonti": [
+            "Atti 5:3-4 (deità)",
+            "Giovanni 14:26; 16:13-14",
+            "Romani 8:26-27",
+            "1 Corinzi 12:11",
+            "Efesini 4:30 (personalità)"
+          ],
           "verificatori": "biblista (AI) + teologo sistematico (AI), indipendenti · ri-eseguito il 6 ago 2026",
-          "esame": { "q": "La personalità dello Spirito poggia solo su Atti 5:3-4?", "a": "Non più: Atti 5:3-4 fonda la deità; la personalità ora è sostenuta da testi propri (Gv 14:26; 16:13-14; Rom 8:26-27; Ef 4:30). Le due tesi non poggiano più su un solo versetto.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["biblica","fix"],["over-claim","ok"]],
-          "cronologia": [{ "v": "v1.14", "t": "ri-esecuzione del motore: distinte deità e personalità dello Spirito, con testi propri per la personalità" }]
+          "esame": {
+            "q": "La personalità dello Spirito poggia solo su Atti 5:3-4?",
+            "a": "Non più: Atti 5:3-4 fonda la deità; la personalità ora è sostenuta da testi propri (Gv 14:26; 16:13-14; Rom 8:26-27; Ef 4:30). Le due tesi non poggiano più su un solo versetto.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "biblica",
+              "fix"
+            ],
+            [
+              "over-claim",
+              "ok"
+            ]
+          ],
+          "cronologia": [
+            {
+              "v": "v1.14",
+              "t": "ri-esecuzione del motore: distinte deità e personalità dello Spirito, con testi propri per la personalità"
+            }
+          ]
         },
         {
           "id": "p2-mt28-19",
@@ -273,11 +826,44 @@
           "tipo": "linguistica",
           "stato": "pronta",
           "fiducia": 5,
-          "fonti": ["Matteo 28:19 — εἰς τὸ ὄνομα (sing.)", "2 Corinzi 13:13"],
+          "fonti": [
+            "Matteo 28:19 — εἰς τὸ ὄνομα (sing.)",
+            "2 Corinzi 13:13"
+          ],
           "verificatori": "grecista/NT (AI) + biblista (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "La versificazione 2 Cor 13:13 vs 13:14 varia tra edizioni.", "a": "Corretto in v1.0 a 13:13 (numerazione Nestle-Aland/NR). Coerente con l'edizione usata.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["biblica","ok"],["lingua","ok"],["over-claim","ok"]],
-          "cronologia": [{ "v": "v1.0", "t": "corretta la citazione a 2 Corinzi 13:13" }]
+          "esame": {
+            "q": "La versificazione 2 Cor 13:13 vs 13:14 varia tra edizioni.",
+            "a": "Corretto in v1.0 a 13:13 (numerazione Nestle-Aland/NR). Coerente con l'edizione usata.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "biblica",
+              "ok"
+            ],
+            [
+              "lingua",
+              "ok"
+            ],
+            [
+              "over-claim",
+              "ok"
+            ]
+          ],
+          "cronologia": [
+            {
+              "v": "v1.0",
+              "t": "corretta la citazione a 2 Corinzi 13:13"
+            }
+          ]
         },
         {
           "id": "p2-ario",
@@ -286,11 +872,43 @@
           "tipo": "storica",
           "stato": "pronta",
           "fiducia": 4,
-          "fonti": ["Encyclopædia Britannica, «First Council of Nicaea» — ἦν ποτε ὅτε οὐκ ἦν"],
+          "fonti": [
+            "Encyclopædia Britannica, «First Council of Nicaea» — ἦν ποτε ὅτε οὐκ ἦν"
+          ],
           "verificatori": "patrologo (AI) + storico della Chiesa (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "Le date di Ario sono incerte nelle fonti.", "a": "Adottata la forma «c.» (circa) allineata a Britannica; l'incertezza è segnalata dal «circa».", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["lingua","ok"],["leale","ok"],["over-claim","ok"]],
-          "cronologia": [{ "v": "v1.8", "t": "corretta la data: c. 256-336 → c. 250-336 (Britannica)" }]
+          "esame": {
+            "q": "Le date di Ario sono incerte nelle fonti.",
+            "a": "Adottata la forma «c.» (circa) allineata a Britannica; l'incertezza è segnalata dal «circa».",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "lingua",
+              "ok"
+            ],
+            [
+              "leale",
+              "ok"
+            ],
+            [
+              "over-claim",
+              "ok"
+            ]
+          ],
+          "cronologia": [
+            {
+              "v": "v1.8",
+              "t": "corretta la data: c. 256-336 → c. 250-336 (Britannica)"
+            }
+          ]
         },
         {
           "id": "p2-nicea-325",
@@ -299,11 +917,41 @@
           "tipo": "storica",
           "stato": "pronta",
           "fiducia": 5,
-          "match": { "type": "year", "value": "325" },
-          "fonti": ["Encyclopædia Britannica, «First Council of Nicaea (325)»"],
+          "match": {
+            "type": "year",
+            "value": "325"
+          },
+          "fonti": [
+            "Encyclopædia Britannica, «First Council of Nicaea (325)»"
+          ],
           "verificatori": "storico della Chiesa (AI) + patrologo (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "Nicea «inventò» la divinità di Cristo?", "a": "No: definì con parole precise ciò che era già confessato; la pagina lo afferma esplicitamente. Regge.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["lingua","ok"],["leale","ok"],["over-claim","ok"]],
+          "esame": {
+            "q": "Nicea «inventò» la divinità di Cristo?",
+            "a": "No: definì con parole precise ciò che era già confessato; la pagina lo afferma esplicitamente. Regge.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "lingua",
+              "ok"
+            ],
+            [
+              "leale",
+              "ok"
+            ],
+            [
+              "over-claim",
+              "ok"
+            ]
+          ],
           "cronologia": []
         },
         {
@@ -313,11 +961,41 @@
           "tipo": "storica",
           "stato": "pronta",
           "fiducia": 5,
-          "match": { "type": "year", "value": "381" },
-          "fonti": ["Encyclopædia Britannica, «First Council of Constantinople (381)»"],
+          "match": {
+            "type": "year",
+            "value": "381"
+          },
+          "fonti": [
+            "Encyclopædia Britannica, «First Council of Constantinople (381)»"
+          ],
           "verificatori": "storico della Chiesa (AI) + patrologo (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "«Macedoniani» e «pneumatomachi» sono la stessa fazione?", "a": "Sì, termini equivalenti nelle fonti; usati correttamente.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["lingua","ok"],["leale","ok"],["over-claim","ok"]],
+          "esame": {
+            "q": "«Macedoniani» e «pneumatomachi» sono la stessa fazione?",
+            "a": "Sì, termini equivalenti nelle fonti; usati correttamente.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "lingua",
+              "ok"
+            ],
+            [
+              "leale",
+              "ok"
+            ],
+            [
+              "over-claim",
+              "ok"
+            ]
+          ],
           "cronologia": []
         },
         {
@@ -327,11 +1005,37 @@
           "tipo": "storica",
           "stato": "pronta",
           "fiducia": 5,
-          "match": { "type": "year", "value": "451" },
-          "fonti": ["Encyclopædia Britannica, «Council of Chalcedon (451)»"],
+          "match": {
+            "type": "year",
+            "value": "451"
+          },
+          "fonti": [
+            "Encyclopædia Britannica, «Council of Chalcedon (451)»"
+          ],
           "verificatori": "storico della Chiesa (AI) + patrologo (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "Efeso (431) manca tra 381 e 451.", "a": "Qui Calcedonia è citata come 4° (corretto); Efeso 431 è stato aggiunto alla Cronologia (v1.11). Numerazione coerente.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["leale","ok"],["over-claim","ok"]],
+          "esame": {
+            "q": "Efeso (431) manca tra 381 e 451.",
+            "a": "Qui Calcedonia è citata come 4° (corretto); Efeso 431 è stato aggiunto alla Cronologia (v1.11). Numerazione coerente.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "leale",
+              "ok"
+            ],
+            [
+              "over-claim",
+              "ok"
+            ]
+          ],
           "cronologia": []
         },
         {
@@ -341,11 +1045,37 @@
           "tipo": "linguistica",
           "stato": "pronta",
           "fiducia": 5,
-          "match": { "type": "oref", "value": "Credo di Nicea" },
-          "fonti": ["Credo di Nicea (325) — ὁμοούσιος / consubstantialis"],
+          "match": {
+            "type": "oref",
+            "value": "Credo di Nicea"
+          },
+          "fonti": [
+            "Credo di Nicea (325) — ὁμοούσιος / consubstantialis"
+          ],
           "verificatori": "grecista (AI) + patrologo (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "«Una sola lettera» è retorica o fatto?", "a": "Fatto: homoousios vs homoiousios differiscono per lo iota. Accurato.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["lingua","ok"],["over-claim","ok"]],
+          "esame": {
+            "q": "«Una sola lettera» è retorica o fatto?",
+            "a": "Fatto: homoousios vs homoiousios differiscono per lo iota. Accurato.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "lingua",
+              "ok"
+            ],
+            [
+              "over-claim",
+              "ok"
+            ]
+          ],
           "cronologia": []
         },
         {
@@ -356,11 +1086,44 @@
           "stato": "pronta",
           "fiducia": 4,
           "nota_tipo": "Affermazione dottrinale/interpretativa (convinzione confessionale riformata), NON un dato storico neutro certificabile. Il motore l'ha classificata «non-verificabile come fatto»: ora la pagina la presenta esplicitamente come posizione teologica e riconosce che la terminologia tecnica è post-biblica.",
-          "fonti": ["Sintesi delle schede bibliche di questa pagina", "Credo di Nicea (vocabolario: ousía, homoousios)"],
+          "fonti": [
+            "Sintesi delle schede bibliche di questa pagina",
+            "Credo di Nicea (vocabolario: ousía, homoousios)"
+          ],
           "verificatori": "teologo storico (AI) + storico della Chiesa (AI), indipendenti · ri-eseguito il 6 ago 2026",
-          "esame": { "q": "Non suona come cronaca storica neutra, mentre la terminologia è sviluppo post-biblico?", "a": "Corretto il framing: ora è dichiarata come convinzione teologica riformata e si ammette apertamente che ousía/hypóstasis/homoousios sono vocabolario post-biblico usato per difendere i dati scritturali.", "regge": true },
-          "griglia": [["fonte","ok"],["biblica","ok"],["leale","ok"],["coerenza","ok"],["over-claim","fix"]],
-          "cronologia": [{ "v": "v1.14", "t": "ri-esecuzione del motore: framing esplicito (convinzione riformata) e riconosciuto che la terminologia è post-biblica" }]
+          "esame": {
+            "q": "Non suona come cronaca storica neutra, mentre la terminologia è sviluppo post-biblico?",
+            "a": "Corretto il framing: ora è dichiarata come convinzione teologica riformata e si ammette apertamente che ousía/hypóstasis/homoousios sono vocabolario post-biblico usato per difendere i dati scritturali.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "biblica",
+              "ok"
+            ],
+            [
+              "leale",
+              "ok"
+            ],
+            [
+              "coerenza",
+              "ok"
+            ],
+            [
+              "over-claim",
+              "fix"
+            ]
+          ],
+          "cronologia": [
+            {
+              "v": "v1.14",
+              "t": "ri-esecuzione del motore: framing esplicito (convinzione riformata) e riconosciuto che la terminologia è post-biblica"
+            }
+          ]
         },
         {
           "id": "p2-at-trinita",
@@ -369,11 +1132,47 @@
           "tipo": "biblica",
           "stato": "pronta",
           "fiducia": 4,
-          "fonti": ["Genesi 1:26; 3:22; 11:7", "Genesi 1:2", "Genesi 16:7-13; Esodo 3:2-6; Giudici 13", "Salmo 110:1; Matteo 22:41-46; Isaia 48:16", "Calvino, Institutio I.13; Bavinck, Reformed Dogmatics II"],
+          "fonti": [
+            "Genesi 1:26; 3:22; 11:7",
+            "Genesi 1:2",
+            "Genesi 16:7-13; Esodo 3:2-6; Giudici 13",
+            "Salmo 110:1; Matteo 22:41-46; Isaia 48:16",
+            "Calvino, Institutio I.13; Bavinck, Reformed Dogmatics II"
+          ],
           "verificatori": "2 revisori indipendenti (AI: biblico + storico) + esame critico · verificata il 6 ago 2026",
-          "esame": { "q": "Non si «leggono» a forza indizi trinitari nell'AT?", "a": "Per questo la pagina li presenta come «semi» portati a luce dal NT, non come prove isolate della Trinità. Framing prudente.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["biblica","ok"],["over-claim","ok"]],
-          "cronologia": [{ "v": "v1.14", "t": "aggiunta come integrazione per completezza (indizi trinitari nell'AT)" }, { "v": "v1.15", "t": "confermata dal motore (2 revisori indipendenti + esame critico); presentata come «semi», non prove isolate" }]
+          "esame": {
+            "q": "Non si «leggono» a forza indizi trinitari nell'AT?",
+            "a": "Per questo la pagina li presenta come «semi» portati a luce dal NT, non come prove isolate della Trinità. Framing prudente.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "biblica",
+              "ok"
+            ],
+            [
+              "over-claim",
+              "ok"
+            ]
+          ],
+          "cronologia": [
+            {
+              "v": "v1.14",
+              "t": "aggiunta come integrazione per completezza (indizi trinitari nell'AT)"
+            },
+            {
+              "v": "v1.15",
+              "t": "confermata dal motore (2 revisori indipendenti + esame critico); presentata come «semi», non prove isolate"
+            }
+          ]
         },
         {
           "id": "p2-gen-eterna",
@@ -382,12 +1181,55 @@
           "tipo": "dottrinale",
           "stato": "pronta",
           "fiducia": 4,
-          "match": { "type": "oref", "value": "Credo niceno · 325" },
-          "fonti": ["Giovanni 5:26 (base della generazione eterna)", "Credo di Nicea (325): γεννηθέντα οὐ ποιηθέντα", "monogenḗs (Gv 1:14.18; 3:16) — «unigenito» tradizionale, BDAG «unico nel suo genere»", "Colossesi 1:15-17; Salmo 89:27; Esodo 4:22 (prōtótokos = rango)", "Westminster II.3; Calvino, Institutio I.13.7"],
+          "match": {
+            "type": "oref",
+            "value": "Credo niceno · 325"
+          },
+          "fonti": [
+            "Giovanni 5:26 (base della generazione eterna)",
+            "Credo di Nicea (325): γεννηθέντα οὐ ποιηθέντα",
+            "monogenḗs (Gv 1:14.18; 3:16) — «unigenito» tradizionale, BDAG «unico nel suo genere»",
+            "Colossesi 1:15-17; Salmo 89:27; Esodo 4:22 (prōtótokos = rango)",
+            "Westminster II.3; Calvino, Institutio I.13.7"
+          ],
           "verificatori": "2 revisori indipendenti (AI: biblico + storico) + esame critico · verificata il 6 ago 2026",
-          "esame": { "q": "«monogenḗs» prova la generazione eterna, e «primogenito» (Col 1:15) che il Figlio è creato (obiezione TdG)?", "a": "monogenḗs da solo no: BDAG lo intende «unico nel suo genere», non «generato» — resta indizio; la generazione è ancorata a Gv 5:26. E prōtótokos è titolo di rango (Sal 89:27; Es 4:22), non ordine di creazione: il contesto (Col 1:16-17, «tutto creato per mezzo di lui») lo esclude.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","fix"],["biblica","ok"],["lingua","ok"],["over-claim","fix"]],
-          "cronologia": [{ "v": "v1.14", "t": "aggiunta come integrazione per completezza (generazione eterna, contro Ario/TdG)" }, { "v": "v1.15", "t": "ri-eseguito il motore: declassato monogenḗs a indizio (BDAG), generazione ancorata a Gv 5:26, aggiunto Col 1:16-17 e l'uso di «primogenito» come rango" }]
+          "esame": {
+            "q": "«monogenḗs» prova la generazione eterna, e «primogenito» (Col 1:15) che il Figlio è creato (obiezione TdG)?",
+            "a": "monogenḗs da solo no: BDAG lo intende «unico nel suo genere», non «generato» — resta indizio; la generazione è ancorata a Gv 5:26. E prōtótokos è titolo di rango (Sal 89:27; Es 4:22), non ordine di creazione: il contesto (Col 1:16-17, «tutto creato per mezzo di lui») lo esclude.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "fix"
+            ],
+            [
+              "biblica",
+              "ok"
+            ],
+            [
+              "lingua",
+              "ok"
+            ],
+            [
+              "over-claim",
+              "fix"
+            ]
+          ],
+          "cronologia": [
+            {
+              "v": "v1.14",
+              "t": "aggiunta come integrazione per completezza (generazione eterna, contro Ario/TdG)"
+            },
+            {
+              "v": "v1.15",
+              "t": "ri-eseguito il motore: declassato monogenḗs a indizio (BDAG), generazione ancorata a Gv 5:26, aggiunto Col 1:16-17 e l'uso di «primogenito» come rango"
+            }
+          ]
         },
         {
           "id": "p2-processione-filioque",
@@ -396,11 +1238,45 @@
           "tipo": "storica",
           "stato": "pronta",
           "fiducia": 4,
-          "fonti": ["Giovanni 15:26", "III Concilio di Toledo (589) — formalizzazione del Filioque", "Scisma del 1054"],
+          "fonti": [
+            "Giovanni 15:26",
+            "III Concilio di Toledo (589) — formalizzazione del Filioque",
+            "Scisma del 1054"
+          ],
           "verificatori": "2 revisori indipendenti (AI: biblico + storico) + esame critico · verificata il 6 ago 2026",
-          "esame": { "q": "Il Filioque è presentato in modo equo verso l'Oriente?", "a": "Sì: si dice che l'Oriente non lo accettò e che fu concausa dello scisma; si dichiara che le chiese riformate lo accolgono. Nessuna caricatura.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["leale","ok"],["over-claim","ok"]],
-          "cronologia": [{ "v": "v1.14", "t": "aggiunta come integrazione per completezza (processione dello Spirito / Filioque)" }, { "v": "v1.15", "t": "confermata dal motore; precisata la base scritturale del Filioque (Gv 16:7; Gal 4:6; Rom 8:9, non Gv 15:26) e l'adozione a Roma (~1014)" }]
+          "esame": {
+            "q": "Il Filioque è presentato in modo equo verso l'Oriente?",
+            "a": "Sì: si dice che l'Oriente non lo accettò e che fu concausa dello scisma; si dichiara che le chiese riformate lo accolgono. Nessuna caricatura.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "leale",
+              "ok"
+            ],
+            [
+              "over-claim",
+              "ok"
+            ]
+          ],
+          "cronologia": [
+            {
+              "v": "v1.14",
+              "t": "aggiunta come integrazione per completezza (processione dello Spirito / Filioque)"
+            },
+            {
+              "v": "v1.15",
+              "t": "confermata dal motore; precisata la base scritturale del Filioque (Gv 16:7; Gal 4:6; Rom 8:9, non Gv 15:26) e l'adozione a Roma (~1014)"
+            }
+          ]
         },
         {
           "id": "p2-pericoresi",
@@ -409,11 +1285,50 @@
           "tipo": "dottrinale",
           "stato": "pronta",
           "fiducia": 4,
-          "fonti": ["Giovanni 10:38; 14:10-11; 17:21 (pericoresi)", "Giovanni Damasceno, De fide orthodoxa", "Giovanni 5:19; 1 Corinzi 8:6; Colossesi 1:16 (opera ad extra indivisa)", "Agostino, De Trinitate; Berkhof"],
+          "fonti": [
+            "Giovanni 10:38; 14:10-11; 17:21 (pericoresi)",
+            "Giovanni Damasceno, De fide orthodoxa",
+            "Giovanni 5:19; 1 Corinzi 8:6; Colossesi 1:16 (opera ad extra indivisa)",
+            "Agostino, De Trinitate; Berkhof"
+          ],
           "verificatori": "2 revisori indipendenti (AI: biblico + storico) + esame critico · verificata il 6 ago 2026",
-          "esame": { "q": "«Pericoresi» e «opere ad extra» non sono categorie extra-bibliche?", "a": "Sono termini tecnici, ma ancorati a testi biblici espliciti (Gv 10:38; 14:10-11; 5:19). Servono a spiegare COME l'unità e la distinzione coesistono, senza aggiungere dottrina.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["biblica","ok"],["coerenza","ok"],["over-claim","ok"]],
-          "cronologia": [{ "v": "v1.14", "t": "aggiunta come integrazione per completezza (pericoresi e opere ad extra indivise)" }, { "v": "v1.15", "t": "confermata dal motore; precisato «ripresa e sistematizzata» da Giovanni Damasceno (nasce cristologica) e la distinzione natura/grazia in Gv 17:21" }]
+          "esame": {
+            "q": "«Pericoresi» e «opere ad extra» non sono categorie extra-bibliche?",
+            "a": "Sono termini tecnici, ma ancorati a testi biblici espliciti (Gv 10:38; 14:10-11; 5:19). Servono a spiegare COME l'unità e la distinzione coesistono, senza aggiungere dottrina.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "biblica",
+              "ok"
+            ],
+            [
+              "coerenza",
+              "ok"
+            ],
+            [
+              "over-claim",
+              "ok"
+            ]
+          ],
+          "cronologia": [
+            {
+              "v": "v1.14",
+              "t": "aggiunta come integrazione per completezza (pericoresi e opere ad extra indivise)"
+            },
+            {
+              "v": "v1.15",
+              "t": "confermata dal motore; precisato «ripresa e sistematizzata» da Giovanni Damasceno (nasce cristologica) e la distinzione natura/grazia in Gv 17:21"
+            }
+          ]
         },
         {
           "id": "p2-eresie",
@@ -422,11 +1337,45 @@
           "tipo": "dottrinale",
           "stato": "pronta",
           "fiducia": 5,
-          "fonti": ["modalismo/sabellianismo (Tertulliano, Adversus Praxean, lo confuta)", "triteismo", "arianesimo (condannato a Nicea 325)"],
+          "fonti": [
+            "modalismo/sabellianismo (Tertulliano, Adversus Praxean, lo confuta)",
+            "triteismo",
+            "arianesimo (condannato a Nicea 325)"
+          ],
           "verificatori": "2 revisori indipendenti (AI: biblico + storico) + esame critico · verificata il 6 ago 2026",
-          "esame": { "q": "La mappa delle eresie è accurata storicamente?", "a": "Sì: le tre negano rispettivamente distinzione, unità e uguaglianza; le identificazioni moderne (Solo-Gesù = modalismo; TdG = arianesimo) sono corrette e utili al lettore.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["leale","ok"],["coerenza","ok"]],
-          "cronologia": [{ "v": "v1.14", "t": "aggiunta come integrazione per completezza (mappa modalismo/triteismo/arianesimo)" }, { "v": "v1.15", "t": "confermata dal motore; aggiunto che l'arianesimo fu debellato a Costantinopoli 381 (non chiuso subito a Nicea)" }]
+          "esame": {
+            "q": "La mappa delle eresie è accurata storicamente?",
+            "a": "Sì: le tre negano rispettivamente distinzione, unità e uguaglianza; le identificazioni moderne (Solo-Gesù = modalismo; TdG = arianesimo) sono corrette e utili al lettore.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "leale",
+              "ok"
+            ],
+            [
+              "coerenza",
+              "ok"
+            ]
+          ],
+          "cronologia": [
+            {
+              "v": "v1.14",
+              "t": "aggiunta come integrazione per completezza (mappa modalismo/triteismo/arianesimo)"
+            },
+            {
+              "v": "v1.15",
+              "t": "confermata dal motore; aggiunto che l'arianesimo fu debellato a Costantinopoli 381 (non chiuso subito a Nicea)"
+            }
+          ]
         },
         {
           "id": "p2-pre-nicea",
@@ -435,11 +1384,45 @@
           "tipo": "storica",
           "stato": "pronta",
           "fiducia": 5,
-          "fonti": ["Plinio il Giovane, Epistulae 10.96 (c. 112 d.C.): «carmen Christo quasi deo»", "Ignazio di Antiochia (c. 107), lettere", "atti del Concilio di Nicea (325)"],
+          "fonti": [
+            "Plinio il Giovane, Epistulae 10.96 (c. 112 d.C.): «carmen Christo quasi deo»",
+            "Ignazio di Antiochia (c. 107), lettere",
+            "atti del Concilio di Nicea (325)"
+          ],
           "verificatori": "2 revisori indipendenti (AI: biblico + storico) + esame critico · verificata il 6 ago 2026",
-          "esame": { "q": "Le testimonianze pre-niceane provano davvero l'adorazione di Cristo come Dio?", "a": "Plinio (fonte pagana ostile) attesta il culto a Cristo «come a un dio» già nel 112; Ignazio lo chiama «Dio» nel 107. Rispondono direttamente all'accusa di «invenzione a Nicea».", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["leale","ok"],["over-claim","ok"]],
-          "cronologia": [{ "v": "v1.14", "t": "aggiunta come integrazione per completezza (prove pre-niceane contro l'accusa di «invenzione a Nicea»)" }, { "v": "v1.15", "t": "confermata dal motore (dati Plinio/Ignazio verificati); distinta la venerazione pre-nicena dalla definizione dogmatica (homoousios); solo due contrari al voto" }]
+          "esame": {
+            "q": "Le testimonianze pre-niceane provano davvero l'adorazione di Cristo come Dio?",
+            "a": "Plinio (fonte pagana ostile) attesta il culto a Cristo «come a un dio» già nel 112; Ignazio lo chiama «Dio» nel 107. Rispondono direttamente all'accusa di «invenzione a Nicea».",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "leale",
+              "ok"
+            ],
+            [
+              "over-claim",
+              "ok"
+            ]
+          ],
+          "cronologia": [
+            {
+              "v": "v1.14",
+              "t": "aggiunta come integrazione per completezza (prove pre-niceane contro l'accusa di «invenzione a Nicea»)"
+            },
+            {
+              "v": "v1.15",
+              "t": "confermata dal motore (dati Plinio/Ignazio verificati); distinta la venerazione pre-nicena dalla definizione dogmatica (homoousios); solo due contrari al voto"
+            }
+          ]
         },
         {
           "id": "p2-confessioni",
@@ -448,11 +1431,43 @@
           "tipo": "dottrinale",
           "stato": "pronta",
           "fiducia": 5,
-          "fonti": ["Confessione di Westminster II.3", "Confessione belga artt. 8-9", "Catechismo di Heidelberg D. 24-25", "Calvino, Institutio I.13", "Simbolo di Atanasio (Quicumque vult)"],
+          "fonti": [
+            "Confessione di Westminster II.3",
+            "Confessione belga artt. 8-9",
+            "Catechismo di Heidelberg D. 24-25",
+            "Calvino, Institutio I.13",
+            "Simbolo di Atanasio (Quicumque vult)"
+          ],
           "verificatori": "2 revisori indipendenti (AI: biblico + storico) + esame critico · verificata il 6 ago 2026",
-          "esame": { "q": "I rimandi confessionali sono esatti?", "a": "Sì: Westminster II tratta di Dio e della Trinità; Belga 8-9 e Heidelberg 24-25 la confessano; il Simbolo di Atanasio ne è la formulazione verbale più precisa.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["coerenza","ok"]],
-          "cronologia": [{ "v": "v1.14", "t": "aggiunta come integrazione per completezza (ancoraggio confessionale riformato)" }, { "v": "v1.15", "t": "confermata dal motore (rimandi confessionali verificati); precisato che il Simbolo di Atanasio è pseudo-atanasiano (formulario latino V-VI sec.)" }]
+          "esame": {
+            "q": "I rimandi confessionali sono esatti?",
+            "a": "Sì: Westminster II tratta di Dio e della Trinità; Belga 8-9 e Heidelberg 24-25 la confessano; il Simbolo di Atanasio ne è la formulazione verbale più precisa.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "coerenza",
+              "ok"
+            ]
+          ],
+          "cronologia": [
+            {
+              "v": "v1.14",
+              "t": "aggiunta come integrazione per completezza (ancoraggio confessionale riformato)"
+            },
+            {
+              "v": "v1.15",
+              "t": "confermata dal motore (rimandi confessionali verificati); precisato che il Simbolo di Atanasio è pseudo-atanasiano (formulario latino V-VI sec.)"
+            }
+          ]
         }
       ]
     },
@@ -468,12 +1483,45 @@
           "tipo": "biblica",
           "stato": "pronta",
           "fiducia": 5,
-          "match": { "type": "oref", "value": "Romani 3:10" },
-          "fonti": ["Romani 3:10-12 — οὐκ ἔστιν δίκαιος οὐδὲ εἷς", "Salmo 14:1-3 (=53)", "Isaia 59:7-8 (in Rm 3:15-17)"],
+          "match": {
+            "type": "oref",
+            "value": "Romani 3:10"
+          },
+          "fonti": [
+            "Romani 3:10-12 — οὐκ ἔστιν δίκαιος οὐδὲ εἷς",
+            "Salmo 14:1-3 (=53)",
+            "Isaia 59:7-8 (in Rm 3:15-17)"
+          ],
           "verificatori": "grecista/NT (AI) + biblista (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "Rm 3:10-12 non cita anche Isaia?", "a": "No: quel tratto riproduce solo il Salmo 14; Isaia 59 è in Rm 3:15-17. Errore di attribuzione corretto.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["biblica","fix"],["lingua","ok"]],
-          "cronologia": [{ "v": "v1.9", "t": "corretto: Rm 3:10-12 cita il Salmo 14, non Isaia (che è in Rm 3:15-17)" }]
+          "esame": {
+            "q": "Rm 3:10-12 non cita anche Isaia?",
+            "a": "No: quel tratto riproduce solo il Salmo 14; Isaia 59 è in Rm 3:15-17. Errore di attribuzione corretto.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "biblica",
+              "fix"
+            ],
+            [
+              "lingua",
+              "ok"
+            ]
+          ],
+          "cronologia": [
+            {
+              "v": "v1.9",
+              "t": "corretto: Rm 3:10-12 cita il Salmo 14, non Isaia (che è in Rm 3:15-17)"
+            }
+          ]
         },
         {
           "id": "p3-depravazione-totale",
@@ -482,10 +1530,34 @@
           "tipo": "dottrinale",
           "stato": "pronta",
           "fiducia": 5,
-          "fonti": ["Romani 6:23", "Efesini 2:1-3"],
+          "fonti": [
+            "Romani 6:23",
+            "Efesini 2:1-3"
+          ],
           "verificatori": "teologo sistematico (AI) + storico della Riforma (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "«Totale» non è un'esagerazione?", "a": "La pagina distingue estensione (tutto) da intensità (non demoni). Formulazione precisa, non over-claim.", "regge": true },
-          "griglia": [["fonte","ok"],["biblica","ok"],["coerenza","ok"],["over-claim","ok"]],
+          "esame": {
+            "q": "«Totale» non è un'esagerazione?",
+            "a": "La pagina distingue estensione (tutto) da intensità (non demoni). Formulazione precisa, non over-claim.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "biblica",
+              "ok"
+            ],
+            [
+              "coerenza",
+              "ok"
+            ],
+            [
+              "over-claim",
+              "ok"
+            ]
+          ],
           "cronologia": []
         },
         {
@@ -495,11 +1567,41 @@
           "tipo": "linguistica",
           "stato": "pronta",
           "fiducia": 5,
-          "match": { "type": "oref", "value": "Giovanni 1:14" },
-          "fonti": ["Giovanni 1:14 — σὰρξ ἐγένετο"],
+          "match": {
+            "type": "oref",
+            "value": "Giovanni 1:14"
+          },
+          "fonti": [
+            "Giovanni 1:14 — σὰρξ ἐγένετο"
+          ],
           "verificatori": "grecista/NT (AI) + patrologo (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "«sárx egéneto» implica un mutamento della natura divina?", "a": "No: indica l'assunzione della natura umana, non la trasformazione di quella divina (coerente con Calcedonia).", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["biblica","ok"],["lingua","ok"],["coerenza","ok"]],
+          "esame": {
+            "q": "«sárx egéneto» implica un mutamento della natura divina?",
+            "a": "No: indica l'assunzione della natura umana, non la trasformazione di quella divina (coerente con Calcedonia).",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "biblica",
+              "ok"
+            ],
+            [
+              "lingua",
+              "ok"
+            ],
+            [
+              "coerenza",
+              "ok"
+            ]
+          ],
           "cronologia": []
         },
         {
@@ -509,10 +1611,30 @@
           "tipo": "storica",
           "stato": "pronta",
           "fiducia": 5,
-          "fonti": ["Definizione di Calcedonia (451)", "Encyclopædia Britannica, «Chalcedonian Definition»"],
+          "fonti": [
+            "Definizione di Calcedonia (451)",
+            "Encyclopædia Britannica, «Chalcedonian Definition»"
+          ],
           "verificatori": "storico della Chiesa (AI) + patrologo (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "I quattro avverbi sono resi correttamente?", "a": "Sì: «senza confusione, mutamento, divisione, separazione», e le date/luogo (451, Bitinia) sono confermati.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["over-claim","ok"]],
+          "esame": {
+            "q": "I quattro avverbi sono resi correttamente?",
+            "a": "Sì: «senza confusione, mutamento, divisione, separazione», e le date/luogo (451, Bitinia) sono confermati.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "over-claim",
+              "ok"
+            ]
+          ],
           "cronologia": []
         },
         {
@@ -522,12 +1644,46 @@
           "tipo": "linguistica",
           "stato": "pronta",
           "fiducia": 4,
-          "match": { "type": "oref", "value": "Romani 3:25" },
-          "fonti": ["Romani 3:25 — ἱλαστήριον", "L. Morris (propiziazione)", "C. H. Dodd (espiazione)", "cfr. Ebrei 9:5; 1 Giovanni 2:2; 4:10"],
+          "match": {
+            "type": "oref",
+            "value": "Romani 3:25"
+          },
+          "fonti": [
+            "Romani 3:25 — ἱλαστήριον",
+            "L. Morris (propiziazione)",
+            "C. H. Dodd (espiazione)",
+            "cfr. Ebrei 9:5; 1 Giovanni 2:2; 4:10"
+          ],
           "verificatori": "grecista/NT (AI) + teologo (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "Non si impone la lettura riformata come unica?", "a": "No: la nota segnala esplicitamente il dibattito Dodd/Morris. La scelta «propiziazione» è dichiarata, non spacciata per unica.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["lingua","ok"],["leale","ok"]],
-          "cronologia": [{ "v": "v1.9", "t": "aggiunta la nota sul dibattito propiziazione/espiazione" }]
+          "esame": {
+            "q": "Non si impone la lettura riformata come unica?",
+            "a": "No: la nota segnala esplicitamente il dibattito Dodd/Morris. La scelta «propiziazione» è dichiarata, non spacciata per unica.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "lingua",
+              "ok"
+            ],
+            [
+              "leale",
+              "ok"
+            ]
+          ],
+          "cronologia": [
+            {
+              "v": "v1.9",
+              "t": "aggiunta la nota sul dibattito propiziazione/espiazione"
+            }
+          ]
         },
         {
           "id": "p3-scambio",
@@ -536,10 +1692,32 @@
           "tipo": "biblica",
           "stato": "pronta",
           "fiducia": 5,
-          "fonti": ["2 Corinzi 5:21", "Isaia 53:5", "1 Pietro 2:24", "Romani 4:25"],
+          "fonti": [
+            "2 Corinzi 5:21",
+            "Isaia 53:5",
+            "1 Pietro 2:24",
+            "Romani 4:25"
+          ],
           "verificatori": "biblista (AI) + teologo (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "I riferimenti sostengono davvero l'imputazione?", "a": "Sì: 2 Cor 5:21 è il testo classico dello scambio; gli altri lo confermano. Riferimenti verificati.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["biblica","ok"]],
+          "esame": {
+            "q": "I riferimenti sostengono davvero l'imputazione?",
+            "a": "Sì: 2 Cor 5:21 è il testo classico dello scambio; gli altri lo confermano. Riferimenti verificati.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "biblica",
+              "ok"
+            ]
+          ],
           "cronologia": []
         },
         {
@@ -549,11 +1727,38 @@
           "tipo": "linguistica",
           "stato": "pronta",
           "fiducia": 5,
-          "match": { "type": "oref", "value": "Romani 3-4" },
-          "fonti": ["Romani 3:28; 5:1 (dikaióō)", "Romani 4:3-5 (logízomai, come ad Abramo)"],
+          "match": {
+            "type": "oref",
+            "value": "Romani 3-4"
+          },
+          "fonti": [
+            "Romani 3:28; 5:1 (dikaióō)",
+            "Romani 4:3-5 (logízomai, come ad Abramo)"
+          ],
           "verificatori": "grecista/NT (AI) + storico della Riforma (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "«dikaióō» non può significare «rendere giusto» (trasformazione)?", "a": "Nel contesto paolino-forense significa «dichiarare giusto» (cambio di status), non infusione. Lettura sostenuta dalla grammatica e dal contesto.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["biblica","ok"],["lingua","ok"]],
+          "esame": {
+            "q": "«dikaióō» non può significare «rendere giusto» (trasformazione)?",
+            "a": "Nel contesto paolino-forense significa «dichiarare giusto» (cambio di status), non infusione. Lettura sostenuta dalla grammatica e dal contesto.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "biblica",
+              "ok"
+            ],
+            [
+              "lingua",
+              "ok"
+            ]
+          ],
           "cronologia": []
         },
         {
@@ -563,11 +1768,33 @@
           "tipo": "storica",
           "stato": "pronta",
           "fiducia": 5,
-          "match": { "type": "oref", "value": "Principio della Riforma" },
-          "fonti": ["Martin Lutero (lezioni su Romani, 1515-16)"],
+          "match": {
+            "type": "oref",
+            "value": "Principio della Riforma"
+          },
+          "fonti": [
+            "Martin Lutero (lezioni su Romani, 1515-16)"
+          ],
           "verificatori": "storico della Riforma (AI) + teologo (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "La formula è davvero di Lutero?", "a": "Sì, espressa nelle lezioni su Romani (1515-16) e ricorrente nella sua teologia della giustificazione.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["lingua","ok"]],
+          "esame": {
+            "q": "La formula è davvero di Lutero?",
+            "a": "Sì, espressa nelle lezioni su Romani (1515-16) e ricorrente nella sua teologia della giustificazione.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "lingua",
+              "ok"
+            ]
+          ],
           "cronologia": []
         },
         {
@@ -577,10 +1804,34 @@
           "tipo": "dottrinale",
           "stato": "pronta",
           "fiducia": 5,
-          "fonti": ["Giacomo 2:14-26", "Efesini 2:8-10"],
+          "fonti": [
+            "Giacomo 2:14-26",
+            "Efesini 2:8-10"
+          ],
           "verificatori": "teologo (AI) + storico della Riforma (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "Giacomo («per opere») non contraddice Paolo («per fede»)?", "a": "No: Giacomo parla della fede che si dimostra viva; Paolo del fondamento della giustificazione. La pagina distingue frutto e radice. Coerente.", "regge": true },
-          "griglia": [["fonte","ok"],["biblica","ok"],["coerenza","ok"],["over-claim","ok"]],
+          "esame": {
+            "q": "Giacomo («per opere») non contraddice Paolo («per fede»)?",
+            "a": "No: Giacomo parla della fede che si dimostra viva; Paolo del fondamento della giustificazione. La pagina distingue frutto e radice. Coerente.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "biblica",
+              "ok"
+            ],
+            [
+              "coerenza",
+              "ok"
+            ],
+            [
+              "over-claim",
+              "ok"
+            ]
+          ],
           "cronologia": []
         },
         {
@@ -590,10 +1841,29 @@
           "tipo": "storica",
           "stato": "pronta",
           "fiducia": 5,
-          "fonti": ["Sinodo di Dordrecht, Canoni (1618-1619)"],
+          "fonti": [
+            "Sinodo di Dordrecht, Canoni (1618-1619)"
+          ],
           "verificatori": "storico della Riforma (AI) + teologo (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "Non si presentano TULIP e le 5 Sola come antichi quanto la Riforma?", "a": "No: la pagina dice esplicitamente che il raggruppamento e l'acronimo sono del XX sec., pur derivando da Dordrecht. Onesto.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["over-claim","ok"]],
+          "esame": {
+            "q": "Non si presentano TULIP e le 5 Sola come antichi quanto la Riforma?",
+            "a": "No: la pagina dice esplicitamente che il raggruppamento e l'acronimo sono del XX sec., pur derivando da Dordrecht. Onesto.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "over-claim",
+              "ok"
+            ]
+          ],
           "cronologia": []
         }
       ]
@@ -610,11 +1880,39 @@
           "tipo": "linguistica",
           "stato": "pronta",
           "fiducia": 5,
-          "match": { "type": "oref", "value": "Matteo 16:18; Efesini 1:22-23" },
-          "fonti": ["Matteo 16:18", "Efesini 1:22-23", "Colossesi 1:18"],
+          "match": {
+            "type": "oref",
+            "value": "Matteo 16:18; Efesini 1:22-23"
+          },
+          "fonti": [
+            "Matteo 16:18",
+            "Efesini 1:22-23",
+            "Colossesi 1:18"
+          ],
           "verificatori": "grecista/NT (AI) + teologo (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "«chiamati fuori» non forza l'etimologia?", "a": "È l'etimologia tradizionale (ek + kaléō); la pagina la usa per il senso di «assemblea», coerente con l'uso neotestamentario.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["biblica","ok"],["lingua","ok"]],
+          "esame": {
+            "q": "«chiamati fuori» non forza l'etimologia?",
+            "a": "È l'etimologia tradizionale (ek + kaléō); la pagina la usa per il senso di «assemblea», coerente con l'uso neotestamentario.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "biblica",
+              "ok"
+            ],
+            [
+              "lingua",
+              "ok"
+            ]
+          ],
           "cronologia": []
         },
         {
@@ -624,10 +1922,30 @@
           "tipo": "storica",
           "stato": "pronta",
           "fiducia": 5,
-          "fonti": ["Confessione belga (1561), art. 29", "Confessione di Augusta (1530); Calvino — due segni"],
+          "fonti": [
+            "Confessione belga (1561), art. 29",
+            "Confessione di Augusta (1530); Calvino — due segni"
+          ],
           "verificatori": "storico della Chiesa (AI) + teologo (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "I due segni (Calvino/Augustana) e i tre (Belga) non sono confusi?", "a": "No: la nota distingue chiaramente le due tradizioni (due vs tre segni). Accurato.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["leale","ok"]],
+          "esame": {
+            "q": "I due segni (Calvino/Augustana) e i tre (Belga) non sono confusi?",
+            "a": "No: la nota distingue chiaramente le due tradizioni (due vs tre segni). Accurato.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "leale",
+              "ok"
+            ]
+          ],
           "cronologia": []
         },
         {
@@ -637,10 +1955,33 @@
           "tipo": "biblica",
           "stato": "pronta",
           "fiducia": 5,
-          "fonti": ["Atti 2:42", "Ebrei 10:24-25", "1 Timoteo 3", "Tito 1:5-9", "Atti 6:1-6"],
+          "fonti": [
+            "Atti 2:42",
+            "Ebrei 10:24-25",
+            "1 Timoteo 3",
+            "Tito 1:5-9",
+            "Atti 6:1-6"
+          ],
           "verificatori": "biblista (AI) + teologo (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "Il NT prevede davvero una pluralità di anziani?", "a": "Sì: Tito 1:5 («costituissi degli anziani in ogni città») e Atti 14:23 mostrano una pluralità. Riferimenti corretti.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["biblica","ok"]],
+          "esame": {
+            "q": "Il NT prevede davvero una pluralità di anziani?",
+            "a": "Sì: Tito 1:5 («costituissi degli anziani in ogni città») e Atti 14:23 mostrano una pluralità. Riferimenti corretti.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "biblica",
+              "ok"
+            ]
+          ],
           "cronologia": []
         },
         {
@@ -650,11 +1991,31 @@
           "tipo": "storica",
           "stato": "pronta",
           "fiducia": 5,
-          "match": { "type": "year", "value": "1561" },
-          "fonti": ["Confessione belga (Guido de Brès, 1561)", "Catechismo di Heidelberg (1563)", "Canoni di Dordrecht (1618-1619)"],
+          "match": {
+            "type": "year",
+            "value": "1561"
+          },
+          "fonti": [
+            "Confessione belga (Guido de Brès, 1561)",
+            "Catechismo di Heidelberg (1563)",
+            "Canoni di Dordrecht (1618-1619)"
+          ],
           "verificatori": "storico della Chiesa (AI) + teologo (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "Le date delle tre forme sono corrette?", "a": "Sì: 1561, 1563, 1618-19, tutte confermate. Insieme costituiscono le Tre Forme dell'Unità.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"]],
+          "esame": {
+            "q": "Le date delle tre forme sono corrette?",
+            "a": "Sì: 1561, 1563, 1618-19, tutte confermate. Insieme costituiscono le Tre Forme dell'Unità.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ]
+          ],
           "cronologia": []
         },
         {
@@ -664,11 +2025,30 @@
           "tipo": "storica",
           "stato": "pronta",
           "fiducia": 5,
-          "match": { "type": "year", "value": "1646" },
-          "fonti": ["Confessione di Westminster (1646, pubbl. 1647)", "Catechismi Maggiore e Minore (1647)"],
+          "match": {
+            "type": "year",
+            "value": "1646"
+          },
+          "fonti": [
+            "Confessione di Westminster (1646, pubbl. 1647)",
+            "Catechismi Maggiore e Minore (1647)"
+          ],
           "verificatori": "storico della Chiesa (AI) + teologo (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "1646 o 1647?", "a": "La Confessione è del 1646, pubblicata nel 1647; i Catechismi del 1647. Datazione precisa.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"]],
+          "esame": {
+            "q": "1646 o 1647?",
+            "a": "La Confessione è del 1646, pubblicata nel 1647; i Catechismi del 1647. Datazione precisa.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ]
+          ],
           "cronologia": []
         },
         {
@@ -678,11 +2058,33 @@
           "tipo": "storica",
           "stato": "pronta",
           "fiducia": 4,
-          "match": { "type": "oref", "value": "Motto riformato" },
-          "fonti": ["motto tradizionale riformato; forma estesa: secundum verbum Dei"],
+          "match": {
+            "type": "oref",
+            "value": "Motto riformato"
+          },
+          "fonti": [
+            "motto tradizionale riformato; forma estesa: secundum verbum Dei"
+          ],
           "verificatori": "storico della Chiesa (AI) + teologo (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "Chi ha coniato il motto?", "a": "Non un singolo autore del XVI sec.: la pagina lo dice apertamente («esprime lo spirito della Riforma»). Nessuna falsa attribuzione.", "regge": true },
-          "griglia": [["fatto","ok"],["lingua","ok"],["over-claim","ok"]],
+          "esame": {
+            "q": "Chi ha coniato il motto?",
+            "a": "Non un singolo autore del XVI sec.: la pagina lo dice apertamente («esprime lo spirito della Riforma»). Nessuna falsa attribuzione.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "lingua",
+              "ok"
+            ],
+            [
+              "over-claim",
+              "ok"
+            ]
+          ],
           "cronologia": []
         }
       ]
@@ -699,10 +2101,32 @@
           "tipo": "biblica",
           "stato": "pronta",
           "fiducia": 5,
-          "fonti": ["Atti 17:11", "1 Giovanni 4:1", "2 Corinzi 11:14", "Galati 1:8-9"],
+          "fonti": [
+            "Atti 17:11",
+            "1 Giovanni 4:1",
+            "2 Corinzi 11:14",
+            "Galati 1:8-9"
+          ],
           "verificatori": "biblista (AI) + teologo (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "«Ascolta dalle sue fonti» è davvero applicato?", "a": "Sì: le sezioni seguenti citano le fonti primarie dei gruppi (Watch Tower, Libro di Mormon, Trento). Metodo coerente con quanto dichiarato.", "regge": true },
-          "griglia": [["fonte","ok"],["biblica","ok"],["coerenza","ok"]],
+          "esame": {
+            "q": "«Ascolta dalle sue fonti» è davvero applicato?",
+            "a": "Sì: le sezioni seguenti citano le fonti primarie dei gruppi (Watch Tower, Libro di Mormon, Trento). Metodo coerente con quanto dichiarato.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "biblica",
+              "ok"
+            ],
+            [
+              "coerenza",
+              "ok"
+            ]
+          ],
           "cronologia": []
         },
         {
@@ -712,12 +2136,43 @@
           "tipo": "statistica",
           "stato": "pronta",
           "fiducia": 5,
-          "match": { "type": "eyebrow", "value": "Quanto è diffuso" },
-          "fonti": ["Lifeway Research, Prosperity Gospel Beliefs on the Rise Among Churchgoers (rilevazione set. 2022, pubbl. 2023), n=1.002"],
+          "match": {
+            "type": "eyebrow",
+            "value": "Quanto è diffuso"
+          },
+          "fonti": [
+            "Lifeway Research, Prosperity Gospel Beliefs on the Rise Among Churchgoers (rilevazione set. 2022, pubbl. 2023), n=1.002"
+          ],
           "verificatori": "revisore dati (AI) + teologo (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "Il dato è del 2022 o del 2023?", "a": "Rilevazione settembre 2022, pubblicazione 2023: indicato l'anno del dato, non solo di pubblicazione. Campione (n=1.002) e ambito (USA) dichiarati.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["anno","ok"],["over-claim","ok"]],
-          "cronologia": [{ "v": "v1.10", "t": "precisato l'anno del dato (rilevazione 2022)" }]
+          "esame": {
+            "q": "Il dato è del 2022 o del 2023?",
+            "a": "Rilevazione settembre 2022, pubblicazione 2023: indicato l'anno del dato, non solo di pubblicazione. Campione (n=1.002) e ambito (USA) dichiarati.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "anno",
+              "ok"
+            ],
+            [
+              "over-claim",
+              "ok"
+            ]
+          ],
+          "cronologia": [
+            {
+              "v": "v1.10",
+              "t": "precisato l'anno del dato (rilevazione 2022)"
+            }
+          ]
         },
         {
           "id": "p5-prosperita-genealogia",
@@ -726,11 +2181,33 @@
           "tipo": "storica",
           "stato": "pronta",
           "fiducia": 4,
-          "match": { "type": "shead", "value": "prosperità" },
-          "fonti": ["genealogia: Nuovo Pensiero (Quimby) → Kenyon → Hagin → Copeland"],
+          "match": {
+            "type": "shead",
+            "value": "prosperità"
+          },
+          "fonti": [
+            "genealogia: Nuovo Pensiero (Quimby) → Kenyon → Hagin → Copeland"
+          ],
           "verificatori": "storico delle religioni (AI) + teologo (AI), indipendenti, con attenzione all'equità · 1 ago 2026",
-          "esame": { "q": "La genealogia non è una semplificazione ostile?", "a": "È la ricostruzione storica accettata; presenta legami di influenza, senza caricatura dottrinale. La risposta biblica resta separata dalla storia.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["leale","ok"]],
+          "esame": {
+            "q": "La genealogia non è una semplificazione ostile?",
+            "a": "È la ricostruzione storica accettata; presenta legami di influenza, senza caricatura dottrinale. La risposta biblica resta separata dalla storia.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "leale",
+              "ok"
+            ]
+          ],
           "cronologia": []
         },
         {
@@ -740,11 +2217,33 @@
           "tipo": "storica",
           "stato": "pronta",
           "fiducia": 5,
-          "match": { "type": "shead", "value": "Testimoni di Geova" },
-          "fonti": ["C. T. Russell (1852-1916); Zion's Watch Tower (1879); Watch Tower Society (1884); nome «Jehovah's Witnesses» (1931, Rutherford)"],
+          "match": {
+            "type": "shead",
+            "value": "Testimoni di Geova"
+          },
+          "fonti": [
+            "C. T. Russell (1852-1916); Zion's Watch Tower (1879); Watch Tower Society (1884); nome «Jehovah's Witnesses» (1931, Rutherford)"
+          ],
           "verificatori": "storico delle religioni (AI) + teologo (AI), indipendenti, con attenzione all'equità · 1 ago 2026",
-          "esame": { "q": "Le date sono corrette e non caricaturali?", "a": "Sì: 1879, 1884, 1931 confermate alle fonti; esposizione storica neutra, senza disprezzo.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["leale","ok"]],
+          "esame": {
+            "q": "Le date sono corrette e non caricaturali?",
+            "a": "Sì: 1879, 1884, 1931 confermate alle fonti; esposizione storica neutra, senza disprezzo.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "leale",
+              "ok"
+            ]
+          ],
           "cronologia": []
         },
         {
@@ -754,10 +2253,30 @@
           "tipo": "rappresentazione",
           "stato": "pronta",
           "fiducia": 5,
-          "fonti": ["insegnamenti Watchtower (Gesù = Michele; Dan 10:13,21; 1 Ts 4:16)", "Traduzione del Nuovo Mondo, Giovanni 1:1 «un dio»"],
+          "fonti": [
+            "insegnamenti Watchtower (Gesù = Michele; Dan 10:13,21; 1 Ts 4:16)",
+            "Traduzione del Nuovo Mondo, Giovanni 1:1 «un dio»"
+          ],
           "verificatori": "storico delle religioni (AI) + grecista (AI), indipendenti, con attenzione all'equità · 1 ago 2026",
-          "esame": { "q": "Si attribuiscono ai TdG dottrine che rifiutano?", "a": "No: sono insegnamenti ufficiali documentati alle loro fonti (Watchtower, NWT). Rappresentazione leale.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["leale","ok"]],
+          "esame": {
+            "q": "Si attribuiscono ai TdG dottrine che rifiutano?",
+            "a": "No: sono insegnamenti ufficiali documentati alle loro fonti (Watchtower, NWT). Rappresentazione leale.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "leale",
+              "ok"
+            ]
+          ],
           "cronologia": []
         },
         {
@@ -767,11 +2286,37 @@
           "tipo": "linguistica",
           "stato": "pronta",
           "fiducia": 5,
-          "match": { "type": "oref", "value": "Giovanni 20:28" },
-          "fonti": ["Giovanni 20:28 — ὁ κύριός μου καὶ ὁ θεός μου"],
+          "match": {
+            "type": "oref",
+            "value": "Giovanni 20:28"
+          },
+          "fonti": [
+            "Giovanni 20:28 — ὁ κύριός μου καὶ ὁ θεός μου"
+          ],
           "verificatori": "grecista/NT (AI) + patrologo (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "Non è solo un'esclamazione di stupore rivolta al Padre?", "a": "No: il testo dice «gli disse» (a Gesù) e Gesù risponde approvando (v. 29). L'articolo lega theós a Cristo.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["biblica","ok"],["lingua","ok"]],
+          "esame": {
+            "q": "Non è solo un'esclamazione di stupore rivolta al Padre?",
+            "a": "No: il testo dice «gli disse» (a Gesù) e Gesù risponde approvando (v. 29). L'articolo lega theós a Cristo.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "biblica",
+              "ok"
+            ],
+            [
+              "lingua",
+              "ok"
+            ]
+          ],
           "cronologia": []
         },
         {
@@ -781,12 +2326,45 @@
           "tipo": "rappresentazione",
           "stato": "pronta",
           "fiducia": 5,
-          "match": { "type": "shead", "value": "mormonismo" },
-          "fonti": ["Joseph Smith (1805-1844); chiesa fondata 6 aprile 1830; Libro di Mormon (1830)", "distico di Lorenzo Snow (1840); anticipa il Discorso di King Follett di Smith (7 aprile 1844)", "R. V. Huggins, JETS 49/3 (2006); Encyclopædia Britannica"],
+          "match": {
+            "type": "shead",
+            "value": "mormonismo"
+          },
+          "fonti": [
+            "Joseph Smith (1805-1844); chiesa fondata 6 aprile 1830; Libro di Mormon (1830)",
+            "distico di Lorenzo Snow (1840); anticipa il Discorso di King Follett di Smith (7 aprile 1844)",
+            "R. V. Huggins, JETS 49/3 (2006); Encyclopædia Britannica"
+          ],
           "verificatori": "2 revisori indipendenti (AI) + esame critico · ri-verificata il 6 ago 2026",
-          "esame": { "q": "Il distico di Snow deriva da un insegnamento di Smith del 1844?", "a": "No — errore cronologico corretto: Snow compose il distico nel 1840, quattro anni PRIMA del Discorso di King Follett (1844). Il distico anticipa quella dottrina, non ne deriva.", "regge": true },
-          "griglia": [["fatto","fix"],["fonte","ok"],["leale","ok"]],
-          "cronologia": [{ "v": "v1.6", "t": "evitata la caricatura «pluralità di dèi»; per la risposta biblica preferiti Galati 1:8 e Deuteronomio 4:2" }, { "v": "v1.16", "t": "ri-esecuzione del motore: corretta la cronologia — distico di Snow (1840) anticipa il 1844, non ne deriva" }]
+          "esame": {
+            "q": "Il distico di Snow deriva da un insegnamento di Smith del 1844?",
+            "a": "No — errore cronologico corretto: Snow compose il distico nel 1840, quattro anni PRIMA del Discorso di King Follett (1844). Il distico anticipa quella dottrina, non ne deriva.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "fix"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "leale",
+              "ok"
+            ]
+          ],
+          "cronologia": [
+            {
+              "v": "v1.6",
+              "t": "evitata la caricatura «pluralità di dèi»; per la risposta biblica preferiti Galati 1:8 e Deuteronomio 4:2"
+            },
+            {
+              "v": "v1.16",
+              "t": "ri-esecuzione del motore: corretta la cronologia — distico di Snow (1840) anticipa il 1844, non ne deriva"
+            }
+          ]
         },
         {
           "id": "p5-trento",
@@ -795,11 +2373,34 @@
           "tipo": "rappresentazione",
           "stato": "pronta",
           "fiducia": 5,
-          "match": { "type": "shead", "value": "Roma" },
-          "fonti": ["Concilio di Trento, Sess. VI (13 gennaio 1547), Canone IX", "Concilio di Trento, Sess. IV — Scrittura e Tradizione"],
+          "match": {
+            "type": "shead",
+            "value": "Roma"
+          },
+          "fonti": [
+            "Concilio di Trento, Sess. VI (13 gennaio 1547), Canone IX",
+            "Concilio di Trento, Sess. IV — Scrittura e Tradizione"
+          ],
           "verificatori": "storico della Chiesa (AI) + teologo (AI), indipendenti, con attenzione all'equità · 1 ago 2026",
-          "esame": { "q": "Si rappresenta correttamente la dottrina cattolica?", "a": "Sì: Canone IX condanna la «sola» fede senza cooperazione, non la fede in sé; citato alla fonte conciliare. Rappresentazione equa.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"],["leale","ok"]],
+          "esame": {
+            "q": "Si rappresenta correttamente la dottrina cattolica?",
+            "a": "Sì: Canone IX condanna la «sola» fede senza cooperazione, non la fede in sé; citato alla fonte conciliare. Rappresentazione equa.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ],
+            [
+              "leale",
+              "ok"
+            ]
+          ],
           "cronologia": []
         }
       ]
@@ -807,7 +2408,7 @@
     "cronologia": {
       "titolo": "Cronologia storica essenziale",
       "stato": "pronta",
-      "nota": "Tutte le date verificate alla fonte da 2 esperti indipendenti. Aggiunto il Concilio di Efeso (431), che prima mancava tra 381 e 451. Le date già trattate nelle Parti sono verificate lì.",
+      "nota": "Ri-eseguito il motore (6 ago 2026): 5/5 confermate — Cartagine 418 (pelagianesimo), Efeso 431 (nestorianesimo), 95 Tesi 1517, Institutio 1536, Dordrecht 1618-19. Le date già trattate nelle Parti sono verificate anche lì.",
       "schede": [
         {
           "id": "cron-418-cartagine",
@@ -816,11 +2417,29 @@
           "tipo": "storica",
           "stato": "pronta",
           "fiducia": 5,
-          "match": { "type": "year", "value": "418" },
-          "fonti": ["Concilio di Cartagine (418) — canoni contro Pelagio"],
+          "match": {
+            "type": "year",
+            "value": "418"
+          },
+          "fonti": [
+            "Concilio di Cartagine (418) — canoni contro Pelagio"
+          ],
           "verificatori": "storico della Chiesa (AI) + patrologo (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "La data 418 è corretta?", "a": "Sì: il concilio di Cartagine del 418 condannò il pelagianesimo. Confermato.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"]],
+          "esame": {
+            "q": "La data 418 è corretta?",
+            "a": "Sì: il concilio di Cartagine del 418 condannò il pelagianesimo. Confermato.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ]
+          ],
           "cronologia": []
         },
         {
@@ -830,12 +2449,35 @@
           "tipo": "storica",
           "stato": "pronta",
           "fiducia": 5,
-          "match": { "type": "year", "value": "431" },
-          "fonti": ["Concilio di Efeso (431) — contro Nestorio"],
+          "match": {
+            "type": "year",
+            "value": "431"
+          },
+          "fonti": [
+            "Concilio di Efeso (431) — contro Nestorio"
+          ],
           "verificatori": "storico della Chiesa (AI) + patrologo (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "Efeso è il 3° concilio ecumenico?", "a": "Sì: 431, terzo concilio, tra Costantinopoli (381) e Calcedonia (451). Aggiunto in audit perché mancava.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"]],
-          "cronologia": [{ "v": "v1.11", "t": "aggiunto il Concilio di Efeso (431) alla cronologia" }]
+          "esame": {
+            "q": "Efeso è il 3° concilio ecumenico?",
+            "a": "Sì: 431, terzo concilio, tra Costantinopoli (381) e Calcedonia (451). Aggiunto in audit perché mancava.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ]
+          ],
+          "cronologia": [
+            {
+              "v": "v1.11",
+              "t": "aggiunto il Concilio di Efeso (431) alla cronologia"
+            }
+          ]
         },
         {
           "id": "cron-1517-tesi",
@@ -844,11 +2486,29 @@
           "tipo": "storica",
           "stato": "pronta",
           "fiducia": 5,
-          "match": { "type": "year", "value": "1517" },
-          "fonti": ["Martin Lutero, 95 Tesi (31 ottobre 1517, Wittenberg)"],
+          "match": {
+            "type": "year",
+            "value": "1517"
+          },
+          "fonti": [
+            "Martin Lutero, 95 Tesi (31 ottobre 1517, Wittenberg)"
+          ],
           "verificatori": "storico della Riforma (AI) + storico della Chiesa (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "La data è corretta?", "a": "Sì: 31 ottobre 1517 è la data tradizionale dell'affissione/invio delle 95 Tesi. Confermata.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"]],
+          "esame": {
+            "q": "La data è corretta?",
+            "a": "Sì: 31 ottobre 1517 è la data tradizionale dell'affissione/invio delle 95 Tesi. Confermata.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ]
+          ],
           "cronologia": []
         },
         {
@@ -858,12 +2518,35 @@
           "tipo": "storica",
           "stato": "pronta",
           "fiducia": 5,
-          "match": { "type": "year", "value": "1536" },
-          "fonti": ["G. Calvino, Institutio Christianae Religionis, 1ª ed. (Basilea, 1536)"],
+          "match": {
+            "type": "year",
+            "value": "1536"
+          },
+          "fonti": [
+            "G. Calvino, Institutio Christianae Religionis, 1ª ed. (Basilea, 1536)"
+          ],
           "verificatori": "storico della Riforma (AI) + storico della Chiesa (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "Prima edizione a Basilea nel 1536?", "a": "Sì: la prima edizione dell'Institutio uscì a Basilea nel 1536. Corretto in audit (v1.0).", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"]],
-          "cronologia": [{ "v": "v1.0", "t": "precisata la prima edizione dell'Institutio a Basilea" }]
+          "esame": {
+            "q": "Prima edizione a Basilea nel 1536?",
+            "a": "Sì: la prima edizione dell'Institutio uscì a Basilea nel 1536. Corretto in audit (v1.0).",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ]
+          ],
+          "cronologia": [
+            {
+              "v": "v1.0",
+              "t": "precisata la prima edizione dell'Institutio a Basilea"
+            }
+          ]
         },
         {
           "id": "cron-1618-dordrecht",
@@ -872,11 +2555,29 @@
           "tipo": "storica",
           "stato": "pronta",
           "fiducia": 5,
-          "match": { "type": "year", "value": "1618" },
-          "fonti": ["Sinodo di Dordrecht (1618-1619), Canoni; Rimostranza arminiana (1610)"],
+          "match": {
+            "type": "year",
+            "value": "1618"
+          },
+          "fonti": [
+            "Sinodo di Dordrecht (1618-1619), Canoni; Rimostranza arminiana (1610)"
+          ],
           "verificatori": "storico della Riforma (AI) + teologo (AI), indipendenti · 1 ago 2026",
-          "esame": { "q": "Le date del sinodo sono corrette?", "a": "Sì: 1618-1619, in risposta alla Rimostranza arminiana del 1610. Confermato.", "regge": true },
-          "griglia": [["fatto","ok"],["fonte","ok"]],
+          "esame": {
+            "q": "Le date del sinodo sono corrette?",
+            "a": "Sì: 1618-1619, in risposta alla Rimostranza arminiana del 1610. Confermato.",
+            "regge": true
+          },
+          "griglia": [
+            [
+              "fatto",
+              "ok"
+            ],
+            [
+              "fonte",
+              "ok"
+            ]
+          ],
           "cronologia": []
         }
       ]

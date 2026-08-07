@@ -5,6 +5,7 @@
   "description": "I Fondamenti della Fede — manuale del discepolo, sistema vivo e verificabile.",
   "scripts": {
     "content": "python3 scripts/gen_content.py",
+    "sigilla": "node scripts/sigilla.mjs",
     "predev": "npm run content",
     "dev": "next dev",
     "build": "next build",

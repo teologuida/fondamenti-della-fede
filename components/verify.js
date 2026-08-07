@@ -5,12 +5,15 @@
 // griglia delle dimensioni e cronologia delle correzioni.
 // Nessun accesso a window/document a livello di modulo (compatibile SSR).
 
+import { effectiveState } from "./seal-util";
+
 const STATE = {
   "da-auditare":     { cls: "v-todo",  sym: "○", label: "da auditare" },
   "1-esperto":       { cls: "v-rev",   sym: "◔", label: "1 esperto" },
   "2-esperti":       { cls: "v-rev",   sym: "◑", label: "2 esperti" },
   "pronta":          { cls: "v-ready", sym: "◕", label: "pronta al sigillo" },
   "sigillata":       { cls: "v-seal",  sym: "●", label: "sigillata" },
+  "rotta":           { cls: "v-broken",sym: "⚠", label: "sigillo rotto · da ri-auditare" },
   "non-verificabile":{ cls: "v-abst",  sym: "✕", label: "non verificabile" }
 };
 
@@ -23,7 +26,7 @@ function esc(t) {
 }
 
 function badgeHtml(sc) {
-  const st = STATE[sc.stato] || STATE["pronta"];
+  const st = STATE[effectiveState(sc)] || STATE["pronta"];
   return '<button type="button" class="vbadge ' + st.cls + '" data-vid="' + esc(sc.id) + '" ' +
     'aria-label="Verifica: ' + esc(st.label) + '">' +
     '<span class="vb-sym" aria-hidden="true">' + st.sym + '</span>' +
@@ -81,7 +84,7 @@ function buildPanel(byId) {
   function open(id) {
     const c = byId[id];
     if (!c) return;
-    const st = STATE[c.stato] || STATE["pronta"];
+    const st = STATE[effectiveState(c)] || STATE["pronta"];
     const fonti = (c.fonti || []).map((f) => '<li>' + esc(f) + '</li>').join("");
     const griglia = (c.griglia || []).map((g) => {
       const v = g[1] === "ok" ? "ok" : (g[1] === "fix" ? "fix" : "na");
